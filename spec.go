@@ -3,6 +3,8 @@ package spec
 import (
 	"embed"
 	"fmt"
+	"iter"
+	"path"
 
 	"github.com/goccy/go-yaml"
 )
@@ -69,4 +71,35 @@ func Load(opcode uint8) (suite *TestSuite, err error) {
 	err = yaml.Unmarshal(bs, suite)
 
 	return
+}
+
+func LoadAll() iter.Seq2[*TestSuite, error] {
+	return func(yield func(*TestSuite, error) bool) {
+		entries, err := specFS.ReadDir("spec")
+
+		if err != nil {
+			yield(nil, err)
+			return
+		}
+
+		for _, entry := range entries {
+			var suite *TestSuite
+			var bs []byte
+
+			bs, err = specFS.ReadFile(path.Join("spec/", entry.Name()))
+
+			if err != nil {
+				yield(nil, err)
+				return
+			}
+
+			suite = &TestSuite{}
+
+			err = yaml.Unmarshal(bs, suite)
+
+			if !yield(suite, err) {
+				return
+			}
+		}
+	}
 }

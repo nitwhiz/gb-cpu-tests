@@ -1,0 +1,5802 @@
+canonicalName: RST $28
+tests:
+- name: ef 22 11
+  initial:
+    registers:
+      a: 127
+      b: 178
+      c: 123
+      d: 148
+      e: 22
+      h: 208
+      l: 29
+      f: 0
+      pc: 31505
+      sp: 40276
+    ram:
+    - address: 40
+      value: 19
+    - address: 31504
+      value: 239
+    - address: 31505
+      value: 34
+    - address: 31506
+      value: 17
+  final:
+    registers:
+      a: 127
+      b: 178
+      c: 123
+      d: 148
+      e: 22
+      h: 208
+      l: 29
+      f: 0
+      pc: 41
+      sp: 40274
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 40275
+    data: 123
+    mode: write
+  - address: 40274
+    data: 17
+    mode: write
+  - address: 40
+    data: 19
+    mode: read
+- name: ef 38 65
+  initial:
+    registers:
+      a: 62
+      b: 37
+      c: 138
+      d: 170
+      e: 21
+      h: 118
+      l: 108
+      f: 0
+      pc: 25043
+      sp: 63143
+    ram:
+    - address: 40
+      value: 159
+    - address: 25042
+      value: 239
+    - address: 25043
+      value: 56
+    - address: 25044
+      value: 101
+  final:
+    registers:
+      a: 62
+      b: 37
+      c: 138
+      d: 170
+      e: 21
+      h: 118
+      l: 108
+      f: 0
+      pc: 41
+      sp: 63141
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 63142
+    data: 97
+    mode: write
+  - address: 63141
+    data: 211
+    mode: write
+  - address: 40
+    data: 159
+    mode: read
+- name: ef 4b 46
+  initial:
+    registers:
+      a: 87
+      b: 196
+      c: 113
+      d: 199
+      e: 250
+      h: 129
+      l: 253
+      f: 96
+      pc: 62663
+      sp: 52664
+    ram:
+    - address: 40
+      value: 242
+    - address: 62662
+      value: 239
+    - address: 62663
+      value: 75
+    - address: 62664
+      value: 70
+  final:
+    registers:
+      a: 87
+      b: 196
+      c: 113
+      d: 199
+      e: 250
+      h: 129
+      l: 253
+      f: 96
+      pc: 41
+      sp: 52662
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 52663
+    data: 244
+    mode: write
+  - address: 52662
+    data: 199
+    mode: write
+  - address: 40
+    data: 242
+    mode: read
+- name: ef 66 f3
+  initial:
+    registers:
+      a: 179
+      b: 38
+      c: 70
+      d: 137
+      e: 63
+      h: 5
+      l: 31
+      f: 32
+      pc: 204
+      sp: 20375
+    ram:
+    - address: 40
+      value: 96
+    - address: 203
+      value: 239
+    - address: 204
+      value: 102
+    - address: 205
+      value: 243
+  final:
+    registers:
+      a: 179
+      b: 38
+      c: 70
+      d: 137
+      e: 63
+      h: 5
+      l: 31
+      f: 32
+      pc: 41
+      sp: 20373
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 20374
+    data: 0
+    mode: write
+  - address: 20373
+    data: 204
+    mode: write
+  - address: 40
+    data: 96
+    mode: read
+- name: ef d4 bf
+  initial:
+    registers:
+      a: 158
+      b: 108
+      c: 12
+      d: 23
+      e: 17
+      h: 54
+      l: 165
+      f: 224
+      pc: 33259
+      sp: 33712
+    ram:
+    - address: 40
+      value: 27
+    - address: 33258
+      value: 239
+    - address: 33259
+      value: 212
+    - address: 33260
+      value: 191
+  final:
+    registers:
+      a: 158
+      b: 108
+      c: 12
+      d: 23
+      e: 17
+      h: 54
+      l: 165
+      f: 224
+      pc: 41
+      sp: 33710
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 33711
+    data: 129
+    mode: write
+  - address: 33710
+    data: 235
+    mode: write
+  - address: 40
+    data: 27
+    mode: read
+- name: ef d4 71
+  initial:
+    registers:
+      a: 9
+      b: 242
+      c: 203
+      d: 204
+      e: 219
+      h: 95
+      l: 96
+      f: 192
+      pc: 51484
+      sp: 31673
+    ram:
+    - address: 40
+      value: 215
+    - address: 51483
+      value: 239
+    - address: 51484
+      value: 212
+    - address: 51485
+      value: 113
+  final:
+    registers:
+      a: 9
+      b: 242
+      c: 203
+      d: 204
+      e: 219
+      h: 95
+      l: 96
+      f: 192
+      pc: 41
+      sp: 31671
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 31672
+    data: 201
+    mode: write
+  - address: 31671
+    data: 28
+    mode: write
+  - address: 40
+    data: 215
+    mode: read
+- name: ef ed b6
+  initial:
+    registers:
+      a: 227
+      b: 84
+      c: 173
+      d: 226
+      e: 152
+      h: 94
+      l: 109
+      f: 112
+      pc: 2953
+      sp: 60602
+    ram:
+    - address: 40
+      value: 252
+    - address: 2952
+      value: 239
+    - address: 2953
+      value: 237
+    - address: 2954
+      value: 182
+  final:
+    registers:
+      a: 227
+      b: 84
+      c: 173
+      d: 226
+      e: 152
+      h: 94
+      l: 109
+      f: 112
+      pc: 41
+      sp: 60600
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 60601
+    data: 11
+    mode: write
+  - address: 60600
+    data: 137
+    mode: write
+  - address: 40
+    data: 252
+    mode: read
+- name: ef 79 d4
+  initial:
+    registers:
+      a: 174
+      b: 250
+      c: 153
+      d: 38
+      e: 122
+      h: 106
+      l: 11
+      f: 208
+      pc: 56795
+      sp: 28983
+    ram:
+    - address: 40
+      value: 154
+    - address: 56794
+      value: 239
+    - address: 56795
+      value: 121
+    - address: 56796
+      value: 212
+  final:
+    registers:
+      a: 174
+      b: 250
+      c: 153
+      d: 38
+      e: 122
+      h: 106
+      l: 11
+      f: 208
+      pc: 41
+      sp: 28981
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 28982
+    data: 221
+    mode: write
+  - address: 28981
+    data: 219
+    mode: write
+  - address: 40
+    data: 154
+    mode: read
+- name: ef 9a c3
+  initial:
+    registers:
+      a: 166
+      b: 97
+      c: 239
+      d: 161
+      e: 121
+      h: 0
+      l: 159
+      f: 208
+      pc: 44617
+      sp: 26179
+    ram:
+    - address: 40
+      value: 142
+    - address: 44616
+      value: 239
+    - address: 44617
+      value: 154
+    - address: 44618
+      value: 195
+  final:
+    registers:
+      a: 166
+      b: 97
+      c: 239
+      d: 161
+      e: 121
+      h: 0
+      l: 159
+      f: 208
+      pc: 41
+      sp: 26177
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 26178
+    data: 174
+    mode: write
+  - address: 26177
+    data: 73
+    mode: write
+  - address: 40
+    data: 142
+    mode: read
+- name: ef cc f1
+  initial:
+    registers:
+      a: 75
+      b: 219
+      c: 230
+      d: 156
+      e: 16
+      h: 149
+      l: 241
+      f: 0
+      pc: 31761
+      sp: 29337
+    ram:
+    - address: 40
+      value: 24
+    - address: 31760
+      value: 239
+    - address: 31761
+      value: 204
+    - address: 31762
+      value: 241
+  final:
+    registers:
+      a: 75
+      b: 219
+      c: 230
+      d: 156
+      e: 16
+      h: 149
+      l: 241
+      f: 0
+      pc: 41
+      sp: 29335
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 29336
+    data: 124
+    mode: write
+  - address: 29335
+    data: 17
+    mode: write
+  - address: 40
+    data: 24
+    mode: read
+- name: ef 97 df
+  initial:
+    registers:
+      a: 8
+      b: 167
+      c: 9
+      d: 146
+      e: 26
+      h: 81
+      l: 110
+      f: 0
+      pc: 44607
+      sp: 44988
+    ram:
+    - address: 40
+      value: 155
+    - address: 44606
+      value: 239
+    - address: 44607
+      value: 151
+    - address: 44608
+      value: 223
+  final:
+    registers:
+      a: 8
+      b: 167
+      c: 9
+      d: 146
+      e: 26
+      h: 81
+      l: 110
+      f: 0
+      pc: 41
+      sp: 44986
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 44987
+    data: 174
+    mode: write
+  - address: 44986
+    data: 63
+    mode: write
+  - address: 40
+    data: 155
+    mode: read
+- name: ef 87 66
+  initial:
+    registers:
+      a: 38
+      b: 242
+      c: 108
+      d: 131
+      e: 112
+      h: 209
+      l: 79
+      f: 80
+      pc: 28851
+      sp: 34274
+    ram:
+    - address: 40
+      value: 46
+    - address: 28850
+      value: 239
+    - address: 28851
+      value: 135
+    - address: 28852
+      value: 102
+  final:
+    registers:
+      a: 38
+      b: 242
+      c: 108
+      d: 131
+      e: 112
+      h: 209
+      l: 79
+      f: 80
+      pc: 41
+      sp: 34272
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 34273
+    data: 112
+    mode: write
+  - address: 34272
+    data: 179
+    mode: write
+  - address: 40
+    data: 46
+    mode: read
+- name: ef ef 08
+  initial:
+    registers:
+      a: 78
+      b: 9
+      c: 193
+      d: 12
+      e: 203
+      h: 209
+      l: 116
+      f: 240
+      pc: 54734
+      sp: 27891
+    ram:
+    - address: 40
+      value: 167
+    - address: 54733
+      value: 239
+    - address: 54734
+      value: 239
+    - address: 54735
+      value: 8
+  final:
+    registers:
+      a: 78
+      b: 9
+      c: 193
+      d: 12
+      e: 203
+      h: 209
+      l: 116
+      f: 240
+      pc: 41
+      sp: 27889
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 27890
+    data: 213
+    mode: write
+  - address: 27889
+    data: 206
+    mode: write
+  - address: 40
+    data: 167
+    mode: read
+- name: ef 86 09
+  initial:
+    registers:
+      a: 63
+      b: 239
+      c: 78
+      d: 249
+      e: 95
+      h: 250
+      l: 91
+      f: 224
+      pc: 49178
+      sp: 46407
+    ram:
+    - address: 40
+      value: 124
+    - address: 49177
+      value: 239
+    - address: 49178
+      value: 134
+    - address: 49179
+      value: 9
+  final:
+    registers:
+      a: 63
+      b: 239
+      c: 78
+      d: 249
+      e: 95
+      h: 250
+      l: 91
+      f: 224
+      pc: 41
+      sp: 46405
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 46406
+    data: 192
+    mode: write
+  - address: 46405
+    data: 26
+    mode: write
+  - address: 40
+    data: 124
+    mode: read
+- name: ef 3a 9e
+  initial:
+    registers:
+      a: 10
+      b: 112
+      c: 21
+      d: 54
+      e: 114
+      h: 106
+      l: 238
+      f: 0
+      pc: 14978
+      sp: 26642
+    ram:
+    - address: 40
+      value: 203
+    - address: 14977
+      value: 239
+    - address: 14978
+      value: 58
+    - address: 14979
+      value: 158
+  final:
+    registers:
+      a: 10
+      b: 112
+      c: 21
+      d: 54
+      e: 114
+      h: 106
+      l: 238
+      f: 0
+      pc: 41
+      sp: 26640
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 26641
+    data: 58
+    mode: write
+  - address: 26640
+    data: 130
+    mode: write
+  - address: 40
+    data: 203
+    mode: read
+- name: ef 2e 1a
+  initial:
+    registers:
+      a: 234
+      b: 54
+      c: 203
+      d: 70
+      e: 200
+      h: 177
+      l: 133
+      f: 144
+      pc: 19779
+      sp: 7967
+    ram:
+    - address: 40
+      value: 213
+    - address: 19778
+      value: 239
+    - address: 19779
+      value: 46
+    - address: 19780
+      value: 26
+  final:
+    registers:
+      a: 234
+      b: 54
+      c: 203
+      d: 70
+      e: 200
+      h: 177
+      l: 133
+      f: 144
+      pc: 41
+      sp: 7965
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 7966
+    data: 77
+    mode: write
+  - address: 7965
+    data: 67
+    mode: write
+  - address: 40
+    data: 213
+    mode: read
+- name: ef 82 54
+  initial:
+    registers:
+      a: 40
+      b: 235
+      c: 91
+      d: 100
+      e: 105
+      h: 193
+      l: 29
+      f: 208
+      pc: 8330
+      sp: 9720
+    ram:
+    - address: 40
+      value: 124
+    - address: 8329
+      value: 239
+    - address: 8330
+      value: 130
+    - address: 8331
+      value: 84
+  final:
+    registers:
+      a: 40
+      b: 235
+      c: 91
+      d: 100
+      e: 105
+      h: 193
+      l: 29
+      f: 208
+      pc: 41
+      sp: 9718
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 9719
+    data: 32
+    mode: write
+  - address: 9718
+    data: 138
+    mode: write
+  - address: 40
+    data: 124
+    mode: read
+- name: ef 67 40
+  initial:
+    registers:
+      a: 98
+      b: 53
+      c: 145
+      d: 16
+      e: 112
+      h: 227
+      l: 100
+      f: 224
+      pc: 53183
+      sp: 53098
+    ram:
+    - address: 40
+      value: 118
+    - address: 53182
+      value: 239
+    - address: 53183
+      value: 103
+    - address: 53184
+      value: 64
+  final:
+    registers:
+      a: 98
+      b: 53
+      c: 145
+      d: 16
+      e: 112
+      h: 227
+      l: 100
+      f: 224
+      pc: 41
+      sp: 53096
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 53097
+    data: 207
+    mode: write
+  - address: 53096
+    data: 191
+    mode: write
+  - address: 40
+    data: 118
+    mode: read
+- name: ef fc 80
+  initial:
+    registers:
+      a: 255
+      b: 83
+      c: 122
+      d: 111
+      e: 227
+      h: 195
+      l: 126
+      f: 160
+      pc: 47487
+      sp: 44916
+    ram:
+    - address: 40
+      value: 53
+    - address: 47486
+      value: 239
+    - address: 47487
+      value: 252
+    - address: 47488
+      value: 128
+  final:
+    registers:
+      a: 255
+      b: 83
+      c: 122
+      d: 111
+      e: 227
+      h: 195
+      l: 126
+      f: 160
+      pc: 41
+      sp: 44914
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 44915
+    data: 185
+    mode: write
+  - address: 44914
+    data: 127
+    mode: write
+  - address: 40
+    data: 53
+    mode: read
+- name: ef 6e 53
+  initial:
+    registers:
+      a: 122
+      b: 175
+      c: 128
+      d: 15
+      e: 197
+      h: 170
+      l: 12
+      f: 64
+      pc: 21374
+      sp: 58777
+    ram:
+    - address: 40
+      value: 249
+    - address: 21373
+      value: 239
+    - address: 21374
+      value: 110
+    - address: 21375
+      value: 83
+  final:
+    registers:
+      a: 122
+      b: 175
+      c: 128
+      d: 15
+      e: 197
+      h: 170
+      l: 12
+      f: 64
+      pc: 41
+      sp: 58775
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 58776
+    data: 83
+    mode: write
+  - address: 58775
+    data: 126
+    mode: write
+  - address: 40
+    data: 249
+    mode: read
+- name: ef 1d 18
+  initial:
+    registers:
+      a: 248
+      b: 207
+      c: 190
+      d: 129
+      e: 177
+      h: 130
+      l: 74
+      f: 112
+      pc: 16497
+      sp: 60134
+    ram:
+    - address: 40
+      value: 207
+    - address: 16496
+      value: 239
+    - address: 16497
+      value: 29
+    - address: 16498
+      value: 24
+  final:
+    registers:
+      a: 248
+      b: 207
+      c: 190
+      d: 129
+      e: 177
+      h: 130
+      l: 74
+      f: 112
+      pc: 41
+      sp: 60132
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 60133
+    data: 64
+    mode: write
+  - address: 60132
+    data: 113
+    mode: write
+  - address: 40
+    data: 207
+    mode: read
+- name: ef 81 0b
+  initial:
+    registers:
+      a: 8
+      b: 49
+      c: 173
+      d: 82
+      e: 167
+      h: 23
+      l: 29
+      f: 32
+      pc: 47732
+      sp: 5347
+    ram:
+    - address: 40
+      value: 2
+    - address: 47731
+      value: 239
+    - address: 47732
+      value: 129
+    - address: 47733
+      value: 11
+  final:
+    registers:
+      a: 8
+      b: 49
+      c: 173
+      d: 82
+      e: 167
+      h: 23
+      l: 29
+      f: 32
+      pc: 41
+      sp: 5345
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 5346
+    data: 186
+    mode: write
+  - address: 5345
+    data: 116
+    mode: write
+  - address: 40
+    data: 2
+    mode: read
+- name: ef 05 5c
+  initial:
+    registers:
+      a: 127
+      b: 42
+      c: 216
+      d: 6
+      e: 164
+      h: 246
+      l: 216
+      f: 112
+      pc: 35730
+      sp: 56289
+    ram:
+    - address: 40
+      value: 224
+    - address: 35729
+      value: 239
+    - address: 35730
+      value: 5
+    - address: 35731
+      value: 92
+  final:
+    registers:
+      a: 127
+      b: 42
+      c: 216
+      d: 6
+      e: 164
+      h: 246
+      l: 216
+      f: 112
+      pc: 41
+      sp: 56287
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 56288
+    data: 139
+    mode: write
+  - address: 56287
+    data: 146
+    mode: write
+  - address: 40
+    data: 224
+    mode: read
+- name: ef b4 3c
+  initial:
+    registers:
+      a: 123
+      b: 48
+      c: 216
+      d: 181
+      e: 210
+      h: 202
+      l: 52
+      f: 80
+      pc: 42085
+      sp: 34079
+    ram:
+    - address: 40
+      value: 128
+    - address: 42084
+      value: 239
+    - address: 42085
+      value: 180
+    - address: 42086
+      value: 60
+  final:
+    registers:
+      a: 123
+      b: 48
+      c: 216
+      d: 181
+      e: 210
+      h: 202
+      l: 52
+      f: 80
+      pc: 41
+      sp: 34077
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 34078
+    data: 164
+    mode: write
+  - address: 34077
+    data: 101
+    mode: write
+  - address: 40
+    data: 128
+    mode: read
+- name: ef f6 d5
+  initial:
+    registers:
+      a: 16
+      b: 108
+      c: 210
+      d: 169
+      e: 117
+      h: 219
+      l: 225
+      f: 176
+      pc: 32263
+      sp: 7048
+    ram:
+    - address: 40
+      value: 151
+    - address: 32262
+      value: 239
+    - address: 32263
+      value: 246
+    - address: 32264
+      value: 213
+  final:
+    registers:
+      a: 16
+      b: 108
+      c: 210
+      d: 169
+      e: 117
+      h: 219
+      l: 225
+      f: 176
+      pc: 41
+      sp: 7046
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 7047
+    data: 126
+    mode: write
+  - address: 7046
+    data: 7
+    mode: write
+  - address: 40
+    data: 151
+    mode: read
+- name: ef 38 b9
+  initial:
+    registers:
+      a: 202
+      b: 53
+      c: 89
+      d: 85
+      e: 237
+      h: 136
+      l: 191
+      f: 128
+      pc: 34778
+      sp: 41306
+    ram:
+    - address: 40
+      value: 237
+    - address: 34777
+      value: 239
+    - address: 34778
+      value: 56
+    - address: 34779
+      value: 185
+  final:
+    registers:
+      a: 202
+      b: 53
+      c: 89
+      d: 85
+      e: 237
+      h: 136
+      l: 191
+      f: 128
+      pc: 41
+      sp: 41304
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 41305
+    data: 135
+    mode: write
+  - address: 41304
+    data: 218
+    mode: write
+  - address: 40
+    data: 237
+    mode: read
+- name: ef 30 64
+  initial:
+    registers:
+      a: 108
+      b: 78
+      c: 48
+      d: 87
+      e: 111
+      h: 150
+      l: 225
+      f: 32
+      pc: 3766
+      sp: 56843
+    ram:
+    - address: 40
+      value: 28
+    - address: 3765
+      value: 239
+    - address: 3766
+      value: 48
+    - address: 3767
+      value: 100
+  final:
+    registers:
+      a: 108
+      b: 78
+      c: 48
+      d: 87
+      e: 111
+      h: 150
+      l: 225
+      f: 32
+      pc: 41
+      sp: 56841
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 56842
+    data: 14
+    mode: write
+  - address: 56841
+    data: 182
+    mode: write
+  - address: 40
+    data: 28
+    mode: read
+- name: ef f2 c3
+  initial:
+    registers:
+      a: 111
+      b: 127
+      c: 151
+      d: 73
+      e: 108
+      h: 212
+      l: 97
+      f: 208
+      pc: 20168
+      sp: 28227
+    ram:
+    - address: 40
+      value: 47
+    - address: 20167
+      value: 239
+    - address: 20168
+      value: 242
+    - address: 20169
+      value: 195
+  final:
+    registers:
+      a: 111
+      b: 127
+      c: 151
+      d: 73
+      e: 108
+      h: 212
+      l: 97
+      f: 208
+      pc: 41
+      sp: 28225
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 28226
+    data: 78
+    mode: write
+  - address: 28225
+    data: 200
+    mode: write
+  - address: 40
+    data: 47
+    mode: read
+- name: ef 40 00
+  initial:
+    registers:
+      a: 139
+      b: 133
+      c: 128
+      d: 53
+      e: 170
+      h: 106
+      l: 8
+      f: 176
+      pc: 4669
+      sp: 30294
+    ram:
+    - address: 40
+      value: 229
+    - address: 4668
+      value: 239
+    - address: 4669
+      value: 64
+    - address: 4670
+      value: 0
+  final:
+    registers:
+      a: 139
+      b: 133
+      c: 128
+      d: 53
+      e: 170
+      h: 106
+      l: 8
+      f: 176
+      pc: 41
+      sp: 30292
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 30293
+    data: 18
+    mode: write
+  - address: 30292
+    data: 61
+    mode: write
+  - address: 40
+    data: 229
+    mode: read
+- name: ef f9 2f
+  initial:
+    registers:
+      a: 91
+      b: 85
+      c: 191
+      d: 62
+      e: 1
+      h: 123
+      l: 193
+      f: 48
+      pc: 62937
+      sp: 28476
+    ram:
+    - address: 40
+      value: 107
+    - address: 62936
+      value: 239
+    - address: 62937
+      value: 249
+    - address: 62938
+      value: 47
+  final:
+    registers:
+      a: 91
+      b: 85
+      c: 191
+      d: 62
+      e: 1
+      h: 123
+      l: 193
+      f: 48
+      pc: 41
+      sp: 28474
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 28475
+    data: 245
+    mode: write
+  - address: 28474
+    data: 217
+    mode: write
+  - address: 40
+    data: 107
+    mode: read
+- name: ef de bf
+  initial:
+    registers:
+      a: 21
+      b: 39
+      c: 240
+      d: 150
+      e: 240
+      h: 168
+      l: 169
+      f: 0
+      pc: 9101
+      sp: 36700
+    ram:
+    - address: 40
+      value: 176
+    - address: 9100
+      value: 239
+    - address: 9101
+      value: 222
+    - address: 9102
+      value: 191
+  final:
+    registers:
+      a: 21
+      b: 39
+      c: 240
+      d: 150
+      e: 240
+      h: 168
+      l: 169
+      f: 0
+      pc: 41
+      sp: 36698
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 36699
+    data: 35
+    mode: write
+  - address: 36698
+    data: 141
+    mode: write
+  - address: 40
+    data: 176
+    mode: read
+- name: ef f2 7e
+  initial:
+    registers:
+      a: 211
+      b: 158
+      c: 61
+      d: 34
+      e: 244
+      h: 208
+      l: 202
+      f: 48
+      pc: 20234
+      sp: 12164
+    ram:
+    - address: 40
+      value: 58
+    - address: 20233
+      value: 239
+    - address: 20234
+      value: 242
+    - address: 20235
+      value: 126
+  final:
+    registers:
+      a: 211
+      b: 158
+      c: 61
+      d: 34
+      e: 244
+      h: 208
+      l: 202
+      f: 48
+      pc: 41
+      sp: 12162
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 12163
+    data: 79
+    mode: write
+  - address: 12162
+    data: 10
+    mode: write
+  - address: 40
+    data: 58
+    mode: read
+- name: ef bb 3c
+  initial:
+    registers:
+      a: 126
+      b: 147
+      c: 18
+      d: 95
+      e: 152
+      h: 23
+      l: 29
+      f: 112
+      pc: 26018
+      sp: 20264
+    ram:
+    - address: 40
+      value: 249
+    - address: 26017
+      value: 239
+    - address: 26018
+      value: 187
+    - address: 26019
+      value: 60
+  final:
+    registers:
+      a: 126
+      b: 147
+      c: 18
+      d: 95
+      e: 152
+      h: 23
+      l: 29
+      f: 112
+      pc: 41
+      sp: 20262
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 20263
+    data: 101
+    mode: write
+  - address: 20262
+    data: 162
+    mode: write
+  - address: 40
+    data: 249
+    mode: read
+- name: ef 79 11
+  initial:
+    registers:
+      a: 38
+      b: 187
+      c: 244
+      d: 184
+      e: 235
+      h: 196
+      l: 90
+      f: 144
+      pc: 18081
+      sp: 41664
+    ram:
+    - address: 40
+      value: 117
+    - address: 18080
+      value: 239
+    - address: 18081
+      value: 121
+    - address: 18082
+      value: 17
+  final:
+    registers:
+      a: 38
+      b: 187
+      c: 244
+      d: 184
+      e: 235
+      h: 196
+      l: 90
+      f: 144
+      pc: 41
+      sp: 41662
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 41663
+    data: 70
+    mode: write
+  - address: 41662
+    data: 161
+    mode: write
+  - address: 40
+    data: 117
+    mode: read
+- name: ef 7b 7e
+  initial:
+    registers:
+      a: 110
+      b: 250
+      c: 203
+      d: 23
+      e: 158
+      h: 208
+      l: 194
+      f: 128
+      pc: 737
+      sp: 25630
+    ram:
+    - address: 40
+      value: 176
+    - address: 736
+      value: 239
+    - address: 737
+      value: 123
+    - address: 738
+      value: 126
+  final:
+    registers:
+      a: 110
+      b: 250
+      c: 203
+      d: 23
+      e: 158
+      h: 208
+      l: 194
+      f: 128
+      pc: 41
+      sp: 25628
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 25629
+    data: 2
+    mode: write
+  - address: 25628
+    data: 225
+    mode: write
+  - address: 40
+    data: 176
+    mode: read
+- name: ef 93 b0
+  initial:
+    registers:
+      a: 211
+      b: 192
+      c: 57
+      d: 33
+      e: 162
+      h: 198
+      l: 196
+      f: 48
+      pc: 42782
+      sp: 1533
+    ram:
+    - address: 40
+      value: 107
+    - address: 42781
+      value: 239
+    - address: 42782
+      value: 147
+    - address: 42783
+      value: 176
+  final:
+    registers:
+      a: 211
+      b: 192
+      c: 57
+      d: 33
+      e: 162
+      h: 198
+      l: 196
+      f: 48
+      pc: 41
+      sp: 1531
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 1532
+    data: 167
+    mode: write
+  - address: 1531
+    data: 30
+    mode: write
+  - address: 40
+    data: 107
+    mode: read
+- name: ef e2 38
+  initial:
+    registers:
+      a: 74
+      b: 170
+      c: 175
+      d: 67
+      e: 241
+      h: 248
+      l: 209
+      f: 32
+      pc: 51200
+      sp: 57842
+    ram:
+    - address: 40
+      value: 201
+    - address: 51199
+      value: 239
+    - address: 51200
+      value: 226
+    - address: 51201
+      value: 56
+  final:
+    registers:
+      a: 74
+      b: 170
+      c: 175
+      d: 67
+      e: 241
+      h: 248
+      l: 209
+      f: 32
+      pc: 41
+      sp: 57840
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 57841
+    data: 200
+    mode: write
+  - address: 57840
+    data: 0
+    mode: write
+  - address: 40
+    data: 201
+    mode: read
+- name: ef ff ed
+  initial:
+    registers:
+      a: 221
+      b: 218
+      c: 17
+      d: 100
+      e: 120
+      h: 179
+      l: 58
+      f: 160
+      pc: 32194
+      sp: 33726
+    ram:
+    - address: 40
+      value: 54
+    - address: 32193
+      value: 239
+    - address: 32194
+      value: 255
+    - address: 32195
+      value: 237
+  final:
+    registers:
+      a: 221
+      b: 218
+      c: 17
+      d: 100
+      e: 120
+      h: 179
+      l: 58
+      f: 160
+      pc: 41
+      sp: 33724
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 33725
+    data: 125
+    mode: write
+  - address: 33724
+    data: 194
+    mode: write
+  - address: 40
+    data: 54
+    mode: read
+- name: ef 44 ed
+  initial:
+    registers:
+      a: 47
+      b: 145
+      c: 56
+      d: 7
+      e: 58
+      h: 157
+      l: 221
+      f: 160
+      pc: 49970
+      sp: 38365
+    ram:
+    - address: 40
+      value: 143
+    - address: 49969
+      value: 239
+    - address: 49970
+      value: 68
+    - address: 49971
+      value: 237
+  final:
+    registers:
+      a: 47
+      b: 145
+      c: 56
+      d: 7
+      e: 58
+      h: 157
+      l: 221
+      f: 160
+      pc: 41
+      sp: 38363
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 38364
+    data: 195
+    mode: write
+  - address: 38363
+    data: 50
+    mode: write
+  - address: 40
+    data: 143
+    mode: read
+- name: ef 18 50
+  initial:
+    registers:
+      a: 1
+      b: 40
+      c: 148
+      d: 28
+      e: 217
+      h: 169
+      l: 10
+      f: 48
+      pc: 62394
+      sp: 34503
+    ram:
+    - address: 40
+      value: 17
+    - address: 62393
+      value: 239
+    - address: 62394
+      value: 24
+    - address: 62395
+      value: 80
+  final:
+    registers:
+      a: 1
+      b: 40
+      c: 148
+      d: 28
+      e: 217
+      h: 169
+      l: 10
+      f: 48
+      pc: 41
+      sp: 34501
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 34502
+    data: 243
+    mode: write
+  - address: 34501
+    data: 186
+    mode: write
+  - address: 40
+    data: 17
+    mode: read
+- name: ef 7b 43
+  initial:
+    registers:
+      a: 113
+      b: 167
+      c: 25
+      d: 139
+      e: 28
+      h: 106
+      l: 207
+      f: 192
+      pc: 35299
+      sp: 62585
+    ram:
+    - address: 40
+      value: 171
+    - address: 35298
+      value: 239
+    - address: 35299
+      value: 123
+    - address: 35300
+      value: 67
+  final:
+    registers:
+      a: 113
+      b: 167
+      c: 25
+      d: 139
+      e: 28
+      h: 106
+      l: 207
+      f: 192
+      pc: 41
+      sp: 62583
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 62584
+    data: 137
+    mode: write
+  - address: 62583
+    data: 227
+    mode: write
+  - address: 40
+    data: 171
+    mode: read
+- name: ef 04 12
+  initial:
+    registers:
+      a: 237
+      b: 124
+      c: 200
+      d: 116
+      e: 186
+      h: 94
+      l: 242
+      f: 64
+      pc: 23519
+      sp: 38706
+    ram:
+    - address: 40
+      value: 78
+    - address: 23518
+      value: 239
+    - address: 23519
+      value: 4
+    - address: 23520
+      value: 18
+  final:
+    registers:
+      a: 237
+      b: 124
+      c: 200
+      d: 116
+      e: 186
+      h: 94
+      l: 242
+      f: 64
+      pc: 41
+      sp: 38704
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 38705
+    data: 91
+    mode: write
+  - address: 38704
+    data: 223
+    mode: write
+  - address: 40
+    data: 78
+    mode: read
+- name: ef 1f f7
+  initial:
+    registers:
+      a: 166
+      b: 52
+      c: 161
+      d: 74
+      e: 18
+      h: 245
+      l: 69
+      f: 160
+      pc: 62769
+      sp: 6692
+    ram:
+    - address: 40
+      value: 93
+    - address: 62768
+      value: 239
+    - address: 62769
+      value: 31
+    - address: 62770
+      value: 247
+  final:
+    registers:
+      a: 166
+      b: 52
+      c: 161
+      d: 74
+      e: 18
+      h: 245
+      l: 69
+      f: 160
+      pc: 41
+      sp: 6690
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 6691
+    data: 245
+    mode: write
+  - address: 6690
+    data: 49
+    mode: write
+  - address: 40
+    data: 93
+    mode: read
+- name: ef 5c 2d
+  initial:
+    registers:
+      a: 156
+      b: 117
+      c: 158
+      d: 14
+      e: 231
+      h: 110
+      l: 169
+      f: 160
+      pc: 22233
+      sp: 11822
+    ram:
+    - address: 40
+      value: 39
+    - address: 22232
+      value: 239
+    - address: 22233
+      value: 92
+    - address: 22234
+      value: 45
+  final:
+    registers:
+      a: 156
+      b: 117
+      c: 158
+      d: 14
+      e: 231
+      h: 110
+      l: 169
+      f: 160
+      pc: 41
+      sp: 11820
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 11821
+    data: 86
+    mode: write
+  - address: 11820
+    data: 217
+    mode: write
+  - address: 40
+    data: 39
+    mode: read
+- name: ef 53 07
+  initial:
+    registers:
+      a: 164
+      b: 248
+      c: 134
+      d: 131
+      e: 167
+      h: 0
+      l: 187
+      f: 160
+      pc: 64614
+      sp: 26507
+    ram:
+    - address: 40
+      value: 9
+    - address: 64613
+      value: 239
+    - address: 64614
+      value: 83
+    - address: 64615
+      value: 7
+  final:
+    registers:
+      a: 164
+      b: 248
+      c: 134
+      d: 131
+      e: 167
+      h: 0
+      l: 187
+      f: 160
+      pc: 41
+      sp: 26505
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 26506
+    data: 252
+    mode: write
+  - address: 26505
+    data: 102
+    mode: write
+  - address: 40
+    data: 9
+    mode: read
+- name: ef 26 81
+  initial:
+    registers:
+      a: 159
+      b: 173
+      c: 209
+      d: 246
+      e: 74
+      h: 50
+      l: 180
+      f: 16
+      pc: 55473
+      sp: 35292
+    ram:
+    - address: 40
+      value: 136
+    - address: 55472
+      value: 239
+    - address: 55473
+      value: 38
+    - address: 55474
+      value: 129
+  final:
+    registers:
+      a: 159
+      b: 173
+      c: 209
+      d: 246
+      e: 74
+      h: 50
+      l: 180
+      f: 16
+      pc: 41
+      sp: 35290
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 35291
+    data: 216
+    mode: write
+  - address: 35290
+    data: 177
+    mode: write
+  - address: 40
+    data: 136
+    mode: read
+- name: ef 6d 36
+  initial:
+    registers:
+      a: 154
+      b: 103
+      c: 215
+      d: 230
+      e: 173
+      h: 83
+      l: 55
+      f: 112
+      pc: 19867
+      sp: 62940
+    ram:
+    - address: 40
+      value: 165
+    - address: 19866
+      value: 239
+    - address: 19867
+      value: 109
+    - address: 19868
+      value: 54
+  final:
+    registers:
+      a: 154
+      b: 103
+      c: 215
+      d: 230
+      e: 173
+      h: 83
+      l: 55
+      f: 112
+      pc: 41
+      sp: 62938
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 62939
+    data: 77
+    mode: write
+  - address: 62938
+    data: 155
+    mode: write
+  - address: 40
+    data: 165
+    mode: read
+- name: ef 93 bb
+  initial:
+    registers:
+      a: 172
+      b: 237
+      c: 87
+      d: 74
+      e: 179
+      h: 20
+      l: 193
+      f: 160
+      pc: 49432
+      sp: 21356
+    ram:
+    - address: 40
+      value: 247
+    - address: 49431
+      value: 239
+    - address: 49432
+      value: 147
+    - address: 49433
+      value: 187
+  final:
+    registers:
+      a: 172
+      b: 237
+      c: 87
+      d: 74
+      e: 179
+      h: 20
+      l: 193
+      f: 160
+      pc: 41
+      sp: 21354
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 21355
+    data: 193
+    mode: write
+  - address: 21354
+    data: 24
+    mode: write
+  - address: 40
+    data: 247
+    mode: read
+- name: ef 35 05
+  initial:
+    registers:
+      a: 211
+      b: 148
+      c: 236
+      d: 54
+      e: 65
+      h: 124
+      l: 154
+      f: 64
+      pc: 48319
+      sp: 31978
+    ram:
+    - address: 40
+      value: 195
+    - address: 48318
+      value: 239
+    - address: 48319
+      value: 53
+    - address: 48320
+      value: 5
+  final:
+    registers:
+      a: 211
+      b: 148
+      c: 236
+      d: 54
+      e: 65
+      h: 124
+      l: 154
+      f: 64
+      pc: 41
+      sp: 31976
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 31977
+    data: 188
+    mode: write
+  - address: 31976
+    data: 191
+    mode: write
+  - address: 40
+    data: 195
+    mode: read
+- name: ef 8c 48
+  initial:
+    registers:
+      a: 110
+      b: 167
+      c: 121
+      d: 240
+      e: 2
+      h: 157
+      l: 204
+      f: 0
+      pc: 15177
+      sp: 44399
+    ram:
+    - address: 40
+      value: 207
+    - address: 15176
+      value: 239
+    - address: 15177
+      value: 140
+    - address: 15178
+      value: 72
+  final:
+    registers:
+      a: 110
+      b: 167
+      c: 121
+      d: 240
+      e: 2
+      h: 157
+      l: 204
+      f: 0
+      pc: 41
+      sp: 44397
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 44398
+    data: 59
+    mode: write
+  - address: 44397
+    data: 73
+    mode: write
+  - address: 40
+    data: 207
+    mode: read
+- name: ef bf c4
+  initial:
+    registers:
+      a: 94
+      b: 16
+      c: 87
+      d: 44
+      e: 36
+      h: 125
+      l: 53
+      f: 144
+      pc: 48501
+      sp: 18488
+    ram:
+    - address: 40
+      value: 241
+    - address: 48500
+      value: 239
+    - address: 48501
+      value: 191
+    - address: 48502
+      value: 196
+  final:
+    registers:
+      a: 94
+      b: 16
+      c: 87
+      d: 44
+      e: 36
+      h: 125
+      l: 53
+      f: 144
+      pc: 41
+      sp: 18486
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 18487
+    data: 189
+    mode: write
+  - address: 18486
+    data: 117
+    mode: write
+  - address: 40
+    data: 241
+    mode: read
+- name: ef 1d 9c
+  initial:
+    registers:
+      a: 17
+      b: 202
+      c: 64
+      d: 164
+      e: 118
+      h: 204
+      l: 128
+      f: 64
+      pc: 1557
+      sp: 44649
+    ram:
+    - address: 40
+      value: 252
+    - address: 1556
+      value: 239
+    - address: 1557
+      value: 29
+    - address: 1558
+      value: 156
+  final:
+    registers:
+      a: 17
+      b: 202
+      c: 64
+      d: 164
+      e: 118
+      h: 204
+      l: 128
+      f: 64
+      pc: 41
+      sp: 44647
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 44648
+    data: 6
+    mode: write
+  - address: 44647
+    data: 21
+    mode: write
+  - address: 40
+    data: 252
+    mode: read
+- name: ef ed a4
+  initial:
+    registers:
+      a: 254
+      b: 246
+      c: 54
+      d: 15
+      e: 161
+      h: 30
+      l: 133
+      f: 160
+      pc: 5000
+      sp: 10102
+    ram:
+    - address: 40
+      value: 161
+    - address: 4999
+      value: 239
+    - address: 5000
+      value: 237
+    - address: 5001
+      value: 164
+  final:
+    registers:
+      a: 254
+      b: 246
+      c: 54
+      d: 15
+      e: 161
+      h: 30
+      l: 133
+      f: 160
+      pc: 41
+      sp: 10100
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 10101
+    data: 19
+    mode: write
+  - address: 10100
+    data: 136
+    mode: write
+  - address: 40
+    data: 161
+    mode: read
+- name: ef 69 b2
+  initial:
+    registers:
+      a: 29
+      b: 28
+      c: 165
+      d: 152
+      e: 31
+      h: 249
+      l: 211
+      f: 80
+      pc: 9292
+      sp: 22449
+    ram:
+    - address: 40
+      value: 58
+    - address: 9291
+      value: 239
+    - address: 9292
+      value: 105
+    - address: 9293
+      value: 178
+  final:
+    registers:
+      a: 29
+      b: 28
+      c: 165
+      d: 152
+      e: 31
+      h: 249
+      l: 211
+      f: 80
+      pc: 41
+      sp: 22447
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 22448
+    data: 36
+    mode: write
+  - address: 22447
+    data: 76
+    mode: write
+  - address: 40
+    data: 58
+    mode: read
+- name: ef df 4d
+  initial:
+    registers:
+      a: 191
+      b: 84
+      c: 5
+      d: 38
+      e: 147
+      h: 17
+      l: 66
+      f: 128
+      pc: 22087
+      sp: 45987
+    ram:
+    - address: 40
+      value: 201
+    - address: 22086
+      value: 239
+    - address: 22087
+      value: 223
+    - address: 22088
+      value: 77
+  final:
+    registers:
+      a: 191
+      b: 84
+      c: 5
+      d: 38
+      e: 147
+      h: 17
+      l: 66
+      f: 128
+      pc: 41
+      sp: 45985
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 45986
+    data: 86
+    mode: write
+  - address: 45985
+    data: 71
+    mode: write
+  - address: 40
+    data: 201
+    mode: read
+- name: ef 96 fc
+  initial:
+    registers:
+      a: 133
+      b: 238
+      c: 104
+      d: 190
+      e: 246
+      h: 159
+      l: 136
+      f: 176
+      pc: 33002
+      sp: 38577
+    ram:
+    - address: 40
+      value: 203
+    - address: 33001
+      value: 239
+    - address: 33002
+      value: 150
+    - address: 33003
+      value: 252
+  final:
+    registers:
+      a: 133
+      b: 238
+      c: 104
+      d: 190
+      e: 246
+      h: 159
+      l: 136
+      f: 176
+      pc: 41
+      sp: 38575
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 38576
+    data: 128
+    mode: write
+  - address: 38575
+    data: 234
+    mode: write
+  - address: 40
+    data: 203
+    mode: read
+- name: ef 1f 49
+  initial:
+    registers:
+      a: 247
+      b: 34
+      c: 202
+      d: 57
+      e: 12
+      h: 105
+      l: 96
+      f: 96
+      pc: 29801
+      sp: 34874
+    ram:
+    - address: 40
+      value: 222
+    - address: 29800
+      value: 239
+    - address: 29801
+      value: 31
+    - address: 29802
+      value: 73
+  final:
+    registers:
+      a: 247
+      b: 34
+      c: 202
+      d: 57
+      e: 12
+      h: 105
+      l: 96
+      f: 96
+      pc: 41
+      sp: 34872
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 34873
+    data: 116
+    mode: write
+  - address: 34872
+    data: 105
+    mode: write
+  - address: 40
+    data: 222
+    mode: read
+- name: ef 8e 7d
+  initial:
+    registers:
+      a: 206
+      b: 225
+      c: 243
+      d: 162
+      e: 38
+      h: 202
+      l: 82
+      f: 224
+      pc: 17172
+      sp: 18420
+    ram:
+    - address: 40
+      value: 153
+    - address: 17171
+      value: 239
+    - address: 17172
+      value: 142
+    - address: 17173
+      value: 125
+  final:
+    registers:
+      a: 206
+      b: 225
+      c: 243
+      d: 162
+      e: 38
+      h: 202
+      l: 82
+      f: 224
+      pc: 41
+      sp: 18418
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 18419
+    data: 67
+    mode: write
+  - address: 18418
+    data: 20
+    mode: write
+  - address: 40
+    data: 153
+    mode: read
+- name: ef 14 4d
+  initial:
+    registers:
+      a: 38
+      b: 46
+      c: 206
+      d: 246
+      e: 62
+      h: 60
+      l: 7
+      f: 240
+      pc: 12008
+      sp: 18771
+    ram:
+    - address: 40
+      value: 148
+    - address: 12007
+      value: 239
+    - address: 12008
+      value: 20
+    - address: 12009
+      value: 77
+  final:
+    registers:
+      a: 38
+      b: 46
+      c: 206
+      d: 246
+      e: 62
+      h: 60
+      l: 7
+      f: 240
+      pc: 41
+      sp: 18769
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 18770
+    data: 46
+    mode: write
+  - address: 18769
+    data: 232
+    mode: write
+  - address: 40
+    data: 148
+    mode: read
+- name: ef 49 3a
+  initial:
+    registers:
+      a: 203
+      b: 242
+      c: 235
+      d: 25
+      e: 219
+      h: 26
+      l: 5
+      f: 128
+      pc: 55119
+      sp: 60418
+    ram:
+    - address: 40
+      value: 126
+    - address: 55118
+      value: 239
+    - address: 55119
+      value: 73
+    - address: 55120
+      value: 58
+  final:
+    registers:
+      a: 203
+      b: 242
+      c: 235
+      d: 25
+      e: 219
+      h: 26
+      l: 5
+      f: 128
+      pc: 41
+      sp: 60416
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 60417
+    data: 215
+    mode: write
+  - address: 60416
+    data: 79
+    mode: write
+  - address: 40
+    data: 126
+    mode: read
+- name: ef c8 b2
+  initial:
+    registers:
+      a: 26
+      b: 131
+      c: 244
+      d: 34
+      e: 18
+      h: 155
+      l: 243
+      f: 208
+      pc: 54870
+      sp: 53978
+    ram:
+    - address: 40
+      value: 60
+    - address: 54869
+      value: 239
+    - address: 54870
+      value: 200
+    - address: 54871
+      value: 178
+  final:
+    registers:
+      a: 26
+      b: 131
+      c: 244
+      d: 34
+      e: 18
+      h: 155
+      l: 243
+      f: 208
+      pc: 41
+      sp: 53976
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 53977
+    data: 214
+    mode: write
+  - address: 53976
+    data: 86
+    mode: write
+  - address: 40
+    data: 60
+    mode: read
+- name: ef 77 a7
+  initial:
+    registers:
+      a: 250
+      b: 97
+      c: 196
+      d: 96
+      e: 143
+      h: 21
+      l: 186
+      f: 224
+      pc: 11131
+      sp: 973
+    ram:
+    - address: 40
+      value: 253
+    - address: 11130
+      value: 239
+    - address: 11131
+      value: 119
+    - address: 11132
+      value: 167
+  final:
+    registers:
+      a: 250
+      b: 97
+      c: 196
+      d: 96
+      e: 143
+      h: 21
+      l: 186
+      f: 224
+      pc: 41
+      sp: 971
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 972
+    data: 43
+    mode: write
+  - address: 971
+    data: 123
+    mode: write
+  - address: 40
+    data: 253
+    mode: read
+- name: ef f0 11
+  initial:
+    registers:
+      a: 33
+      b: 113
+      c: 48
+      d: 79
+      e: 252
+      h: 209
+      l: 170
+      f: 176
+      pc: 9162
+      sp: 60702
+    ram:
+    - address: 40
+      value: 171
+    - address: 9161
+      value: 239
+    - address: 9162
+      value: 240
+    - address: 9163
+      value: 17
+  final:
+    registers:
+      a: 33
+      b: 113
+      c: 48
+      d: 79
+      e: 252
+      h: 209
+      l: 170
+      f: 176
+      pc: 41
+      sp: 60700
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 60701
+    data: 35
+    mode: write
+  - address: 60700
+    data: 202
+    mode: write
+  - address: 40
+    data: 171
+    mode: read
+- name: ef f7 4b
+  initial:
+    registers:
+      a: 128
+      b: 238
+      c: 96
+      d: 101
+      e: 133
+      h: 89
+      l: 29
+      f: 240
+      pc: 45573
+      sp: 34438
+    ram:
+    - address: 40
+      value: 118
+    - address: 45572
+      value: 239
+    - address: 45573
+      value: 247
+    - address: 45574
+      value: 75
+  final:
+    registers:
+      a: 128
+      b: 238
+      c: 96
+      d: 101
+      e: 133
+      h: 89
+      l: 29
+      f: 240
+      pc: 41
+      sp: 34436
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 34437
+    data: 178
+    mode: write
+  - address: 34436
+    data: 5
+    mode: write
+  - address: 40
+    data: 118
+    mode: read
+- name: ef a4 75
+  initial:
+    registers:
+      a: 22
+      b: 181
+      c: 132
+      d: 107
+      e: 76
+      h: 56
+      l: 233
+      f: 80
+      pc: 59990
+      sp: 50131
+    ram:
+    - address: 40
+      value: 74
+    - address: 59989
+      value: 239
+    - address: 59990
+      value: 164
+    - address: 59991
+      value: 117
+  final:
+    registers:
+      a: 22
+      b: 181
+      c: 132
+      d: 107
+      e: 76
+      h: 56
+      l: 233
+      f: 80
+      pc: 41
+      sp: 50129
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 50130
+    data: 234
+    mode: write
+  - address: 50129
+    data: 86
+    mode: write
+  - address: 40
+    data: 74
+    mode: read
+- name: ef db cf
+  initial:
+    registers:
+      a: 222
+      b: 222
+      c: 109
+      d: 100
+      e: 217
+      h: 143
+      l: 12
+      f: 16
+      pc: 5184
+      sp: 34170
+    ram:
+    - address: 40
+      value: 91
+    - address: 5183
+      value: 239
+    - address: 5184
+      value: 219
+    - address: 5185
+      value: 207
+  final:
+    registers:
+      a: 222
+      b: 222
+      c: 109
+      d: 100
+      e: 217
+      h: 143
+      l: 12
+      f: 16
+      pc: 41
+      sp: 34168
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 34169
+    data: 20
+    mode: write
+  - address: 34168
+    data: 64
+    mode: write
+  - address: 40
+    data: 91
+    mode: read
+- name: ef c7 6b
+  initial:
+    registers:
+      a: 25
+      b: 6
+      c: 115
+      d: 228
+      e: 4
+      h: 217
+      l: 222
+      f: 240
+      pc: 43116
+      sp: 64560
+    ram:
+    - address: 40
+      value: 140
+    - address: 43115
+      value: 239
+    - address: 43116
+      value: 199
+    - address: 43117
+      value: 107
+  final:
+    registers:
+      a: 25
+      b: 6
+      c: 115
+      d: 228
+      e: 4
+      h: 217
+      l: 222
+      f: 240
+      pc: 41
+      sp: 64558
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 64559
+    data: 168
+    mode: write
+  - address: 64558
+    data: 108
+    mode: write
+  - address: 40
+    data: 140
+    mode: read
+- name: ef 28 2d
+  initial:
+    registers:
+      a: 197
+      b: 20
+      c: 127
+      d: 15
+      e: 34
+      h: 110
+      l: 4
+      f: 160
+      pc: 7556
+      sp: 27854
+    ram:
+    - address: 40
+      value: 129
+    - address: 7555
+      value: 239
+    - address: 7556
+      value: 40
+    - address: 7557
+      value: 45
+  final:
+    registers:
+      a: 197
+      b: 20
+      c: 127
+      d: 15
+      e: 34
+      h: 110
+      l: 4
+      f: 160
+      pc: 41
+      sp: 27852
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 27853
+    data: 29
+    mode: write
+  - address: 27852
+    data: 132
+    mode: write
+  - address: 40
+    data: 129
+    mode: read
+- name: ef 7a 9f
+  initial:
+    registers:
+      a: 0
+      b: 246
+      c: 249
+      d: 123
+      e: 164
+      h: 186
+      l: 238
+      f: 80
+      pc: 12088
+      sp: 16183
+    ram:
+    - address: 40
+      value: 219
+    - address: 12087
+      value: 239
+    - address: 12088
+      value: 122
+    - address: 12089
+      value: 159
+  final:
+    registers:
+      a: 0
+      b: 246
+      c: 249
+      d: 123
+      e: 164
+      h: 186
+      l: 238
+      f: 80
+      pc: 41
+      sp: 16181
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 16182
+    data: 47
+    mode: write
+  - address: 16181
+    data: 56
+    mode: write
+  - address: 40
+    data: 219
+    mode: read
+- name: ef 48 77
+  initial:
+    registers:
+      a: 102
+      b: 100
+      c: 174
+      d: 163
+      e: 65
+      h: 82
+      l: 117
+      f: 80
+      pc: 6477
+      sp: 28543
+    ram:
+    - address: 40
+      value: 43
+    - address: 6476
+      value: 239
+    - address: 6477
+      value: 72
+    - address: 6478
+      value: 119
+  final:
+    registers:
+      a: 102
+      b: 100
+      c: 174
+      d: 163
+      e: 65
+      h: 82
+      l: 117
+      f: 80
+      pc: 41
+      sp: 28541
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 28542
+    data: 25
+    mode: write
+  - address: 28541
+    data: 77
+    mode: write
+  - address: 40
+    data: 43
+    mode: read
+- name: ef 9e 59
+  initial:
+    registers:
+      a: 254
+      b: 13
+      c: 27
+      d: 156
+      e: 93
+      h: 109
+      l: 78
+      f: 48
+      pc: 23821
+      sp: 33708
+    ram:
+    - address: 40
+      value: 193
+    - address: 23820
+      value: 239
+    - address: 23821
+      value: 158
+    - address: 23822
+      value: 89
+  final:
+    registers:
+      a: 254
+      b: 13
+      c: 27
+      d: 156
+      e: 93
+      h: 109
+      l: 78
+      f: 48
+      pc: 41
+      sp: 33706
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 33707
+    data: 93
+    mode: write
+  - address: 33706
+    data: 13
+    mode: write
+  - address: 40
+    data: 193
+    mode: read
+- name: ef 56 38
+  initial:
+    registers:
+      a: 202
+      b: 224
+      c: 54
+      d: 74
+      e: 44
+      h: 120
+      l: 222
+      f: 112
+      pc: 26850
+      sp: 17908
+    ram:
+    - address: 40
+      value: 214
+    - address: 26849
+      value: 239
+    - address: 26850
+      value: 86
+    - address: 26851
+      value: 56
+  final:
+    registers:
+      a: 202
+      b: 224
+      c: 54
+      d: 74
+      e: 44
+      h: 120
+      l: 222
+      f: 112
+      pc: 41
+      sp: 17906
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 17907
+    data: 104
+    mode: write
+  - address: 17906
+    data: 226
+    mode: write
+  - address: 40
+    data: 214
+    mode: read
+- name: ef a4 77
+  initial:
+    registers:
+      a: 96
+      b: 61
+      c: 223
+      d: 113
+      e: 144
+      h: 186
+      l: 209
+      f: 16
+      pc: 5233
+      sp: 62827
+    ram:
+    - address: 40
+      value: 2
+    - address: 5232
+      value: 239
+    - address: 5233
+      value: 164
+    - address: 5234
+      value: 119
+  final:
+    registers:
+      a: 96
+      b: 61
+      c: 223
+      d: 113
+      e: 144
+      h: 186
+      l: 209
+      f: 16
+      pc: 41
+      sp: 62825
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 62826
+    data: 20
+    mode: write
+  - address: 62825
+    data: 113
+    mode: write
+  - address: 40
+    data: 2
+    mode: read
+- name: ef d9 b5
+  initial:
+    registers:
+      a: 167
+      b: 2
+      c: 253
+      d: 145
+      e: 245
+      h: 80
+      l: 50
+      f: 112
+      pc: 31875
+      sp: 1602
+    ram:
+    - address: 40
+      value: 232
+    - address: 31874
+      value: 239
+    - address: 31875
+      value: 217
+    - address: 31876
+      value: 181
+  final:
+    registers:
+      a: 167
+      b: 2
+      c: 253
+      d: 145
+      e: 245
+      h: 80
+      l: 50
+      f: 112
+      pc: 41
+      sp: 1600
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 1601
+    data: 124
+    mode: write
+  - address: 1600
+    data: 131
+    mode: write
+  - address: 40
+    data: 232
+    mode: read
+- name: ef d9 e4
+  initial:
+    registers:
+      a: 147
+      b: 93
+      c: 247
+      d: 198
+      e: 57
+      h: 89
+      l: 109
+      f: 160
+      pc: 55893
+      sp: 37354
+    ram:
+    - address: 40
+      value: 199
+    - address: 55892
+      value: 239
+    - address: 55893
+      value: 217
+    - address: 55894
+      value: 228
+  final:
+    registers:
+      a: 147
+      b: 93
+      c: 247
+      d: 198
+      e: 57
+      h: 89
+      l: 109
+      f: 160
+      pc: 41
+      sp: 37352
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 37353
+    data: 218
+    mode: write
+  - address: 37352
+    data: 85
+    mode: write
+  - address: 40
+    data: 199
+    mode: read
+- name: ef 1f e7
+  initial:
+    registers:
+      a: 27
+      b: 253
+      c: 55
+      d: 115
+      e: 85
+      h: 218
+      l: 244
+      f: 48
+      pc: 8366
+      sp: 38381
+    ram:
+    - address: 40
+      value: 56
+    - address: 8365
+      value: 239
+    - address: 8366
+      value: 31
+    - address: 8367
+      value: 231
+  final:
+    registers:
+      a: 27
+      b: 253
+      c: 55
+      d: 115
+      e: 85
+      h: 218
+      l: 244
+      f: 48
+      pc: 41
+      sp: 38379
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 38380
+    data: 32
+    mode: write
+  - address: 38379
+    data: 174
+    mode: write
+  - address: 40
+    data: 56
+    mode: read
+- name: ef 97 86
+  initial:
+    registers:
+      a: 151
+      b: 16
+      c: 227
+      d: 59
+      e: 57
+      h: 215
+      l: 250
+      f: 80
+      pc: 39966
+      sp: 43610
+    ram:
+    - address: 40
+      value: 50
+    - address: 39965
+      value: 239
+    - address: 39966
+      value: 151
+    - address: 39967
+      value: 134
+  final:
+    registers:
+      a: 151
+      b: 16
+      c: 227
+      d: 59
+      e: 57
+      h: 215
+      l: 250
+      f: 80
+      pc: 41
+      sp: 43608
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 43609
+    data: 156
+    mode: write
+  - address: 43608
+    data: 30
+    mode: write
+  - address: 40
+    data: 50
+    mode: read
+- name: ef bf e2
+  initial:
+    registers:
+      a: 116
+      b: 170
+      c: 225
+      d: 235
+      e: 60
+      h: 136
+      l: 134
+      f: 160
+      pc: 44613
+      sp: 24454
+    ram:
+    - address: 40
+      value: 0
+    - address: 44612
+      value: 239
+    - address: 44613
+      value: 191
+    - address: 44614
+      value: 226
+  final:
+    registers:
+      a: 116
+      b: 170
+      c: 225
+      d: 235
+      e: 60
+      h: 136
+      l: 134
+      f: 160
+      pc: 41
+      sp: 24452
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 24453
+    data: 174
+    mode: write
+  - address: 24452
+    data: 69
+    mode: write
+  - address: 40
+    data: 0
+    mode: read
+- name: ef 1e d9
+  initial:
+    registers:
+      a: 201
+      b: 61
+      c: 162
+      d: 213
+      e: 96
+      h: 186
+      l: 229
+      f: 144
+      pc: 15170
+      sp: 13049
+    ram:
+    - address: 40
+      value: 172
+    - address: 15169
+      value: 239
+    - address: 15170
+      value: 30
+    - address: 15171
+      value: 217
+  final:
+    registers:
+      a: 201
+      b: 61
+      c: 162
+      d: 213
+      e: 96
+      h: 186
+      l: 229
+      f: 144
+      pc: 41
+      sp: 13047
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 13048
+    data: 59
+    mode: write
+  - address: 13047
+    data: 66
+    mode: write
+  - address: 40
+    data: 172
+    mode: read
+- name: ef 02 c9
+  initial:
+    registers:
+      a: 39
+      b: 46
+      c: 117
+      d: 0
+      e: 181
+      h: 188
+      l: 245
+      f: 240
+      pc: 10225
+      sp: 30011
+    ram:
+    - address: 40
+      value: 74
+    - address: 10224
+      value: 239
+    - address: 10225
+      value: 2
+    - address: 10226
+      value: 201
+  final:
+    registers:
+      a: 39
+      b: 46
+      c: 117
+      d: 0
+      e: 181
+      h: 188
+      l: 245
+      f: 240
+      pc: 41
+      sp: 30009
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 30010
+    data: 39
+    mode: write
+  - address: 30009
+    data: 241
+    mode: write
+  - address: 40
+    data: 74
+    mode: read
+- name: ef 7c fa
+  initial:
+    registers:
+      a: 219
+      b: 141
+      c: 43
+      d: 64
+      e: 168
+      h: 72
+      l: 26
+      f: 64
+      pc: 35325
+      sp: 27884
+    ram:
+    - address: 40
+      value: 72
+    - address: 35324
+      value: 239
+    - address: 35325
+      value: 124
+    - address: 35326
+      value: 250
+  final:
+    registers:
+      a: 219
+      b: 141
+      c: 43
+      d: 64
+      e: 168
+      h: 72
+      l: 26
+      f: 64
+      pc: 41
+      sp: 27882
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 27883
+    data: 137
+    mode: write
+  - address: 27882
+    data: 253
+    mode: write
+  - address: 40
+    data: 72
+    mode: read
+- name: ef c2 74
+  initial:
+    registers:
+      a: 131
+      b: 162
+      c: 92
+      d: 44
+      e: 114
+      h: 51
+      l: 43
+      f: 208
+      pc: 3933
+      sp: 24965
+    ram:
+    - address: 40
+      value: 44
+    - address: 3932
+      value: 239
+    - address: 3933
+      value: 194
+    - address: 3934
+      value: 116
+  final:
+    registers:
+      a: 131
+      b: 162
+      c: 92
+      d: 44
+      e: 114
+      h: 51
+      l: 43
+      f: 208
+      pc: 41
+      sp: 24963
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 24964
+    data: 15
+    mode: write
+  - address: 24963
+    data: 93
+    mode: write
+  - address: 40
+    data: 44
+    mode: read
+- name: ef 5f 65
+  initial:
+    registers:
+      a: 207
+      b: 120
+      c: 245
+      d: 199
+      e: 0
+      h: 108
+      l: 19
+      f: 128
+      pc: 28809
+      sp: 59635
+    ram:
+    - address: 40
+      value: 192
+    - address: 28808
+      value: 239
+    - address: 28809
+      value: 95
+    - address: 28810
+      value: 101
+  final:
+    registers:
+      a: 207
+      b: 120
+      c: 245
+      d: 199
+      e: 0
+      h: 108
+      l: 19
+      f: 128
+      pc: 41
+      sp: 59633
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 59634
+    data: 112
+    mode: write
+  - address: 59633
+    data: 137
+    mode: write
+  - address: 40
+    data: 192
+    mode: read
+- name: ef da 83
+  initial:
+    registers:
+      a: 133
+      b: 101
+      c: 89
+      d: 49
+      e: 24
+      h: 53
+      l: 166
+      f: 0
+      pc: 4032
+      sp: 59493
+    ram:
+    - address: 40
+      value: 238
+    - address: 4031
+      value: 239
+    - address: 4032
+      value: 218
+    - address: 4033
+      value: 131
+  final:
+    registers:
+      a: 133
+      b: 101
+      c: 89
+      d: 49
+      e: 24
+      h: 53
+      l: 166
+      f: 0
+      pc: 41
+      sp: 59491
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 59492
+    data: 15
+    mode: write
+  - address: 59491
+    data: 192
+    mode: write
+  - address: 40
+    data: 238
+    mode: read
+- name: ef 16 5a
+  initial:
+    registers:
+      a: 175
+      b: 172
+      c: 147
+      d: 94
+      e: 243
+      h: 201
+      l: 217
+      f: 96
+      pc: 47557
+      sp: 46372
+    ram:
+    - address: 40
+      value: 86
+    - address: 47556
+      value: 239
+    - address: 47557
+      value: 22
+    - address: 47558
+      value: 90
+  final:
+    registers:
+      a: 175
+      b: 172
+      c: 147
+      d: 94
+      e: 243
+      h: 201
+      l: 217
+      f: 96
+      pc: 41
+      sp: 46370
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 46371
+    data: 185
+    mode: write
+  - address: 46370
+    data: 197
+    mode: write
+  - address: 40
+    data: 86
+    mode: read
+- name: ef 27 39
+  initial:
+    registers:
+      a: 18
+      b: 8
+      c: 71
+      d: 183
+      e: 41
+      h: 145
+      l: 161
+      f: 192
+      pc: 26428
+      sp: 31338
+    ram:
+    - address: 40
+      value: 184
+    - address: 26427
+      value: 239
+    - address: 26428
+      value: 39
+    - address: 26429
+      value: 57
+  final:
+    registers:
+      a: 18
+      b: 8
+      c: 71
+      d: 183
+      e: 41
+      h: 145
+      l: 161
+      f: 192
+      pc: 41
+      sp: 31336
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 31337
+    data: 103
+    mode: write
+  - address: 31336
+    data: 60
+    mode: write
+  - address: 40
+    data: 184
+    mode: read
+- name: ef 1e 0c
+  initial:
+    registers:
+      a: 27
+      b: 116
+      c: 85
+      d: 247
+      e: 121
+      h: 27
+      l: 139
+      f: 224
+      pc: 17840
+      sp: 57742
+    ram:
+    - address: 40
+      value: 214
+    - address: 17839
+      value: 239
+    - address: 17840
+      value: 30
+    - address: 17841
+      value: 12
+  final:
+    registers:
+      a: 27
+      b: 116
+      c: 85
+      d: 247
+      e: 121
+      h: 27
+      l: 139
+      f: 224
+      pc: 41
+      sp: 57740
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 57741
+    data: 69
+    mode: write
+  - address: 57740
+    data: 176
+    mode: write
+  - address: 40
+    data: 214
+    mode: read
+- name: ef 8c f7
+  initial:
+    registers:
+      a: 98
+      b: 237
+      c: 166
+      d: 140
+      e: 143
+      h: 31
+      l: 129
+      f: 80
+      pc: 8977
+      sp: 20748
+    ram:
+    - address: 40
+      value: 64
+    - address: 8976
+      value: 239
+    - address: 8977
+      value: 140
+    - address: 8978
+      value: 247
+  final:
+    registers:
+      a: 98
+      b: 237
+      c: 166
+      d: 140
+      e: 143
+      h: 31
+      l: 129
+      f: 80
+      pc: 41
+      sp: 20746
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 20747
+    data: 35
+    mode: write
+  - address: 20746
+    data: 17
+    mode: write
+  - address: 40
+    data: 64
+    mode: read
+- name: ef 67 d3
+  initial:
+    registers:
+      a: 41
+      b: 21
+      c: 113
+      d: 36
+      e: 207
+      h: 226
+      l: 167
+      f: 96
+      pc: 12847
+      sp: 53918
+    ram:
+    - address: 40
+      value: 238
+    - address: 12846
+      value: 239
+    - address: 12847
+      value: 103
+    - address: 12848
+      value: 211
+  final:
+    registers:
+      a: 41
+      b: 21
+      c: 113
+      d: 36
+      e: 207
+      h: 226
+      l: 167
+      f: 96
+      pc: 41
+      sp: 53916
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 53917
+    data: 50
+    mode: write
+  - address: 53916
+    data: 47
+    mode: write
+  - address: 40
+    data: 238
+    mode: read
+- name: ef 99 47
+  initial:
+    registers:
+      a: 226
+      b: 117
+      c: 234
+      d: 29
+      e: 61
+      h: 89
+      l: 220
+      f: 192
+      pc: 56639
+      sp: 5274
+    ram:
+    - address: 40
+      value: 14
+    - address: 56638
+      value: 239
+    - address: 56639
+      value: 153
+    - address: 56640
+      value: 71
+  final:
+    registers:
+      a: 226
+      b: 117
+      c: 234
+      d: 29
+      e: 61
+      h: 89
+      l: 220
+      f: 192
+      pc: 41
+      sp: 5272
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 5273
+    data: 221
+    mode: write
+  - address: 5272
+    data: 63
+    mode: write
+  - address: 40
+    data: 14
+    mode: read
+- name: ef 4b 9e
+  initial:
+    registers:
+      a: 149
+      b: 122
+      c: 159
+      d: 9
+      e: 64
+      h: 1
+      l: 132
+      f: 160
+      pc: 592
+      sp: 9048
+    ram:
+    - address: 40
+      value: 27
+    - address: 591
+      value: 239
+    - address: 592
+      value: 75
+    - address: 593
+      value: 158
+  final:
+    registers:
+      a: 149
+      b: 122
+      c: 159
+      d: 9
+      e: 64
+      h: 1
+      l: 132
+      f: 160
+      pc: 41
+      sp: 9046
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 9047
+    data: 2
+    mode: write
+  - address: 9046
+    data: 80
+    mode: write
+  - address: 40
+    data: 27
+    mode: read
+- name: ef 84 f9
+  initial:
+    registers:
+      a: 65
+      b: 188
+      c: 17
+      d: 91
+      e: 39
+      h: 159
+      l: 20
+      f: 32
+      pc: 52256
+      sp: 36105
+    ram:
+    - address: 40
+      value: 224
+    - address: 52255
+      value: 239
+    - address: 52256
+      value: 132
+    - address: 52257
+      value: 249
+  final:
+    registers:
+      a: 65
+      b: 188
+      c: 17
+      d: 91
+      e: 39
+      h: 159
+      l: 20
+      f: 32
+      pc: 41
+      sp: 36103
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 36104
+    data: 204
+    mode: write
+  - address: 36103
+    data: 32
+    mode: write
+  - address: 40
+    data: 224
+    mode: read
+- name: ef 99 a2
+  initial:
+    registers:
+      a: 60
+      b: 50
+      c: 93
+      d: 86
+      e: 242
+      h: 140
+      l: 204
+      f: 96
+      pc: 24616
+      sp: 14819
+    ram:
+    - address: 40
+      value: 30
+    - address: 24615
+      value: 239
+    - address: 24616
+      value: 153
+    - address: 24617
+      value: 162
+  final:
+    registers:
+      a: 60
+      b: 50
+      c: 93
+      d: 86
+      e: 242
+      h: 140
+      l: 204
+      f: 96
+      pc: 41
+      sp: 14817
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 14818
+    data: 96
+    mode: write
+  - address: 14817
+    data: 40
+    mode: write
+  - address: 40
+    data: 30
+    mode: read
+- name: ef 72 ea
+  initial:
+    registers:
+      a: 145
+      b: 186
+      c: 49
+      d: 67
+      e: 255
+      h: 129
+      l: 66
+      f: 192
+      pc: 10609
+      sp: 57174
+    ram:
+    - address: 40
+      value: 203
+    - address: 10608
+      value: 239
+    - address: 10609
+      value: 114
+    - address: 10610
+      value: 234
+  final:
+    registers:
+      a: 145
+      b: 186
+      c: 49
+      d: 67
+      e: 255
+      h: 129
+      l: 66
+      f: 192
+      pc: 41
+      sp: 57172
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 57173
+    data: 41
+    mode: write
+  - address: 57172
+    data: 113
+    mode: write
+  - address: 40
+    data: 203
+    mode: read
+- name: ef fa d7
+  initial:
+    registers:
+      a: 218
+      b: 97
+      c: 86
+      d: 64
+      e: 169
+      h: 156
+      l: 2
+      f: 224
+      pc: 45684
+      sp: 8470
+    ram:
+    - address: 40
+      value: 96
+    - address: 45683
+      value: 239
+    - address: 45684
+      value: 250
+    - address: 45685
+      value: 215
+  final:
+    registers:
+      a: 218
+      b: 97
+      c: 86
+      d: 64
+      e: 169
+      h: 156
+      l: 2
+      f: 224
+      pc: 41
+      sp: 8468
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 8469
+    data: 178
+    mode: write
+  - address: 8468
+    data: 116
+    mode: write
+  - address: 40
+    data: 96
+    mode: read
+- name: ef 11 71
+  initial:
+    registers:
+      a: 14
+      b: 127
+      c: 245
+      d: 20
+      e: 132
+      h: 52
+      l: 241
+      f: 0
+      pc: 1600
+      sp: 52219
+    ram:
+    - address: 40
+      value: 122
+    - address: 1599
+      value: 239
+    - address: 1600
+      value: 17
+    - address: 1601
+      value: 113
+  final:
+    registers:
+      a: 14
+      b: 127
+      c: 245
+      d: 20
+      e: 132
+      h: 52
+      l: 241
+      f: 0
+      pc: 41
+      sp: 52217
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 52218
+    data: 6
+    mode: write
+  - address: 52217
+    data: 64
+    mode: write
+  - address: 40
+    data: 122
+    mode: read
+- name: ef 73 59
+  initial:
+    registers:
+      a: 104
+      b: 65
+      c: 159
+      d: 110
+      e: 128
+      h: 154
+      l: 26
+      f: 176
+      pc: 42555
+      sp: 9744
+    ram:
+    - address: 40
+      value: 126
+    - address: 42554
+      value: 239
+    - address: 42555
+      value: 115
+    - address: 42556
+      value: 89
+  final:
+    registers:
+      a: 104
+      b: 65
+      c: 159
+      d: 110
+      e: 128
+      h: 154
+      l: 26
+      f: 176
+      pc: 41
+      sp: 9742
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 9743
+    data: 166
+    mode: write
+  - address: 9742
+    data: 59
+    mode: write
+  - address: 40
+    data: 126
+    mode: read
+- name: ef cf c4
+  initial:
+    registers:
+      a: 21
+      b: 22
+      c: 98
+      d: 194
+      e: 202
+      h: 85
+      l: 215
+      f: 48
+      pc: 14752
+      sp: 36672
+    ram:
+    - address: 40
+      value: 83
+    - address: 14751
+      value: 239
+    - address: 14752
+      value: 207
+    - address: 14753
+      value: 196
+  final:
+    registers:
+      a: 21
+      b: 22
+      c: 98
+      d: 194
+      e: 202
+      h: 85
+      l: 215
+      f: 48
+      pc: 41
+      sp: 36670
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 36671
+    data: 57
+    mode: write
+  - address: 36670
+    data: 160
+    mode: write
+  - address: 40
+    data: 83
+    mode: read
+- name: ef d4 f2
+  initial:
+    registers:
+      a: 150
+      b: 235
+      c: 209
+      d: 143
+      e: 206
+      h: 170
+      l: 19
+      f: 48
+      pc: 16385
+      sp: 12554
+    ram:
+    - address: 40
+      value: 161
+    - address: 16384
+      value: 239
+    - address: 16385
+      value: 212
+    - address: 16386
+      value: 242
+  final:
+    registers:
+      a: 150
+      b: 235
+      c: 209
+      d: 143
+      e: 206
+      h: 170
+      l: 19
+      f: 48
+      pc: 41
+      sp: 12552
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 12553
+    data: 64
+    mode: write
+  - address: 12552
+    data: 1
+    mode: write
+  - address: 40
+    data: 161
+    mode: read
+- name: ef 9e 57
+  initial:
+    registers:
+      a: 99
+      b: 234
+      c: 76
+      d: 190
+      e: 181
+      h: 123
+      l: 31
+      f: 0
+      pc: 44775
+      sp: 32710
+    ram:
+    - address: 40
+      value: 137
+    - address: 44774
+      value: 239
+    - address: 44775
+      value: 158
+    - address: 44776
+      value: 87
+  final:
+    registers:
+      a: 99
+      b: 234
+      c: 76
+      d: 190
+      e: 181
+      h: 123
+      l: 31
+      f: 0
+      pc: 41
+      sp: 32708
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 32709
+    data: 174
+    mode: write
+  - address: 32708
+    data: 231
+    mode: write
+  - address: 40
+    data: 137
+    mode: read

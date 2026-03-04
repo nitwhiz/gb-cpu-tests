@@ -1,0 +1,4302 @@
+canonicalName: OR A, B
+tests:
+- name: b0 22 11
+  initial:
+    registers:
+      a: 127
+      b: 178
+      c: 123
+      d: 148
+      e: 22
+      h: 208
+      l: 29
+      f: 0
+      pc: 31505
+      sp: 40276
+    ram:
+    - address: 31504
+      value: 176
+    - address: 31505
+      value: 34
+    - address: 31506
+      value: 17
+  final:
+    registers:
+      a: 255
+      b: 178
+      c: 123
+      d: 148
+      e: 22
+      h: 208
+      l: 29
+      f: 0
+      pc: 31506
+      sp: 40276
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 31505
+    data: 34
+    mode: read
+- name: b0 47 ba
+  initial:
+    registers:
+      a: 86
+      b: 146
+      c: 38
+      d: 14
+      e: 226
+      h: 40
+      l: 117
+      f: 128
+      pc: 50840
+      sp: 47098
+    ram:
+    - address: 50839
+      value: 176
+    - address: 50840
+      value: 71
+    - address: 50841
+      value: 186
+  final:
+    registers:
+      a: 214
+      b: 146
+      c: 38
+      d: 14
+      e: 226
+      h: 40
+      l: 117
+      f: 0
+      pc: 50841
+      sp: 47098
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 50840
+    data: 71
+    mode: read
+- name: b0 93 3a
+  initial:
+    registers:
+      a: 34
+      b: 185
+      c: 181
+      d: 244
+      e: 24
+      h: 23
+      l: 14
+      f: 16
+      pc: 9080
+      sp: 1151
+    ram:
+    - address: 9079
+      value: 176
+    - address: 9080
+      value: 147
+    - address: 9081
+      value: 58
+  final:
+    registers:
+      a: 187
+      b: 185
+      c: 181
+      d: 244
+      e: 24
+      h: 23
+      l: 14
+      f: 0
+      pc: 9081
+      sp: 1151
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 9080
+    data: 147
+    mode: read
+- name: b0 0f 47
+  initial:
+    registers:
+      a: 122
+      b: 48
+      c: 178
+      d: 155
+      e: 79
+      h: 4
+      l: 84
+      f: 0
+      pc: 41787
+      sp: 45462
+    ram:
+    - address: 41786
+      value: 176
+    - address: 41787
+      value: 15
+    - address: 41788
+      value: 71
+  final:
+    registers:
+      a: 122
+      b: 48
+      c: 178
+      d: 155
+      e: 79
+      h: 4
+      l: 84
+      f: 0
+      pc: 41788
+      sp: 45462
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 41787
+    data: 15
+    mode: read
+- name: b0 76 95
+  initial:
+    registers:
+      a: 169
+      b: 222
+      c: 172
+      d: 32
+      e: 38
+      h: 36
+      l: 204
+      f: 224
+      pc: 55544
+      sp: 19226
+    ram:
+    - address: 55543
+      value: 176
+    - address: 55544
+      value: 118
+    - address: 55545
+      value: 149
+  final:
+    registers:
+      a: 255
+      b: 222
+      c: 172
+      d: 32
+      e: 38
+      h: 36
+      l: 204
+      f: 0
+      pc: 55545
+      sp: 19226
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 55544
+    data: 118
+    mode: read
+- name: b0 e2 de
+  initial:
+    registers:
+      a: 150
+      b: 110
+      c: 138
+      d: 220
+      e: 61
+      h: 9
+      l: 93
+      f: 16
+      pc: 1385
+      sp: 657
+    ram:
+    - address: 1384
+      value: 176
+    - address: 1385
+      value: 226
+    - address: 1386
+      value: 222
+  final:
+    registers:
+      a: 254
+      b: 110
+      c: 138
+      d: 220
+      e: 61
+      h: 9
+      l: 93
+      f: 0
+      pc: 1386
+      sp: 657
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 1385
+    data: 226
+    mode: read
+- name: b0 15 13
+  initial:
+    registers:
+      a: 173
+      b: 141
+      c: 144
+      d: 82
+      e: 244
+      h: 91
+      l: 14
+      f: 208
+      pc: 27761
+      sp: 17268
+    ram:
+    - address: 27760
+      value: 176
+    - address: 27761
+      value: 21
+    - address: 27762
+      value: 19
+  final:
+    registers:
+      a: 173
+      b: 141
+      c: 144
+      d: 82
+      e: 244
+      h: 91
+      l: 14
+      f: 0
+      pc: 27762
+      sp: 17268
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 27761
+    data: 21
+    mode: read
+- name: b0 58 7f
+  initial:
+    registers:
+      a: 215
+      b: 206
+      c: 59
+      d: 119
+      e: 28
+      h: 252
+      l: 146
+      f: 240
+      pc: 10264
+      sp: 14158
+    ram:
+    - address: 10263
+      value: 176
+    - address: 10264
+      value: 88
+    - address: 10265
+      value: 127
+  final:
+    registers:
+      a: 223
+      b: 206
+      c: 59
+      d: 119
+      e: 28
+      h: 252
+      l: 146
+      f: 0
+      pc: 10265
+      sp: 14158
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 10264
+    data: 88
+    mode: read
+- name: b0 ca 99
+  initial:
+    registers:
+      a: 16
+      b: 136
+      c: 106
+      d: 250
+      e: 255
+      h: 52
+      l: 202
+      f: 160
+      pc: 3003
+      sp: 21686
+    ram:
+    - address: 3002
+      value: 176
+    - address: 3003
+      value: 202
+    - address: 3004
+      value: 153
+  final:
+    registers:
+      a: 152
+      b: 136
+      c: 106
+      d: 250
+      e: 255
+      h: 52
+      l: 202
+      f: 0
+      pc: 3004
+      sp: 21686
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 3003
+    data: 202
+    mode: read
+- name: b0 81 fe
+  initial:
+    registers:
+      a: 237
+      b: 13
+      c: 238
+      d: 147
+      e: 140
+      h: 236
+      l: 231
+      f: 160
+      pc: 45655
+      sp: 54845
+    ram:
+    - address: 45654
+      value: 176
+    - address: 45655
+      value: 129
+    - address: 45656
+      value: 254
+  final:
+    registers:
+      a: 237
+      b: 13
+      c: 238
+      d: 147
+      e: 140
+      h: 236
+      l: 231
+      f: 0
+      pc: 45656
+      sp: 54845
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 45655
+    data: 129
+    mode: read
+- name: b0 26 a3
+  initial:
+    registers:
+      a: 126
+      b: 32
+      c: 184
+      d: 235
+      e: 28
+      h: 112
+      l: 175
+      f: 0
+      pc: 53830
+      sp: 59965
+    ram:
+    - address: 53829
+      value: 176
+    - address: 53830
+      value: 38
+    - address: 53831
+      value: 163
+  final:
+    registers:
+      a: 126
+      b: 32
+      c: 184
+      d: 235
+      e: 28
+      h: 112
+      l: 175
+      f: 0
+      pc: 53831
+      sp: 59965
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 53830
+    data: 38
+    mode: read
+- name: b0 ed d6
+  initial:
+    registers:
+      a: 218
+      b: 155
+      c: 103
+      d: 145
+      e: 70
+      h: 77
+      l: 152
+      f: 0
+      pc: 3504
+      sp: 10660
+    ram:
+    - address: 3503
+      value: 176
+    - address: 3504
+      value: 237
+    - address: 3505
+      value: 214
+  final:
+    registers:
+      a: 219
+      b: 155
+      c: 103
+      d: 145
+      e: 70
+      h: 77
+      l: 152
+      f: 0
+      pc: 3505
+      sp: 10660
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 3504
+    data: 237
+    mode: read
+- name: b0 40 1e
+  initial:
+    registers:
+      a: 87
+      b: 167
+      c: 65
+      d: 51
+      e: 223
+      h: 163
+      l: 191
+      f: 112
+      pc: 50509
+      sp: 6236
+    ram:
+    - address: 50508
+      value: 176
+    - address: 50509
+      value: 64
+    - address: 50510
+      value: 30
+  final:
+    registers:
+      a: 247
+      b: 167
+      c: 65
+      d: 51
+      e: 223
+      h: 163
+      l: 191
+      f: 0
+      pc: 50510
+      sp: 6236
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 50509
+    data: 64
+    mode: read
+- name: b0 83 65
+  initial:
+    registers:
+      a: 233
+      b: 136
+      c: 247
+      d: 172
+      e: 188
+      h: 173
+      l: 33
+      f: 0
+      pc: 54730
+      sp: 43776
+    ram:
+    - address: 54729
+      value: 176
+    - address: 54730
+      value: 131
+    - address: 54731
+      value: 101
+  final:
+    registers:
+      a: 233
+      b: 136
+      c: 247
+      d: 172
+      e: 188
+      h: 173
+      l: 33
+      f: 0
+      pc: 54731
+      sp: 43776
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 54730
+    data: 131
+    mode: read
+- name: b0 ea aa
+  initial:
+    registers:
+      a: 174
+      b: 75
+      c: 136
+      d: 35
+      e: 143
+      h: 104
+      l: 4
+      f: 128
+      pc: 54479
+      sp: 45630
+    ram:
+    - address: 54478
+      value: 176
+    - address: 54479
+      value: 234
+    - address: 54480
+      value: 170
+  final:
+    registers:
+      a: 239
+      b: 75
+      c: 136
+      d: 35
+      e: 143
+      h: 104
+      l: 4
+      f: 0
+      pc: 54480
+      sp: 45630
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 54479
+    data: 234
+    mode: read
+- name: b0 83 d9
+  initial:
+    registers:
+      a: 230
+      b: 27
+      c: 109
+      d: 102
+      e: 131
+      h: 140
+      l: 32
+      f: 96
+      pc: 13431
+      sp: 20814
+    ram:
+    - address: 13430
+      value: 176
+    - address: 13431
+      value: 131
+    - address: 13432
+      value: 217
+  final:
+    registers:
+      a: 255
+      b: 27
+      c: 109
+      d: 102
+      e: 131
+      h: 140
+      l: 32
+      f: 0
+      pc: 13432
+      sp: 20814
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 13431
+    data: 131
+    mode: read
+- name: b0 12 e1
+  initial:
+    registers:
+      a: 21
+      b: 250
+      c: 145
+      d: 147
+      e: 121
+      h: 38
+      l: 240
+      f: 32
+      pc: 24801
+      sp: 47707
+    ram:
+    - address: 24800
+      value: 176
+    - address: 24801
+      value: 18
+    - address: 24802
+      value: 225
+  final:
+    registers:
+      a: 255
+      b: 250
+      c: 145
+      d: 147
+      e: 121
+      h: 38
+      l: 240
+      f: 0
+      pc: 24802
+      sp: 47707
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 24801
+    data: 18
+    mode: read
+- name: b0 13 14
+  initial:
+    registers:
+      a: 94
+      b: 187
+      c: 54
+      d: 128
+      e: 225
+      h: 142
+      l: 103
+      f: 192
+      pc: 43735
+      sp: 27654
+    ram:
+    - address: 43734
+      value: 176
+    - address: 43735
+      value: 19
+    - address: 43736
+      value: 20
+  final:
+    registers:
+      a: 255
+      b: 187
+      c: 54
+      d: 128
+      e: 225
+      h: 142
+      l: 103
+      f: 0
+      pc: 43736
+      sp: 27654
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 43735
+    data: 19
+    mode: read
+- name: b0 90 ee
+  initial:
+    registers:
+      a: 183
+      b: 97
+      c: 97
+      d: 211
+      e: 36
+      h: 127
+      l: 204
+      f: 0
+      pc: 4143
+      sp: 48724
+    ram:
+    - address: 4142
+      value: 176
+    - address: 4143
+      value: 144
+    - address: 4144
+      value: 238
+  final:
+    registers:
+      a: 247
+      b: 97
+      c: 97
+      d: 211
+      e: 36
+      h: 127
+      l: 204
+      f: 0
+      pc: 4144
+      sp: 48724
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 4143
+    data: 144
+    mode: read
+- name: b0 cf af
+  initial:
+    registers:
+      a: 115
+      b: 22
+      c: 227
+      d: 177
+      e: 210
+      h: 159
+      l: 63
+      f: 96
+      pc: 32584
+      sp: 49101
+    ram:
+    - address: 32583
+      value: 176
+    - address: 32584
+      value: 207
+    - address: 32585
+      value: 175
+  final:
+    registers:
+      a: 119
+      b: 22
+      c: 227
+      d: 177
+      e: 210
+      h: 159
+      l: 63
+      f: 0
+      pc: 32585
+      sp: 49101
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 32584
+    data: 207
+    mode: read
+- name: b0 55 f3
+  initial:
+    registers:
+      a: 227
+      b: 59
+      c: 211
+      d: 168
+      e: 129
+      h: 223
+      l: 197
+      f: 224
+      pc: 40918
+      sp: 20428
+    ram:
+    - address: 40917
+      value: 176
+    - address: 40918
+      value: 85
+    - address: 40919
+      value: 243
+  final:
+    registers:
+      a: 251
+      b: 59
+      c: 211
+      d: 168
+      e: 129
+      h: 223
+      l: 197
+      f: 0
+      pc: 40919
+      sp: 20428
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 40918
+    data: 85
+    mode: read
+- name: b0 3a 71
+  initial:
+    registers:
+      a: 49
+      b: 44
+      c: 81
+      d: 237
+      e: 71
+      h: 171
+      l: 42
+      f: 240
+      pc: 56504
+      sp: 51626
+    ram:
+    - address: 56503
+      value: 176
+    - address: 56504
+      value: 58
+    - address: 56505
+      value: 113
+  final:
+    registers:
+      a: 61
+      b: 44
+      c: 81
+      d: 237
+      e: 71
+      h: 171
+      l: 42
+      f: 0
+      pc: 56505
+      sp: 51626
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 56504
+    data: 58
+    mode: read
+- name: b0 c7 d7
+  initial:
+    registers:
+      a: 70
+      b: 129
+      c: 184
+      d: 112
+      e: 104
+      h: 88
+      l: 137
+      f: 144
+      pc: 56144
+      sp: 59025
+    ram:
+    - address: 56143
+      value: 176
+    - address: 56144
+      value: 199
+    - address: 56145
+      value: 215
+  final:
+    registers:
+      a: 199
+      b: 129
+      c: 184
+      d: 112
+      e: 104
+      h: 88
+      l: 137
+      f: 0
+      pc: 56145
+      sp: 59025
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 56144
+    data: 199
+    mode: read
+- name: b0 7a d9
+  initial:
+    registers:
+      a: 91
+      b: 136
+      c: 81
+      d: 154
+      e: 31
+      h: 160
+      l: 3
+      f: 144
+      pc: 38046
+      sp: 1749
+    ram:
+    - address: 38045
+      value: 176
+    - address: 38046
+      value: 122
+    - address: 38047
+      value: 217
+  final:
+    registers:
+      a: 219
+      b: 136
+      c: 81
+      d: 154
+      e: 31
+      h: 160
+      l: 3
+      f: 0
+      pc: 38047
+      sp: 1749
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 38046
+    data: 122
+    mode: read
+- name: b0 e9 79
+  initial:
+    registers:
+      a: 138
+      b: 255
+      c: 235
+      d: 4
+      e: 80
+      h: 100
+      l: 210
+      f: 224
+      pc: 18553
+      sp: 15524
+    ram:
+    - address: 18552
+      value: 176
+    - address: 18553
+      value: 233
+    - address: 18554
+      value: 121
+  final:
+    registers:
+      a: 255
+      b: 255
+      c: 235
+      d: 4
+      e: 80
+      h: 100
+      l: 210
+      f: 0
+      pc: 18554
+      sp: 15524
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 18553
+    data: 233
+    mode: read
+- name: b0 9f e2
+  initial:
+    registers:
+      a: 158
+      b: 246
+      c: 180
+      d: 197
+      e: 155
+      h: 235
+      l: 2
+      f: 192
+      pc: 8124
+      sp: 49552
+    ram:
+    - address: 8123
+      value: 176
+    - address: 8124
+      value: 159
+    - address: 8125
+      value: 226
+  final:
+    registers:
+      a: 254
+      b: 246
+      c: 180
+      d: 197
+      e: 155
+      h: 235
+      l: 2
+      f: 0
+      pc: 8125
+      sp: 49552
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 8124
+    data: 159
+    mode: read
+- name: b0 bf be
+  initial:
+    registers:
+      a: 158
+      b: 189
+      c: 103
+      d: 114
+      e: 251
+      h: 130
+      l: 235
+      f: 208
+      pc: 49397
+      sp: 2297
+    ram:
+    - address: 49396
+      value: 176
+    - address: 49397
+      value: 191
+    - address: 49398
+      value: 190
+  final:
+    registers:
+      a: 191
+      b: 189
+      c: 103
+      d: 114
+      e: 251
+      h: 130
+      l: 235
+      f: 0
+      pc: 49398
+      sp: 2297
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 49397
+    data: 191
+    mode: read
+- name: b0 4f a8
+  initial:
+    registers:
+      a: 2
+      b: 159
+      c: 186
+      d: 167
+      e: 136
+      h: 160
+      l: 162
+      f: 240
+      pc: 40027
+      sp: 14297
+    ram:
+    - address: 40026
+      value: 176
+    - address: 40027
+      value: 79
+    - address: 40028
+      value: 168
+  final:
+    registers:
+      a: 159
+      b: 159
+      c: 186
+      d: 167
+      e: 136
+      h: 160
+      l: 162
+      f: 0
+      pc: 40028
+      sp: 14297
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 40027
+    data: 79
+    mode: read
+- name: b0 53 65
+  initial:
+    registers:
+      a: 57
+      b: 11
+      c: 243
+      d: 80
+      e: 208
+      h: 146
+      l: 32
+      f: 192
+      pc: 289
+      sp: 17357
+    ram:
+    - address: 288
+      value: 176
+    - address: 289
+      value: 83
+    - address: 290
+      value: 101
+  final:
+    registers:
+      a: 59
+      b: 11
+      c: 243
+      d: 80
+      e: 208
+      h: 146
+      l: 32
+      f: 0
+      pc: 290
+      sp: 17357
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 289
+    data: 83
+    mode: read
+- name: b0 4e 64
+  initial:
+    registers:
+      a: 138
+      b: 243
+      c: 12
+      d: 55
+      e: 224
+      h: 95
+      l: 118
+      f: 208
+      pc: 32675
+      sp: 45089
+    ram:
+    - address: 32674
+      value: 176
+    - address: 32675
+      value: 78
+    - address: 32676
+      value: 100
+  final:
+    registers:
+      a: 251
+      b: 243
+      c: 12
+      d: 55
+      e: 224
+      h: 95
+      l: 118
+      f: 0
+      pc: 32676
+      sp: 45089
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 32675
+    data: 78
+    mode: read
+- name: b0 37 41
+  initial:
+    registers:
+      a: 40
+      b: 230
+      c: 197
+      d: 178
+      e: 42
+      h: 1
+      l: 55
+      f: 160
+      pc: 43918
+      sp: 5463
+    ram:
+    - address: 43917
+      value: 176
+    - address: 43918
+      value: 55
+    - address: 43919
+      value: 65
+  final:
+    registers:
+      a: 238
+      b: 230
+      c: 197
+      d: 178
+      e: 42
+      h: 1
+      l: 55
+      f: 0
+      pc: 43919
+      sp: 5463
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 43918
+    data: 55
+    mode: read
+- name: b0 f3 b9
+  initial:
+    registers:
+      a: 210
+      b: 116
+      c: 86
+      d: 182
+      e: 238
+      h: 125
+      l: 56
+      f: 240
+      pc: 45430
+      sp: 39276
+    ram:
+    - address: 45429
+      value: 176
+    - address: 45430
+      value: 243
+    - address: 45431
+      value: 185
+  final:
+    registers:
+      a: 246
+      b: 116
+      c: 86
+      d: 182
+      e: 238
+      h: 125
+      l: 56
+      f: 0
+      pc: 45431
+      sp: 39276
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 45430
+    data: 243
+    mode: read
+- name: b0 16 0c
+  initial:
+    registers:
+      a: 134
+      b: 232
+      c: 128
+      d: 46
+      e: 211
+      h: 209
+      l: 231
+      f: 64
+      pc: 61660
+      sp: 62855
+    ram:
+    - address: 61659
+      value: 176
+    - address: 61660
+      value: 22
+    - address: 61661
+      value: 12
+  final:
+    registers:
+      a: 238
+      b: 232
+      c: 128
+      d: 46
+      e: 211
+      h: 209
+      l: 231
+      f: 0
+      pc: 61661
+      sp: 62855
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 61660
+    data: 22
+    mode: read
+- name: b0 fe d3
+  initial:
+    registers:
+      a: 234
+      b: 223
+      c: 115
+      d: 255
+      e: 24
+      h: 105
+      l: 62
+      f: 128
+      pc: 55211
+      sp: 43720
+    ram:
+    - address: 55210
+      value: 176
+    - address: 55211
+      value: 254
+    - address: 55212
+      value: 211
+  final:
+    registers:
+      a: 255
+      b: 223
+      c: 115
+      d: 255
+      e: 24
+      h: 105
+      l: 62
+      f: 0
+      pc: 55212
+      sp: 43720
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 55211
+    data: 254
+    mode: read
+- name: b0 2a ed
+  initial:
+    registers:
+      a: 214
+      b: 223
+      c: 60
+      d: 196
+      e: 163
+      h: 59
+      l: 129
+      f: 64
+      pc: 62364
+      sp: 16091
+    ram:
+    - address: 62363
+      value: 176
+    - address: 62364
+      value: 42
+    - address: 62365
+      value: 237
+  final:
+    registers:
+      a: 223
+      b: 223
+      c: 60
+      d: 196
+      e: 163
+      h: 59
+      l: 129
+      f: 0
+      pc: 62365
+      sp: 16091
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 62364
+    data: 42
+    mode: read
+- name: b0 6c a2
+  initial:
+    registers:
+      a: 22
+      b: 241
+      c: 106
+      d: 117
+      e: 11
+      h: 227
+      l: 128
+      f: 128
+      pc: 8003
+      sp: 43272
+    ram:
+    - address: 8002
+      value: 176
+    - address: 8003
+      value: 108
+    - address: 8004
+      value: 162
+  final:
+    registers:
+      a: 247
+      b: 241
+      c: 106
+      d: 117
+      e: 11
+      h: 227
+      l: 128
+      f: 0
+      pc: 8004
+      sp: 43272
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 8003
+    data: 108
+    mode: read
+- name: b0 4f cf
+  initial:
+    registers:
+      a: 130
+      b: 136
+      c: 103
+      d: 136
+      e: 44
+      h: 114
+      l: 166
+      f: 96
+      pc: 46741
+      sp: 69
+    ram:
+    - address: 46740
+      value: 176
+    - address: 46741
+      value: 79
+    - address: 46742
+      value: 207
+  final:
+    registers:
+      a: 138
+      b: 136
+      c: 103
+      d: 136
+      e: 44
+      h: 114
+      l: 166
+      f: 0
+      pc: 46742
+      sp: 69
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 46741
+    data: 79
+    mode: read
+- name: b0 09 44
+  initial:
+    registers:
+      a: 118
+      b: 84
+      c: 213
+      d: 184
+      e: 240
+      h: 67
+      l: 36
+      f: 160
+      pc: 31125
+      sp: 63644
+    ram:
+    - address: 31124
+      value: 176
+    - address: 31125
+      value: 9
+    - address: 31126
+      value: 68
+  final:
+    registers:
+      a: 118
+      b: 84
+      c: 213
+      d: 184
+      e: 240
+      h: 67
+      l: 36
+      f: 0
+      pc: 31126
+      sp: 63644
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 31125
+    data: 9
+    mode: read
+- name: b0 e5 1c
+  initial:
+    registers:
+      a: 192
+      b: 213
+      c: 130
+      d: 246
+      e: 148
+      h: 28
+      l: 67
+      f: 32
+      pc: 26333
+      sp: 54538
+    ram:
+    - address: 26332
+      value: 176
+    - address: 26333
+      value: 229
+    - address: 26334
+      value: 28
+  final:
+    registers:
+      a: 213
+      b: 213
+      c: 130
+      d: 246
+      e: 148
+      h: 28
+      l: 67
+      f: 0
+      pc: 26334
+      sp: 54538
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 26333
+    data: 229
+    mode: read
+- name: b0 a3 f6
+  initial:
+    registers:
+      a: 137
+      b: 52
+      c: 154
+      d: 204
+      e: 139
+      h: 82
+      l: 198
+      f: 160
+      pc: 33271
+      sp: 21982
+    ram:
+    - address: 33270
+      value: 176
+    - address: 33271
+      value: 163
+    - address: 33272
+      value: 246
+  final:
+    registers:
+      a: 189
+      b: 52
+      c: 154
+      d: 204
+      e: 139
+      h: 82
+      l: 198
+      f: 0
+      pc: 33272
+      sp: 21982
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 33271
+    data: 163
+    mode: read
+- name: b0 a3 6c
+  initial:
+    registers:
+      a: 27
+      b: 84
+      c: 99
+      d: 215
+      e: 131
+      h: 186
+      l: 181
+      f: 192
+      pc: 44802
+      sp: 13431
+    ram:
+    - address: 44801
+      value: 176
+    - address: 44802
+      value: 163
+    - address: 44803
+      value: 108
+  final:
+    registers:
+      a: 95
+      b: 84
+      c: 99
+      d: 215
+      e: 131
+      h: 186
+      l: 181
+      f: 0
+      pc: 44803
+      sp: 13431
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 44802
+    data: 163
+    mode: read
+- name: b0 55 84
+  initial:
+    registers:
+      a: 51
+      b: 174
+      c: 26
+      d: 29
+      e: 93
+      h: 159
+      l: 90
+      f: 144
+      pc: 40587
+      sp: 32294
+    ram:
+    - address: 40586
+      value: 176
+    - address: 40587
+      value: 85
+    - address: 40588
+      value: 132
+  final:
+    registers:
+      a: 191
+      b: 174
+      c: 26
+      d: 29
+      e: 93
+      h: 159
+      l: 90
+      f: 0
+      pc: 40588
+      sp: 32294
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 40587
+    data: 85
+    mode: read
+- name: b0 f6 9a
+  initial:
+    registers:
+      a: 212
+      b: 234
+      c: 127
+      d: 28
+      e: 25
+      h: 98
+      l: 230
+      f: 16
+      pc: 19968
+      sp: 6542
+    ram:
+    - address: 19967
+      value: 176
+    - address: 19968
+      value: 246
+    - address: 19969
+      value: 154
+  final:
+    registers:
+      a: 254
+      b: 234
+      c: 127
+      d: 28
+      e: 25
+      h: 98
+      l: 230
+      f: 0
+      pc: 19969
+      sp: 6542
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 19968
+    data: 246
+    mode: read
+- name: b0 6f dd
+  initial:
+    registers:
+      a: 229
+      b: 26
+      c: 125
+      d: 87
+      e: 86
+      h: 181
+      l: 84
+      f: 16
+      pc: 457
+      sp: 61851
+    ram:
+    - address: 456
+      value: 176
+    - address: 457
+      value: 111
+    - address: 458
+      value: 221
+  final:
+    registers:
+      a: 255
+      b: 26
+      c: 125
+      d: 87
+      e: 86
+      h: 181
+      l: 84
+      f: 0
+      pc: 458
+      sp: 61851
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 457
+    data: 111
+    mode: read
+- name: b0 88 6d
+  initial:
+    registers:
+      a: 227
+      b: 42
+      c: 185
+      d: 20
+      e: 26
+      h: 85
+      l: 17
+      f: 176
+      pc: 5815
+      sp: 50719
+    ram:
+    - address: 5814
+      value: 176
+    - address: 5815
+      value: 136
+    - address: 5816
+      value: 109
+  final:
+    registers:
+      a: 235
+      b: 42
+      c: 185
+      d: 20
+      e: 26
+      h: 85
+      l: 17
+      f: 0
+      pc: 5816
+      sp: 50719
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 5815
+    data: 136
+    mode: read
+- name: b0 85 62
+  initial:
+    registers:
+      a: 8
+      b: 67
+      c: 10
+      d: 101
+      e: 172
+      h: 248
+      l: 117
+      f: 208
+      pc: 14943
+      sp: 15146
+    ram:
+    - address: 14942
+      value: 176
+    - address: 14943
+      value: 133
+    - address: 14944
+      value: 98
+  final:
+    registers:
+      a: 75
+      b: 67
+      c: 10
+      d: 101
+      e: 172
+      h: 248
+      l: 117
+      f: 0
+      pc: 14944
+      sp: 15146
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 14943
+    data: 133
+    mode: read
+- name: b0 13 b5
+  initial:
+    registers:
+      a: 83
+      b: 66
+      c: 221
+      d: 8
+      e: 25
+      h: 104
+      l: 222
+      f: 208
+      pc: 23783
+      sp: 25679
+    ram:
+    - address: 23782
+      value: 176
+    - address: 23783
+      value: 19
+    - address: 23784
+      value: 181
+  final:
+    registers:
+      a: 83
+      b: 66
+      c: 221
+      d: 8
+      e: 25
+      h: 104
+      l: 222
+      f: 0
+      pc: 23784
+      sp: 25679
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 23783
+    data: 19
+    mode: read
+- name: b0 2e e8
+  initial:
+    registers:
+      a: 177
+      b: 151
+      c: 192
+      d: 90
+      e: 172
+      h: 38
+      l: 180
+      f: 32
+      pc: 61294
+      sp: 24862
+    ram:
+    - address: 61293
+      value: 176
+    - address: 61294
+      value: 46
+    - address: 61295
+      value: 232
+  final:
+    registers:
+      a: 183
+      b: 151
+      c: 192
+      d: 90
+      e: 172
+      h: 38
+      l: 180
+      f: 0
+      pc: 61295
+      sp: 24862
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 61294
+    data: 46
+    mode: read
+- name: b0 84 56
+  initial:
+    registers:
+      a: 135
+      b: 230
+      c: 22
+      d: 3
+      e: 45
+      h: 49
+      l: 99
+      f: 16
+      pc: 43043
+      sp: 12499
+    ram:
+    - address: 43042
+      value: 176
+    - address: 43043
+      value: 132
+    - address: 43044
+      value: 86
+  final:
+    registers:
+      a: 231
+      b: 230
+      c: 22
+      d: 3
+      e: 45
+      h: 49
+      l: 99
+      f: 0
+      pc: 43044
+      sp: 12499
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 43043
+    data: 132
+    mode: read
+- name: b0 7f d6
+  initial:
+    registers:
+      a: 65
+      b: 197
+      c: 108
+      d: 218
+      e: 147
+      h: 204
+      l: 107
+      f: 176
+      pc: 39014
+      sp: 62691
+    ram:
+    - address: 39013
+      value: 176
+    - address: 39014
+      value: 127
+    - address: 39015
+      value: 214
+  final:
+    registers:
+      a: 197
+      b: 197
+      c: 108
+      d: 218
+      e: 147
+      h: 204
+      l: 107
+      f: 0
+      pc: 39015
+      sp: 62691
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 39014
+    data: 127
+    mode: read
+- name: b0 24 58
+  initial:
+    registers:
+      a: 27
+      b: 212
+      c: 181
+      d: 61
+      e: 254
+      h: 244
+      l: 254
+      f: 208
+      pc: 59324
+      sp: 35374
+    ram:
+    - address: 59323
+      value: 176
+    - address: 59324
+      value: 36
+    - address: 59325
+      value: 88
+  final:
+    registers:
+      a: 223
+      b: 212
+      c: 181
+      d: 61
+      e: 254
+      h: 244
+      l: 254
+      f: 0
+      pc: 59325
+      sp: 35374
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 59324
+    data: 36
+    mode: read
+- name: b0 f5 df
+  initial:
+    registers:
+      a: 248
+      b: 167
+      c: 22
+      d: 33
+      e: 229
+      h: 172
+      l: 211
+      f: 32
+      pc: 40865
+      sp: 12252
+    ram:
+    - address: 40864
+      value: 176
+    - address: 40865
+      value: 245
+    - address: 40866
+      value: 223
+  final:
+    registers:
+      a: 255
+      b: 167
+      c: 22
+      d: 33
+      e: 229
+      h: 172
+      l: 211
+      f: 0
+      pc: 40866
+      sp: 12252
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 40865
+    data: 245
+    mode: read
+- name: b0 6a 9c
+  initial:
+    registers:
+      a: 171
+      b: 187
+      c: 41
+      d: 125
+      e: 65
+      h: 167
+      l: 170
+      f: 192
+      pc: 26247
+      sp: 60126
+    ram:
+    - address: 26246
+      value: 176
+    - address: 26247
+      value: 106
+    - address: 26248
+      value: 156
+  final:
+    registers:
+      a: 187
+      b: 187
+      c: 41
+      d: 125
+      e: 65
+      h: 167
+      l: 170
+      f: 0
+      pc: 26248
+      sp: 60126
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 26247
+    data: 106
+    mode: read
+- name: b0 64 03
+  initial:
+    registers:
+      a: 147
+      b: 125
+      c: 165
+      d: 192
+      e: 237
+      h: 132
+      l: 28
+      f: 16
+      pc: 4507
+      sp: 21335
+    ram:
+    - address: 4506
+      value: 176
+    - address: 4507
+      value: 100
+    - address: 4508
+      value: 3
+  final:
+    registers:
+      a: 255
+      b: 125
+      c: 165
+      d: 192
+      e: 237
+      h: 132
+      l: 28
+      f: 0
+      pc: 4508
+      sp: 21335
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 4507
+    data: 100
+    mode: read
+- name: b0 16 86
+  initial:
+    registers:
+      a: 192
+      b: 44
+      c: 185
+      d: 149
+      e: 87
+      h: 204
+      l: 91
+      f: 16
+      pc: 28360
+      sp: 9828
+    ram:
+    - address: 28359
+      value: 176
+    - address: 28360
+      value: 22
+    - address: 28361
+      value: 134
+  final:
+    registers:
+      a: 236
+      b: 44
+      c: 185
+      d: 149
+      e: 87
+      h: 204
+      l: 91
+      f: 0
+      pc: 28361
+      sp: 9828
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 28360
+    data: 22
+    mode: read
+- name: b0 4b a8
+  initial:
+    registers:
+      a: 135
+      b: 97
+      c: 138
+      d: 255
+      e: 232
+      h: 134
+      l: 112
+      f: 80
+      pc: 2198
+      sp: 36757
+    ram:
+    - address: 2197
+      value: 176
+    - address: 2198
+      value: 75
+    - address: 2199
+      value: 168
+  final:
+    registers:
+      a: 231
+      b: 97
+      c: 138
+      d: 255
+      e: 232
+      h: 134
+      l: 112
+      f: 0
+      pc: 2199
+      sp: 36757
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 2198
+    data: 75
+    mode: read
+- name: b0 6c f1
+  initial:
+    registers:
+      a: 139
+      b: 167
+      c: 90
+      d: 61
+      e: 213
+      h: 194
+      l: 174
+      f: 112
+      pc: 43995
+      sp: 51679
+    ram:
+    - address: 43994
+      value: 176
+    - address: 43995
+      value: 108
+    - address: 43996
+      value: 241
+  final:
+    registers:
+      a: 175
+      b: 167
+      c: 90
+      d: 61
+      e: 213
+      h: 194
+      l: 174
+      f: 0
+      pc: 43996
+      sp: 51679
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 43995
+    data: 108
+    mode: read
+- name: b0 12 08
+  initial:
+    registers:
+      a: 80
+      b: 6
+      c: 141
+      d: 83
+      e: 185
+      h: 33
+      l: 249
+      f: 160
+      pc: 6924
+      sp: 51782
+    ram:
+    - address: 6923
+      value: 176
+    - address: 6924
+      value: 18
+    - address: 6925
+      value: 8
+  final:
+    registers:
+      a: 86
+      b: 6
+      c: 141
+      d: 83
+      e: 185
+      h: 33
+      l: 249
+      f: 0
+      pc: 6925
+      sp: 51782
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 6924
+    data: 18
+    mode: read
+- name: b0 15 ff
+  initial:
+    registers:
+      a: 87
+      b: 78
+      c: 178
+      d: 209
+      e: 187
+      h: 225
+      l: 247
+      f: 208
+      pc: 22337
+      sp: 50847
+    ram:
+    - address: 22336
+      value: 176
+    - address: 22337
+      value: 21
+    - address: 22338
+      value: 255
+  final:
+    registers:
+      a: 95
+      b: 78
+      c: 178
+      d: 209
+      e: 187
+      h: 225
+      l: 247
+      f: 0
+      pc: 22338
+      sp: 50847
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 22337
+    data: 21
+    mode: read
+- name: b0 e6 e4
+  initial:
+    registers:
+      a: 114
+      b: 155
+      c: 109
+      d: 233
+      e: 23
+      h: 185
+      l: 188
+      f: 96
+      pc: 59671
+      sp: 2436
+    ram:
+    - address: 59670
+      value: 176
+    - address: 59671
+      value: 230
+    - address: 59672
+      value: 228
+  final:
+    registers:
+      a: 251
+      b: 155
+      c: 109
+      d: 233
+      e: 23
+      h: 185
+      l: 188
+      f: 0
+      pc: 59672
+      sp: 2436
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 59671
+    data: 230
+    mode: read
+- name: b0 6d db
+  initial:
+    registers:
+      a: 16
+      b: 150
+      c: 160
+      d: 188
+      e: 58
+      h: 207
+      l: 102
+      f: 128
+      pc: 15369
+      sp: 34597
+    ram:
+    - address: 15368
+      value: 176
+    - address: 15369
+      value: 109
+    - address: 15370
+      value: 219
+  final:
+    registers:
+      a: 150
+      b: 150
+      c: 160
+      d: 188
+      e: 58
+      h: 207
+      l: 102
+      f: 0
+      pc: 15370
+      sp: 34597
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 15369
+    data: 109
+    mode: read
+- name: b0 e6 db
+  initial:
+    registers:
+      a: 86
+      b: 156
+      c: 187
+      d: 165
+      e: 171
+      h: 42
+      l: 71
+      f: 144
+      pc: 49181
+      sp: 34217
+    ram:
+    - address: 49180
+      value: 176
+    - address: 49181
+      value: 230
+    - address: 49182
+      value: 219
+  final:
+    registers:
+      a: 222
+      b: 156
+      c: 187
+      d: 165
+      e: 171
+      h: 42
+      l: 71
+      f: 0
+      pc: 49182
+      sp: 34217
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 49181
+    data: 230
+    mode: read
+- name: b0 99 22
+  initial:
+    registers:
+      a: 249
+      b: 106
+      c: 87
+      d: 235
+      e: 9
+      h: 119
+      l: 156
+      f: 16
+      pc: 32319
+      sp: 21591
+    ram:
+    - address: 32318
+      value: 176
+    - address: 32319
+      value: 153
+    - address: 32320
+      value: 34
+  final:
+    registers:
+      a: 251
+      b: 106
+      c: 87
+      d: 235
+      e: 9
+      h: 119
+      l: 156
+      f: 0
+      pc: 32320
+      sp: 21591
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 32319
+    data: 153
+    mode: read
+- name: b0 76 c2
+  initial:
+    registers:
+      a: 244
+      b: 101
+      c: 176
+      d: 100
+      e: 1
+      h: 225
+      l: 114
+      f: 48
+      pc: 42060
+      sp: 56782
+    ram:
+    - address: 42059
+      value: 176
+    - address: 42060
+      value: 118
+    - address: 42061
+      value: 194
+  final:
+    registers:
+      a: 245
+      b: 101
+      c: 176
+      d: 100
+      e: 1
+      h: 225
+      l: 114
+      f: 0
+      pc: 42061
+      sp: 56782
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 42060
+    data: 118
+    mode: read
+- name: b0 1d ba
+  initial:
+    registers:
+      a: 40
+      b: 147
+      c: 213
+      d: 194
+      e: 90
+      h: 104
+      l: 49
+      f: 32
+      pc: 48672
+      sp: 38678
+    ram:
+    - address: 48671
+      value: 176
+    - address: 48672
+      value: 29
+    - address: 48673
+      value: 186
+  final:
+    registers:
+      a: 187
+      b: 147
+      c: 213
+      d: 194
+      e: 90
+      h: 104
+      l: 49
+      f: 0
+      pc: 48673
+      sp: 38678
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 48672
+    data: 29
+    mode: read
+- name: b0 92 d4
+  initial:
+    registers:
+      a: 188
+      b: 230
+      c: 243
+      d: 29
+      e: 197
+      h: 73
+      l: 101
+      f: 128
+      pc: 60911
+      sp: 56895
+    ram:
+    - address: 60910
+      value: 176
+    - address: 60911
+      value: 146
+    - address: 60912
+      value: 212
+  final:
+    registers:
+      a: 254
+      b: 230
+      c: 243
+      d: 29
+      e: 197
+      h: 73
+      l: 101
+      f: 0
+      pc: 60912
+      sp: 56895
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 60911
+    data: 146
+    mode: read
+- name: b0 5e ec
+  initial:
+    registers:
+      a: 203
+      b: 171
+      c: 243
+      d: 184
+      e: 230
+      h: 217
+      l: 97
+      f: 160
+      pc: 27573
+      sp: 49021
+    ram:
+    - address: 27572
+      value: 176
+    - address: 27573
+      value: 94
+    - address: 27574
+      value: 236
+  final:
+    registers:
+      a: 235
+      b: 171
+      c: 243
+      d: 184
+      e: 230
+      h: 217
+      l: 97
+      f: 0
+      pc: 27574
+      sp: 49021
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 27573
+    data: 94
+    mode: read
+- name: b0 15 ab
+  initial:
+    registers:
+      a: 86
+      b: 52
+      c: 155
+      d: 238
+      e: 187
+      h: 170
+      l: 85
+      f: 176
+      pc: 28910
+      sp: 6439
+    ram:
+    - address: 28909
+      value: 176
+    - address: 28910
+      value: 21
+    - address: 28911
+      value: 171
+  final:
+    registers:
+      a: 118
+      b: 52
+      c: 155
+      d: 238
+      e: 187
+      h: 170
+      l: 85
+      f: 0
+      pc: 28911
+      sp: 6439
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 28910
+    data: 21
+    mode: read
+- name: b0 77 7d
+  initial:
+    registers:
+      a: 244
+      b: 168
+      c: 175
+      d: 61
+      e: 82
+      h: 192
+      l: 253
+      f: 0
+      pc: 60122
+      sp: 5066
+    ram:
+    - address: 60121
+      value: 176
+    - address: 60122
+      value: 119
+    - address: 60123
+      value: 125
+  final:
+    registers:
+      a: 252
+      b: 168
+      c: 175
+      d: 61
+      e: 82
+      h: 192
+      l: 253
+      f: 0
+      pc: 60123
+      sp: 5066
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 60122
+    data: 119
+    mode: read
+- name: b0 96 d9
+  initial:
+    registers:
+      a: 58
+      b: 236
+      c: 136
+      d: 184
+      e: 151
+      h: 64
+      l: 206
+      f: 176
+      pc: 25905
+      sp: 8212
+    ram:
+    - address: 25904
+      value: 176
+    - address: 25905
+      value: 150
+    - address: 25906
+      value: 217
+  final:
+    registers:
+      a: 254
+      b: 236
+      c: 136
+      d: 184
+      e: 151
+      h: 64
+      l: 206
+      f: 0
+      pc: 25906
+      sp: 8212
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 25905
+    data: 150
+    mode: read
+- name: b0 44 8a
+  initial:
+    registers:
+      a: 216
+      b: 9
+      c: 66
+      d: 183
+      e: 115
+      h: 192
+      l: 120
+      f: 128
+      pc: 6372
+      sp: 56628
+    ram:
+    - address: 6371
+      value: 176
+    - address: 6372
+      value: 68
+    - address: 6373
+      value: 138
+  final:
+    registers:
+      a: 217
+      b: 9
+      c: 66
+      d: 183
+      e: 115
+      h: 192
+      l: 120
+      f: 0
+      pc: 6373
+      sp: 56628
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 6372
+    data: 68
+    mode: read
+- name: b0 e4 01
+  initial:
+    registers:
+      a: 22
+      b: 45
+      c: 216
+      d: 220
+      e: 191
+      h: 209
+      l: 21
+      f: 128
+      pc: 40014
+      sp: 17146
+    ram:
+    - address: 40013
+      value: 176
+    - address: 40014
+      value: 228
+    - address: 40015
+      value: 1
+  final:
+    registers:
+      a: 63
+      b: 45
+      c: 216
+      d: 220
+      e: 191
+      h: 209
+      l: 21
+      f: 0
+      pc: 40015
+      sp: 17146
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 40014
+    data: 228
+    mode: read
+- name: b0 54 a0
+  initial:
+    registers:
+      a: 3
+      b: 2
+      c: 204
+      d: 174
+      e: 6
+      h: 213
+      l: 157
+      f: 16
+      pc: 2290
+      sp: 12870
+    ram:
+    - address: 2289
+      value: 176
+    - address: 2290
+      value: 84
+    - address: 2291
+      value: 160
+  final:
+    registers:
+      a: 3
+      b: 2
+      c: 204
+      d: 174
+      e: 6
+      h: 213
+      l: 157
+      f: 0
+      pc: 2291
+      sp: 12870
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 2290
+    data: 84
+    mode: read
+- name: b0 fc c8
+  initial:
+    registers:
+      a: 57
+      b: 144
+      c: 127
+      d: 154
+      e: 46
+      h: 171
+      l: 181
+      f: 32
+      pc: 42185
+      sp: 34623
+    ram:
+    - address: 42184
+      value: 176
+    - address: 42185
+      value: 252
+    - address: 42186
+      value: 200
+  final:
+    registers:
+      a: 185
+      b: 144
+      c: 127
+      d: 154
+      e: 46
+      h: 171
+      l: 181
+      f: 0
+      pc: 42186
+      sp: 34623
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 42185
+    data: 252
+    mode: read
+- name: b0 1d 43
+  initial:
+    registers:
+      a: 186
+      b: 74
+      c: 153
+      d: 151
+      e: 90
+      h: 131
+      l: 224
+      f: 96
+      pc: 27177
+      sp: 51420
+    ram:
+    - address: 27176
+      value: 176
+    - address: 27177
+      value: 29
+    - address: 27178
+      value: 67
+  final:
+    registers:
+      a: 250
+      b: 74
+      c: 153
+      d: 151
+      e: 90
+      h: 131
+      l: 224
+      f: 0
+      pc: 27178
+      sp: 51420
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 27177
+    data: 29
+    mode: read
+- name: b0 ba a7
+  initial:
+    registers:
+      a: 136
+      b: 67
+      c: 100
+      d: 60
+      e: 52
+      h: 193
+      l: 30
+      f: 128
+      pc: 37757
+      sp: 40842
+    ram:
+    - address: 37756
+      value: 176
+    - address: 37757
+      value: 186
+    - address: 37758
+      value: 167
+  final:
+    registers:
+      a: 203
+      b: 67
+      c: 100
+      d: 60
+      e: 52
+      h: 193
+      l: 30
+      f: 0
+      pc: 37758
+      sp: 40842
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 37757
+    data: 186
+    mode: read
+- name: b0 0b e4
+  initial:
+    registers:
+      a: 215
+      b: 226
+      c: 214
+      d: 31
+      e: 107
+      h: 81
+      l: 57
+      f: 128
+      pc: 61052
+      sp: 11001
+    ram:
+    - address: 61051
+      value: 176
+    - address: 61052
+      value: 11
+    - address: 61053
+      value: 228
+  final:
+    registers:
+      a: 247
+      b: 226
+      c: 214
+      d: 31
+      e: 107
+      h: 81
+      l: 57
+      f: 0
+      pc: 61053
+      sp: 11001
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 61052
+    data: 11
+    mode: read
+- name: b0 02 a9
+  initial:
+    registers:
+      a: 164
+      b: 116
+      c: 78
+      d: 50
+      e: 201
+      h: 219
+      l: 238
+      f: 240
+      pc: 22063
+      sp: 36070
+    ram:
+    - address: 22062
+      value: 176
+    - address: 22063
+      value: 2
+    - address: 22064
+      value: 169
+  final:
+    registers:
+      a: 244
+      b: 116
+      c: 78
+      d: 50
+      e: 201
+      h: 219
+      l: 238
+      f: 0
+      pc: 22064
+      sp: 36070
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 22063
+    data: 2
+    mode: read
+- name: b0 8a dd
+  initial:
+    registers:
+      a: 82
+      b: 83
+      c: 49
+      d: 183
+      e: 177
+      h: 219
+      l: 111
+      f: 64
+      pc: 13367
+      sp: 10322
+    ram:
+    - address: 13366
+      value: 176
+    - address: 13367
+      value: 138
+    - address: 13368
+      value: 221
+  final:
+    registers:
+      a: 83
+      b: 83
+      c: 49
+      d: 183
+      e: 177
+      h: 219
+      l: 111
+      f: 0
+      pc: 13368
+      sp: 10322
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 13367
+    data: 138
+    mode: read
+- name: b0 ab df
+  initial:
+    registers:
+      a: 98
+      b: 138
+      c: 219
+      d: 237
+      e: 60
+      h: 213
+      l: 52
+      f: 176
+      pc: 32807
+      sp: 51188
+    ram:
+    - address: 32806
+      value: 176
+    - address: 32807
+      value: 171
+    - address: 32808
+      value: 223
+  final:
+    registers:
+      a: 234
+      b: 138
+      c: 219
+      d: 237
+      e: 60
+      h: 213
+      l: 52
+      f: 0
+      pc: 32808
+      sp: 51188
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 32807
+    data: 171
+    mode: read
+- name: b0 1a 1f
+  initial:
+    registers:
+      a: 59
+      b: 23
+      c: 175
+      d: 129
+      e: 233
+      h: 170
+      l: 7
+      f: 96
+      pc: 15128
+      sp: 1368
+    ram:
+    - address: 15127
+      value: 176
+    - address: 15128
+      value: 26
+    - address: 15129
+      value: 31
+  final:
+    registers:
+      a: 63
+      b: 23
+      c: 175
+      d: 129
+      e: 233
+      h: 170
+      l: 7
+      f: 0
+      pc: 15129
+      sp: 1368
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 15128
+    data: 26
+    mode: read
+- name: b0 07 2e
+  initial:
+    registers:
+      a: 247
+      b: 72
+      c: 133
+      d: 196
+      e: 141
+      h: 66
+      l: 149
+      f: 224
+      pc: 54829
+      sp: 962
+    ram:
+    - address: 54828
+      value: 176
+    - address: 54829
+      value: 7
+    - address: 54830
+      value: 46
+  final:
+    registers:
+      a: 255
+      b: 72
+      c: 133
+      d: 196
+      e: 141
+      h: 66
+      l: 149
+      f: 0
+      pc: 54830
+      sp: 962
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 54829
+    data: 7
+    mode: read
+- name: b0 cd 13
+  initial:
+    registers:
+      a: 163
+      b: 86
+      c: 16
+      d: 206
+      e: 136
+      h: 189
+      l: 12
+      f: 64
+      pc: 43200
+      sp: 45357
+    ram:
+    - address: 43199
+      value: 176
+    - address: 43200
+      value: 205
+    - address: 43201
+      value: 19
+  final:
+    registers:
+      a: 247
+      b: 86
+      c: 16
+      d: 206
+      e: 136
+      h: 189
+      l: 12
+      f: 0
+      pc: 43201
+      sp: 45357
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 43200
+    data: 205
+    mode: read
+- name: b0 1a 3b
+  initial:
+    registers:
+      a: 33
+      b: 177
+      c: 140
+      d: 59
+      e: 90
+      h: 90
+      l: 80
+      f: 176
+      pc: 53359
+      sp: 61420
+    ram:
+    - address: 53358
+      value: 176
+    - address: 53359
+      value: 26
+    - address: 53360
+      value: 59
+  final:
+    registers:
+      a: 177
+      b: 177
+      c: 140
+      d: 59
+      e: 90
+      h: 90
+      l: 80
+      f: 0
+      pc: 53360
+      sp: 61420
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 53359
+    data: 26
+    mode: read
+- name: b0 1a 93
+  initial:
+    registers:
+      a: 24
+      b: 81
+      c: 87
+      d: 223
+      e: 233
+      h: 9
+      l: 231
+      f: 176
+      pc: 55783
+      sp: 43458
+    ram:
+    - address: 55782
+      value: 176
+    - address: 55783
+      value: 26
+    - address: 55784
+      value: 147
+  final:
+    registers:
+      a: 89
+      b: 81
+      c: 87
+      d: 223
+      e: 233
+      h: 9
+      l: 231
+      f: 0
+      pc: 55784
+      sp: 43458
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 55783
+    data: 26
+    mode: read
+- name: b0 4b c9
+  initial:
+    registers:
+      a: 95
+      b: 16
+      c: 1
+      d: 178
+      e: 35
+      h: 34
+      l: 90
+      f: 128
+      pc: 3080
+      sp: 51802
+    ram:
+    - address: 3079
+      value: 176
+    - address: 3080
+      value: 75
+    - address: 3081
+      value: 201
+  final:
+    registers:
+      a: 95
+      b: 16
+      c: 1
+      d: 178
+      e: 35
+      h: 34
+      l: 90
+      f: 0
+      pc: 3081
+      sp: 51802
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 3080
+    data: 75
+    mode: read
+- name: b0 d2 89
+  initial:
+    registers:
+      a: 147
+      b: 171
+      c: 6
+      d: 168
+      e: 73
+      h: 130
+      l: 116
+      f: 144
+      pc: 26269
+      sp: 34482
+    ram:
+    - address: 26268
+      value: 176
+    - address: 26269
+      value: 210
+    - address: 26270
+      value: 137
+  final:
+    registers:
+      a: 187
+      b: 171
+      c: 6
+      d: 168
+      e: 73
+      h: 130
+      l: 116
+      f: 0
+      pc: 26270
+      sp: 34482
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 26269
+    data: 210
+    mode: read
+- name: b0 4a 66
+  initial:
+    registers:
+      a: 121
+      b: 254
+      c: 60
+      d: 54
+      e: 193
+      h: 50
+      l: 154
+      f: 208
+      pc: 15559
+      sp: 31566
+    ram:
+    - address: 15558
+      value: 176
+    - address: 15559
+      value: 74
+    - address: 15560
+      value: 102
+  final:
+    registers:
+      a: 255
+      b: 254
+      c: 60
+      d: 54
+      e: 193
+      h: 50
+      l: 154
+      f: 0
+      pc: 15560
+      sp: 31566
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 15559
+    data: 74
+    mode: read
+- name: b0 67 3d
+  initial:
+    registers:
+      a: 127
+      b: 212
+      c: 17
+      d: 251
+      e: 105
+      h: 33
+      l: 68
+      f: 240
+      pc: 14048
+      sp: 15484
+    ram:
+    - address: 14047
+      value: 176
+    - address: 14048
+      value: 103
+    - address: 14049
+      value: 61
+  final:
+    registers:
+      a: 255
+      b: 212
+      c: 17
+      d: 251
+      e: 105
+      h: 33
+      l: 68
+      f: 0
+      pc: 14049
+      sp: 15484
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 14048
+    data: 103
+    mode: read
+- name: b0 ac 44
+  initial:
+    registers:
+      a: 4
+      b: 241
+      c: 146
+      d: 68
+      e: 90
+      h: 152
+      l: 111
+      f: 240
+      pc: 14074
+      sp: 44020
+    ram:
+    - address: 14073
+      value: 176
+    - address: 14074
+      value: 172
+    - address: 14075
+      value: 68
+  final:
+    registers:
+      a: 245
+      b: 241
+      c: 146
+      d: 68
+      e: 90
+      h: 152
+      l: 111
+      f: 0
+      pc: 14075
+      sp: 44020
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 14074
+    data: 172
+    mode: read
+- name: b0 b1 4a
+  initial:
+    registers:
+      a: 214
+      b: 113
+      c: 173
+      d: 86
+      e: 239
+      h: 235
+      l: 166
+      f: 16
+      pc: 33211
+      sp: 47576
+    ram:
+    - address: 33210
+      value: 176
+    - address: 33211
+      value: 177
+    - address: 33212
+      value: 74
+  final:
+    registers:
+      a: 247
+      b: 113
+      c: 173
+      d: 86
+      e: 239
+      h: 235
+      l: 166
+      f: 0
+      pc: 33212
+      sp: 47576
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 33211
+    data: 177
+    mode: read
+- name: b0 05 17
+  initial:
+    registers:
+      a: 92
+      b: 35
+      c: 116
+      d: 240
+      e: 27
+      h: 50
+      l: 108
+      f: 240
+      pc: 28809
+      sp: 23420
+    ram:
+    - address: 28808
+      value: 176
+    - address: 28809
+      value: 5
+    - address: 28810
+      value: 23
+  final:
+    registers:
+      a: 127
+      b: 35
+      c: 116
+      d: 240
+      e: 27
+      h: 50
+      l: 108
+      f: 0
+      pc: 28810
+      sp: 23420
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 28809
+    data: 5
+    mode: read
+- name: b0 19 7a
+  initial:
+    registers:
+      a: 229
+      b: 190
+      c: 134
+      d: 1
+      e: 242
+      h: 29
+      l: 213
+      f: 176
+      pc: 39828
+      sp: 23866
+    ram:
+    - address: 39827
+      value: 176
+    - address: 39828
+      value: 25
+    - address: 39829
+      value: 122
+  final:
+    registers:
+      a: 255
+      b: 190
+      c: 134
+      d: 1
+      e: 242
+      h: 29
+      l: 213
+      f: 0
+      pc: 39829
+      sp: 23866
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 39828
+    data: 25
+    mode: read
+- name: b0 bb 43
+  initial:
+    registers:
+      a: 0
+      b: 82
+      c: 199
+      d: 1
+      e: 160
+      h: 109
+      l: 10
+      f: 0
+      pc: 27410
+      sp: 33310
+    ram:
+    - address: 27409
+      value: 176
+    - address: 27410
+      value: 187
+    - address: 27411
+      value: 67
+  final:
+    registers:
+      a: 82
+      b: 82
+      c: 199
+      d: 1
+      e: 160
+      h: 109
+      l: 10
+      f: 0
+      pc: 27411
+      sp: 33310
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 27410
+    data: 187
+    mode: read
+- name: b0 9d 35
+  initial:
+    registers:
+      a: 44
+      b: 207
+      c: 145
+      d: 203
+      e: 176
+      h: 48
+      l: 113
+      f: 16
+      pc: 46340
+      sp: 15369
+    ram:
+    - address: 46339
+      value: 176
+    - address: 46340
+      value: 157
+    - address: 46341
+      value: 53
+  final:
+    registers:
+      a: 239
+      b: 207
+      c: 145
+      d: 203
+      e: 176
+      h: 48
+      l: 113
+      f: 0
+      pc: 46341
+      sp: 15369
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 46340
+    data: 157
+    mode: read
+- name: b0 b1 a2
+  initial:
+    registers:
+      a: 97
+      b: 139
+      c: 160
+      d: 34
+      e: 233
+      h: 99
+      l: 43
+      f: 208
+      pc: 21000
+      sp: 24278
+    ram:
+    - address: 20999
+      value: 176
+    - address: 21000
+      value: 177
+    - address: 21001
+      value: 162
+  final:
+    registers:
+      a: 235
+      b: 139
+      c: 160
+      d: 34
+      e: 233
+      h: 99
+      l: 43
+      f: 0
+      pc: 21001
+      sp: 24278
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 21000
+    data: 177
+    mode: read
+- name: b0 07 ae
+  initial:
+    registers:
+      a: 83
+      b: 29
+      c: 84
+      d: 177
+      e: 240
+      h: 247
+      l: 18
+      f: 160
+      pc: 55687
+      sp: 62541
+    ram:
+    - address: 55686
+      value: 176
+    - address: 55687
+      value: 7
+    - address: 55688
+      value: 174
+  final:
+    registers:
+      a: 95
+      b: 29
+      c: 84
+      d: 177
+      e: 240
+      h: 247
+      l: 18
+      f: 0
+      pc: 55688
+      sp: 62541
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 55687
+    data: 7
+    mode: read
+- name: b0 71 40
+  initial:
+    registers:
+      a: 127
+      b: 142
+      c: 193
+      d: 196
+      e: 33
+      h: 56
+      l: 146
+      f: 0
+      pc: 5139
+      sp: 57363
+    ram:
+    - address: 5138
+      value: 176
+    - address: 5139
+      value: 113
+    - address: 5140
+      value: 64
+  final:
+    registers:
+      a: 255
+      b: 142
+      c: 193
+      d: 196
+      e: 33
+      h: 56
+      l: 146
+      f: 0
+      pc: 5140
+      sp: 57363
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 5139
+    data: 113
+    mode: read
+- name: b0 3b 27
+  initial:
+    registers:
+      a: 211
+      b: 47
+      c: 38
+      d: 38
+      e: 125
+      h: 167
+      l: 208
+      f: 192
+      pc: 22629
+      sp: 37336
+    ram:
+    - address: 22628
+      value: 176
+    - address: 22629
+      value: 59
+    - address: 22630
+      value: 39
+  final:
+    registers:
+      a: 255
+      b: 47
+      c: 38
+      d: 38
+      e: 125
+      h: 167
+      l: 208
+      f: 0
+      pc: 22630
+      sp: 37336
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 22629
+    data: 59
+    mode: read
+- name: b0 48 4b
+  initial:
+    registers:
+      a: 2
+      b: 108
+      c: 40
+      d: 85
+      e: 160
+      h: 80
+      l: 188
+      f: 80
+      pc: 65117
+      sp: 22820
+    ram:
+    - address: 65116
+      value: 176
+    - address: 65117
+      value: 72
+    - address: 65118
+      value: 75
+  final:
+    registers:
+      a: 110
+      b: 108
+      c: 40
+      d: 85
+      e: 160
+      h: 80
+      l: 188
+      f: 0
+      pc: 65118
+      sp: 22820
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 65117
+    data: 72
+    mode: read

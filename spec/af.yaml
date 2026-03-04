@@ -1,0 +1,4302 @@
+canonicalName: XOR A, A
+tests:
+- name: af 22 11
+  initial:
+    registers:
+      a: 127
+      b: 178
+      c: 123
+      d: 148
+      e: 22
+      h: 208
+      l: 29
+      f: 0
+      pc: 31505
+      sp: 40276
+    ram:
+    - address: 31504
+      value: 175
+    - address: 31505
+      value: 34
+    - address: 31506
+      value: 17
+  final:
+    registers:
+      a: 0
+      b: 178
+      c: 123
+      d: 148
+      e: 22
+      h: 208
+      l: 29
+      f: 128
+      pc: 31506
+      sp: 40276
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 31505
+    data: 34
+    mode: read
+- name: af 1d db
+  initial:
+    registers:
+      a: 42
+      b: 22
+      c: 231
+      d: 166
+      e: 165
+      h: 53
+      l: 215
+      f: 64
+      pc: 46361
+      sp: 19674
+    ram:
+    - address: 46360
+      value: 175
+    - address: 46361
+      value: 29
+    - address: 46362
+      value: 219
+  final:
+    registers:
+      a: 0
+      b: 22
+      c: 231
+      d: 166
+      e: 165
+      h: 53
+      l: 215
+      f: 128
+      pc: 46362
+      sp: 19674
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 46361
+    data: 29
+    mode: read
+- name: af ec 63
+  initial:
+    registers:
+      a: 144
+      b: 231
+      c: 255
+      d: 87
+      e: 30
+      h: 25
+      l: 187
+      f: 0
+      pc: 61344
+      sp: 38788
+    ram:
+    - address: 61343
+      value: 175
+    - address: 61344
+      value: 236
+    - address: 61345
+      value: 99
+  final:
+    registers:
+      a: 0
+      b: 231
+      c: 255
+      d: 87
+      e: 30
+      h: 25
+      l: 187
+      f: 128
+      pc: 61345
+      sp: 38788
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 61344
+    data: 236
+    mode: read
+- name: af 58 62
+  initial:
+    registers:
+      a: 22
+      b: 4
+      c: 169
+      d: 79
+      e: 20
+      h: 57
+      l: 80
+      f: 240
+      pc: 46294
+      sp: 27761
+    ram:
+    - address: 46293
+      value: 175
+    - address: 46294
+      value: 88
+    - address: 46295
+      value: 98
+  final:
+    registers:
+      a: 0
+      b: 4
+      c: 169
+      d: 79
+      e: 20
+      h: 57
+      l: 80
+      f: 128
+      pc: 46295
+      sp: 27761
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 46294
+    data: 88
+    mode: read
+- name: af 62 7d
+  initial:
+    registers:
+      a: 225
+      b: 49
+      c: 224
+      d: 192
+      e: 247
+      h: 246
+      l: 179
+      f: 224
+      pc: 32101
+      sp: 37955
+    ram:
+    - address: 32100
+      value: 175
+    - address: 32101
+      value: 98
+    - address: 32102
+      value: 125
+  final:
+    registers:
+      a: 0
+      b: 49
+      c: 224
+      d: 192
+      e: 247
+      h: 246
+      l: 179
+      f: 128
+      pc: 32102
+      sp: 37955
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 32101
+    data: 98
+    mode: read
+- name: af 92 18
+  initial:
+    registers:
+      a: 174
+      b: 165
+      c: 228
+      d: 102
+      e: 164
+      h: 231
+      l: 50
+      f: 224
+      pc: 37731
+      sp: 7967
+    ram:
+    - address: 37730
+      value: 175
+    - address: 37731
+      value: 146
+    - address: 37732
+      value: 24
+  final:
+    registers:
+      a: 0
+      b: 165
+      c: 228
+      d: 102
+      e: 164
+      h: 231
+      l: 50
+      f: 128
+      pc: 37732
+      sp: 7967
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 37731
+    data: 146
+    mode: read
+- name: af fa 3c
+  initial:
+    registers:
+      a: 24
+      b: 222
+      c: 159
+      d: 207
+      e: 65
+      h: 20
+      l: 158
+      f: 80
+      pc: 64123
+      sp: 2726
+    ram:
+    - address: 64122
+      value: 175
+    - address: 64123
+      value: 250
+    - address: 64124
+      value: 60
+  final:
+    registers:
+      a: 0
+      b: 222
+      c: 159
+      d: 207
+      e: 65
+      h: 20
+      l: 158
+      f: 128
+      pc: 64124
+      sp: 2726
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 64123
+    data: 250
+    mode: read
+- name: af a8 88
+  initial:
+    registers:
+      a: 175
+      b: 169
+      c: 48
+      d: 190
+      e: 185
+      h: 44
+      l: 144
+      f: 240
+      pc: 39133
+      sp: 31725
+    ram:
+    - address: 39132
+      value: 175
+    - address: 39133
+      value: 168
+    - address: 39134
+      value: 136
+  final:
+    registers:
+      a: 0
+      b: 169
+      c: 48
+      d: 190
+      e: 185
+      h: 44
+      l: 144
+      f: 128
+      pc: 39134
+      sp: 31725
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 39133
+    data: 168
+    mode: read
+- name: af 04 6e
+  initial:
+    registers:
+      a: 113
+      b: 33
+      c: 25
+      d: 186
+      e: 80
+      h: 85
+      l: 195
+      f: 176
+      pc: 37540
+      sp: 11530
+    ram:
+    - address: 37539
+      value: 175
+    - address: 37540
+      value: 4
+    - address: 37541
+      value: 110
+  final:
+    registers:
+      a: 0
+      b: 33
+      c: 25
+      d: 186
+      e: 80
+      h: 85
+      l: 195
+      f: 128
+      pc: 37541
+      sp: 11530
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 37540
+    data: 4
+    mode: read
+- name: af b0 b1
+  initial:
+    registers:
+      a: 46
+      b: 46
+      c: 65
+      d: 175
+      e: 208
+      h: 137
+      l: 91
+      f: 112
+      pc: 3345
+      sp: 24887
+    ram:
+    - address: 3344
+      value: 175
+    - address: 3345
+      value: 176
+    - address: 3346
+      value: 177
+  final:
+    registers:
+      a: 0
+      b: 46
+      c: 65
+      d: 175
+      e: 208
+      h: 137
+      l: 91
+      f: 128
+      pc: 3346
+      sp: 24887
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 3345
+    data: 176
+    mode: read
+- name: af ac 2e
+  initial:
+    registers:
+      a: 83
+      b: 140
+      c: 249
+      d: 198
+      e: 73
+      h: 209
+      l: 172
+      f: 16
+      pc: 20655
+      sp: 41467
+    ram:
+    - address: 20654
+      value: 175
+    - address: 20655
+      value: 172
+    - address: 20656
+      value: 46
+  final:
+    registers:
+      a: 0
+      b: 140
+      c: 249
+      d: 198
+      e: 73
+      h: 209
+      l: 172
+      f: 128
+      pc: 20656
+      sp: 41467
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 20655
+    data: 172
+    mode: read
+- name: af 23 c8
+  initial:
+    registers:
+      a: 110
+      b: 16
+      c: 210
+      d: 142
+      e: 22
+      h: 41
+      l: 190
+      f: 16
+      pc: 59800
+      sp: 13104
+    ram:
+    - address: 59799
+      value: 175
+    - address: 59800
+      value: 35
+    - address: 59801
+      value: 200
+  final:
+    registers:
+      a: 0
+      b: 16
+      c: 210
+      d: 142
+      e: 22
+      h: 41
+      l: 190
+      f: 128
+      pc: 59801
+      sp: 13104
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 59800
+    data: 35
+    mode: read
+- name: af 82 ea
+  initial:
+    registers:
+      a: 18
+      b: 106
+      c: 128
+      d: 186
+      e: 117
+      h: 197
+      l: 130
+      f: 32
+      pc: 17055
+      sp: 53453
+    ram:
+    - address: 17054
+      value: 175
+    - address: 17055
+      value: 130
+    - address: 17056
+      value: 234
+  final:
+    registers:
+      a: 0
+      b: 106
+      c: 128
+      d: 186
+      e: 117
+      h: 197
+      l: 130
+      f: 128
+      pc: 17056
+      sp: 53453
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 17055
+    data: 130
+    mode: read
+- name: af df d6
+  initial:
+    registers:
+      a: 19
+      b: 11
+      c: 219
+      d: 57
+      e: 72
+      h: 116
+      l: 220
+      f: 240
+      pc: 40242
+      sp: 27575
+    ram:
+    - address: 40241
+      value: 175
+    - address: 40242
+      value: 223
+    - address: 40243
+      value: 214
+  final:
+    registers:
+      a: 0
+      b: 11
+      c: 219
+      d: 57
+      e: 72
+      h: 116
+      l: 220
+      f: 128
+      pc: 40243
+      sp: 27575
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 40242
+    data: 223
+    mode: read
+- name: af 98 c3
+  initial:
+    registers:
+      a: 240
+      b: 86
+      c: 252
+      d: 182
+      e: 93
+      h: 85
+      l: 195
+      f: 48
+      pc: 12893
+      sp: 17283
+    ram:
+    - address: 12892
+      value: 175
+    - address: 12893
+      value: 152
+    - address: 12894
+      value: 195
+  final:
+    registers:
+      a: 0
+      b: 86
+      c: 252
+      d: 182
+      e: 93
+      h: 85
+      l: 195
+      f: 128
+      pc: 12894
+      sp: 17283
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 12893
+    data: 152
+    mode: read
+- name: af 37 7d
+  initial:
+    registers:
+      a: 175
+      b: 132
+      c: 149
+      d: 135
+      e: 193
+      h: 128
+      l: 195
+      f: 96
+      pc: 19943
+      sp: 32528
+    ram:
+    - address: 19942
+      value: 175
+    - address: 19943
+      value: 55
+    - address: 19944
+      value: 125
+  final:
+    registers:
+      a: 0
+      b: 132
+      c: 149
+      d: 135
+      e: 193
+      h: 128
+      l: 195
+      f: 128
+      pc: 19944
+      sp: 32528
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 19943
+    data: 55
+    mode: read
+- name: af 6c 59
+  initial:
+    registers:
+      a: 45
+      b: 203
+      c: 174
+      d: 6
+      e: 235
+      h: 234
+      l: 241
+      f: 208
+      pc: 61622
+      sp: 30936
+    ram:
+    - address: 61621
+      value: 175
+    - address: 61622
+      value: 108
+    - address: 61623
+      value: 89
+  final:
+    registers:
+      a: 0
+      b: 203
+      c: 174
+      d: 6
+      e: 235
+      h: 234
+      l: 241
+      f: 128
+      pc: 61623
+      sp: 30936
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 61622
+    data: 108
+    mode: read
+- name: af ab b2
+  initial:
+    registers:
+      a: 217
+      b: 236
+      c: 139
+      d: 68
+      e: 22
+      h: 214
+      l: 122
+      f: 32
+      pc: 16691
+      sp: 50723
+    ram:
+    - address: 16690
+      value: 175
+    - address: 16691
+      value: 171
+    - address: 16692
+      value: 178
+  final:
+    registers:
+      a: 0
+      b: 236
+      c: 139
+      d: 68
+      e: 22
+      h: 214
+      l: 122
+      f: 128
+      pc: 16692
+      sp: 50723
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 16691
+    data: 171
+    mode: read
+- name: af b6 b4
+  initial:
+    registers:
+      a: 109
+      b: 154
+      c: 207
+      d: 54
+      e: 249
+      h: 253
+      l: 197
+      f: 176
+      pc: 35084
+      sp: 48972
+    ram:
+    - address: 35083
+      value: 175
+    - address: 35084
+      value: 182
+    - address: 35085
+      value: 180
+  final:
+    registers:
+      a: 0
+      b: 154
+      c: 207
+      d: 54
+      e: 249
+      h: 253
+      l: 197
+      f: 128
+      pc: 35085
+      sp: 48972
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 35084
+    data: 182
+    mode: read
+- name: af 4e 3c
+  initial:
+    registers:
+      a: 138
+      b: 155
+      c: 191
+      d: 27
+      e: 160
+      h: 152
+      l: 239
+      f: 0
+      pc: 22646
+      sp: 34456
+    ram:
+    - address: 22645
+      value: 175
+    - address: 22646
+      value: 78
+    - address: 22647
+      value: 60
+  final:
+    registers:
+      a: 0
+      b: 155
+      c: 191
+      d: 27
+      e: 160
+      h: 152
+      l: 239
+      f: 128
+      pc: 22647
+      sp: 34456
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 22646
+    data: 78
+    mode: read
+- name: af bd 8f
+  initial:
+    registers:
+      a: 211
+      b: 205
+      c: 255
+      d: 30
+      e: 84
+      h: 59
+      l: 90
+      f: 48
+      pc: 29971
+      sp: 18538
+    ram:
+    - address: 29970
+      value: 175
+    - address: 29971
+      value: 189
+    - address: 29972
+      value: 143
+  final:
+    registers:
+      a: 0
+      b: 205
+      c: 255
+      d: 30
+      e: 84
+      h: 59
+      l: 90
+      f: 128
+      pc: 29972
+      sp: 18538
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 29971
+    data: 189
+    mode: read
+- name: af d9 51
+  initial:
+    registers:
+      a: 160
+      b: 39
+      c: 147
+      d: 123
+      e: 47
+      h: 183
+      l: 48
+      f: 208
+      pc: 13304
+      sp: 25440
+    ram:
+    - address: 13303
+      value: 175
+    - address: 13304
+      value: 217
+    - address: 13305
+      value: 81
+  final:
+    registers:
+      a: 0
+      b: 39
+      c: 147
+      d: 123
+      e: 47
+      h: 183
+      l: 48
+      f: 128
+      pc: 13305
+      sp: 25440
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 13304
+    data: 217
+    mode: read
+- name: af 5d 1d
+  initial:
+    registers:
+      a: 168
+      b: 229
+      c: 121
+      d: 134
+      e: 53
+      h: 20
+      l: 54
+      f: 192
+      pc: 39221
+      sp: 36847
+    ram:
+    - address: 39220
+      value: 175
+    - address: 39221
+      value: 93
+    - address: 39222
+      value: 29
+  final:
+    registers:
+      a: 0
+      b: 229
+      c: 121
+      d: 134
+      e: 53
+      h: 20
+      l: 54
+      f: 128
+      pc: 39222
+      sp: 36847
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 39221
+    data: 93
+    mode: read
+- name: af ae b4
+  initial:
+    registers:
+      a: 156
+      b: 99
+      c: 172
+      d: 85
+      e: 96
+      h: 38
+      l: 146
+      f: 240
+      pc: 31229
+      sp: 5384
+    ram:
+    - address: 31228
+      value: 175
+    - address: 31229
+      value: 174
+    - address: 31230
+      value: 180
+  final:
+    registers:
+      a: 0
+      b: 99
+      c: 172
+      d: 85
+      e: 96
+      h: 38
+      l: 146
+      f: 128
+      pc: 31230
+      sp: 5384
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 31229
+    data: 174
+    mode: read
+- name: af 10 68
+  initial:
+    registers:
+      a: 108
+      b: 172
+      c: 210
+      d: 154
+      e: 111
+      h: 88
+      l: 131
+      f: 112
+      pc: 39229
+      sp: 12156
+    ram:
+    - address: 39228
+      value: 175
+    - address: 39229
+      value: 16
+    - address: 39230
+      value: 104
+  final:
+    registers:
+      a: 0
+      b: 172
+      c: 210
+      d: 154
+      e: 111
+      h: 88
+      l: 131
+      f: 128
+      pc: 39230
+      sp: 12156
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 39229
+    data: 16
+    mode: read
+- name: af d6 27
+  initial:
+    registers:
+      a: 240
+      b: 38
+      c: 71
+      d: 239
+      e: 196
+      h: 118
+      l: 75
+      f: 0
+      pc: 55122
+      sp: 1104
+    ram:
+    - address: 55121
+      value: 175
+    - address: 55122
+      value: 214
+    - address: 55123
+      value: 39
+  final:
+    registers:
+      a: 0
+      b: 38
+      c: 71
+      d: 239
+      e: 196
+      h: 118
+      l: 75
+      f: 128
+      pc: 55123
+      sp: 1104
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 55122
+    data: 214
+    mode: read
+- name: af b4 25
+  initial:
+    registers:
+      a: 42
+      b: 9
+      c: 201
+      d: 97
+      e: 245
+      h: 149
+      l: 164
+      f: 128
+      pc: 16642
+      sp: 1202
+    ram:
+    - address: 16641
+      value: 175
+    - address: 16642
+      value: 180
+    - address: 16643
+      value: 37
+  final:
+    registers:
+      a: 0
+      b: 9
+      c: 201
+      d: 97
+      e: 245
+      h: 149
+      l: 164
+      f: 128
+      pc: 16643
+      sp: 1202
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 16642
+    data: 180
+    mode: read
+- name: af 74 05
+  initial:
+    registers:
+      a: 138
+      b: 39
+      c: 84
+      d: 242
+      e: 108
+      h: 116
+      l: 186
+      f: 224
+      pc: 35863
+      sp: 2208
+    ram:
+    - address: 35862
+      value: 175
+    - address: 35863
+      value: 116
+    - address: 35864
+      value: 5
+  final:
+    registers:
+      a: 0
+      b: 39
+      c: 84
+      d: 242
+      e: 108
+      h: 116
+      l: 186
+      f: 128
+      pc: 35864
+      sp: 2208
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 35863
+    data: 116
+    mode: read
+- name: af 7f e9
+  initial:
+    registers:
+      a: 164
+      b: 43
+      c: 96
+      d: 108
+      e: 33
+      h: 3
+      l: 204
+      f: 208
+      pc: 49679
+      sp: 2483
+    ram:
+    - address: 49678
+      value: 175
+    - address: 49679
+      value: 127
+    - address: 49680
+      value: 233
+  final:
+    registers:
+      a: 0
+      b: 43
+      c: 96
+      d: 108
+      e: 33
+      h: 3
+      l: 204
+      f: 128
+      pc: 49680
+      sp: 2483
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 49679
+    data: 127
+    mode: read
+- name: af 01 84
+  initial:
+    registers:
+      a: 210
+      b: 104
+      c: 82
+      d: 108
+      e: 211
+      h: 29
+      l: 130
+      f: 96
+      pc: 16151
+      sp: 59135
+    ram:
+    - address: 16150
+      value: 175
+    - address: 16151
+      value: 1
+    - address: 16152
+      value: 132
+  final:
+    registers:
+      a: 0
+      b: 104
+      c: 82
+      d: 108
+      e: 211
+      h: 29
+      l: 130
+      f: 128
+      pc: 16152
+      sp: 59135
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 16151
+    data: 1
+    mode: read
+- name: af 37 4b
+  initial:
+    registers:
+      a: 194
+      b: 244
+      c: 141
+      d: 48
+      e: 96
+      h: 186
+      l: 95
+      f: 16
+      pc: 22604
+      sp: 34097
+    ram:
+    - address: 22603
+      value: 175
+    - address: 22604
+      value: 55
+    - address: 22605
+      value: 75
+  final:
+    registers:
+      a: 0
+      b: 244
+      c: 141
+      d: 48
+      e: 96
+      h: 186
+      l: 95
+      f: 128
+      pc: 22605
+      sp: 34097
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 22604
+    data: 55
+    mode: read
+- name: af 35 b7
+  initial:
+    registers:
+      a: 54
+      b: 37
+      c: 202
+      d: 35
+      e: 68
+      h: 164
+      l: 12
+      f: 144
+      pc: 6260
+      sp: 19495
+    ram:
+    - address: 6259
+      value: 175
+    - address: 6260
+      value: 53
+    - address: 6261
+      value: 183
+  final:
+    registers:
+      a: 0
+      b: 37
+      c: 202
+      d: 35
+      e: 68
+      h: 164
+      l: 12
+      f: 128
+      pc: 6261
+      sp: 19495
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 6260
+    data: 53
+    mode: read
+- name: af ab bf
+  initial:
+    registers:
+      a: 97
+      b: 186
+      c: 80
+      d: 74
+      e: 88
+      h: 153
+      l: 9
+      f: 208
+      pc: 38006
+      sp: 31849
+    ram:
+    - address: 38005
+      value: 175
+    - address: 38006
+      value: 171
+    - address: 38007
+      value: 191
+  final:
+    registers:
+      a: 0
+      b: 186
+      c: 80
+      d: 74
+      e: 88
+      h: 153
+      l: 9
+      f: 128
+      pc: 38007
+      sp: 31849
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 38006
+    data: 171
+    mode: read
+- name: af a0 43
+  initial:
+    registers:
+      a: 208
+      b: 240
+      c: 46
+      d: 12
+      e: 243
+      h: 21
+      l: 167
+      f: 144
+      pc: 49466
+      sp: 36093
+    ram:
+    - address: 49465
+      value: 175
+    - address: 49466
+      value: 160
+    - address: 49467
+      value: 67
+  final:
+    registers:
+      a: 0
+      b: 240
+      c: 46
+      d: 12
+      e: 243
+      h: 21
+      l: 167
+      f: 128
+      pc: 49467
+      sp: 36093
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 49466
+    data: 160
+    mode: read
+- name: af dc d0
+  initial:
+    registers:
+      a: 179
+      b: 76
+      c: 213
+      d: 254
+      e: 201
+      h: 78
+      l: 136
+      f: 80
+      pc: 40912
+      sp: 57578
+    ram:
+    - address: 40911
+      value: 175
+    - address: 40912
+      value: 220
+    - address: 40913
+      value: 208
+  final:
+    registers:
+      a: 0
+      b: 76
+      c: 213
+      d: 254
+      e: 201
+      h: 78
+      l: 136
+      f: 128
+      pc: 40913
+      sp: 57578
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 40912
+    data: 220
+    mode: read
+- name: af 6a b7
+  initial:
+    registers:
+      a: 111
+      b: 188
+      c: 224
+      d: 107
+      e: 155
+      h: 248
+      l: 25
+      f: 48
+      pc: 44604
+      sp: 63333
+    ram:
+    - address: 44603
+      value: 175
+    - address: 44604
+      value: 106
+    - address: 44605
+      value: 183
+  final:
+    registers:
+      a: 0
+      b: 188
+      c: 224
+      d: 107
+      e: 155
+      h: 248
+      l: 25
+      f: 128
+      pc: 44605
+      sp: 63333
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 44604
+    data: 106
+    mode: read
+- name: af 94 03
+  initial:
+    registers:
+      a: 84
+      b: 16
+      c: 168
+      d: 144
+      e: 41
+      h: 131
+      l: 117
+      f: 96
+      pc: 49430
+      sp: 62331
+    ram:
+    - address: 49429
+      value: 175
+    - address: 49430
+      value: 148
+    - address: 49431
+      value: 3
+  final:
+    registers:
+      a: 0
+      b: 16
+      c: 168
+      d: 144
+      e: 41
+      h: 131
+      l: 117
+      f: 128
+      pc: 49431
+      sp: 62331
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 49430
+    data: 148
+    mode: read
+- name: af 51 87
+  initial:
+    registers:
+      a: 193
+      b: 61
+      c: 139
+      d: 158
+      e: 52
+      h: 162
+      l: 231
+      f: 48
+      pc: 48908
+      sp: 33619
+    ram:
+    - address: 48907
+      value: 175
+    - address: 48908
+      value: 81
+    - address: 48909
+      value: 135
+  final:
+    registers:
+      a: 0
+      b: 61
+      c: 139
+      d: 158
+      e: 52
+      h: 162
+      l: 231
+      f: 128
+      pc: 48909
+      sp: 33619
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 48908
+    data: 81
+    mode: read
+- name: af 65 cc
+  initial:
+    registers:
+      a: 63
+      b: 65
+      c: 34
+      d: 244
+      e: 71
+      h: 210
+      l: 81
+      f: 48
+      pc: 12654
+      sp: 41751
+    ram:
+    - address: 12653
+      value: 175
+    - address: 12654
+      value: 101
+    - address: 12655
+      value: 204
+  final:
+    registers:
+      a: 0
+      b: 65
+      c: 34
+      d: 244
+      e: 71
+      h: 210
+      l: 81
+      f: 128
+      pc: 12655
+      sp: 41751
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 12654
+    data: 101
+    mode: read
+- name: af 5c 65
+  initial:
+    registers:
+      a: 184
+      b: 103
+      c: 67
+      d: 245
+      e: 255
+      h: 136
+      l: 227
+      f: 64
+      pc: 62717
+      sp: 14471
+    ram:
+    - address: 62716
+      value: 175
+    - address: 62717
+      value: 92
+    - address: 62718
+      value: 101
+  final:
+    registers:
+      a: 0
+      b: 103
+      c: 67
+      d: 245
+      e: 255
+      h: 136
+      l: 227
+      f: 128
+      pc: 62718
+      sp: 14471
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 62717
+    data: 92
+    mode: read
+- name: af b7 c4
+  initial:
+    registers:
+      a: 88
+      b: 20
+      c: 103
+      d: 35
+      e: 8
+      h: 89
+      l: 236
+      f: 16
+      pc: 24712
+      sp: 54554
+    ram:
+    - address: 24711
+      value: 175
+    - address: 24712
+      value: 183
+    - address: 24713
+      value: 196
+  final:
+    registers:
+      a: 0
+      b: 20
+      c: 103
+      d: 35
+      e: 8
+      h: 89
+      l: 236
+      f: 128
+      pc: 24713
+      sp: 54554
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 24712
+    data: 183
+    mode: read
+- name: af c1 44
+  initial:
+    registers:
+      a: 43
+      b: 42
+      c: 91
+      d: 69
+      e: 170
+      h: 36
+      l: 162
+      f: 16
+      pc: 40364
+      sp: 38682
+    ram:
+    - address: 40363
+      value: 175
+    - address: 40364
+      value: 193
+    - address: 40365
+      value: 68
+  final:
+    registers:
+      a: 0
+      b: 42
+      c: 91
+      d: 69
+      e: 170
+      h: 36
+      l: 162
+      f: 128
+      pc: 40365
+      sp: 38682
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 40364
+    data: 193
+    mode: read
+- name: af 1f 6e
+  initial:
+    registers:
+      a: 166
+      b: 83
+      c: 58
+      d: 191
+      e: 234
+      h: 154
+      l: 247
+      f: 48
+      pc: 18027
+      sp: 59180
+    ram:
+    - address: 18026
+      value: 175
+    - address: 18027
+      value: 31
+    - address: 18028
+      value: 110
+  final:
+    registers:
+      a: 0
+      b: 83
+      c: 58
+      d: 191
+      e: 234
+      h: 154
+      l: 247
+      f: 128
+      pc: 18028
+      sp: 59180
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 18027
+    data: 31
+    mode: read
+- name: af 5b 5e
+  initial:
+    registers:
+      a: 20
+      b: 95
+      c: 199
+      d: 28
+      e: 141
+      h: 85
+      l: 229
+      f: 240
+      pc: 56280
+      sp: 33049
+    ram:
+    - address: 56279
+      value: 175
+    - address: 56280
+      value: 91
+    - address: 56281
+      value: 94
+  final:
+    registers:
+      a: 0
+      b: 95
+      c: 199
+      d: 28
+      e: 141
+      h: 85
+      l: 229
+      f: 128
+      pc: 56281
+      sp: 33049
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 56280
+    data: 91
+    mode: read
+- name: af d6 85
+  initial:
+    registers:
+      a: 178
+      b: 242
+      c: 67
+      d: 131
+      e: 159
+      h: 241
+      l: 27
+      f: 112
+      pc: 3202
+      sp: 63311
+    ram:
+    - address: 3201
+      value: 175
+    - address: 3202
+      value: 214
+    - address: 3203
+      value: 133
+  final:
+    registers:
+      a: 0
+      b: 242
+      c: 67
+      d: 131
+      e: 159
+      h: 241
+      l: 27
+      f: 128
+      pc: 3203
+      sp: 63311
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 3202
+    data: 214
+    mode: read
+- name: af 84 0e
+  initial:
+    registers:
+      a: 216
+      b: 196
+      c: 246
+      d: 68
+      e: 128
+      h: 255
+      l: 71
+      f: 112
+      pc: 42705
+      sp: 36912
+    ram:
+    - address: 42704
+      value: 175
+    - address: 42705
+      value: 132
+    - address: 42706
+      value: 14
+  final:
+    registers:
+      a: 0
+      b: 196
+      c: 246
+      d: 68
+      e: 128
+      h: 255
+      l: 71
+      f: 128
+      pc: 42706
+      sp: 36912
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 42705
+    data: 132
+    mode: read
+- name: af b9 56
+  initial:
+    registers:
+      a: 23
+      b: 195
+      c: 168
+      d: 228
+      e: 232
+      h: 203
+      l: 186
+      f: 16
+      pc: 57110
+      sp: 10130
+    ram:
+    - address: 57109
+      value: 175
+    - address: 57110
+      value: 185
+    - address: 57111
+      value: 86
+  final:
+    registers:
+      a: 0
+      b: 195
+      c: 168
+      d: 228
+      e: 232
+      h: 203
+      l: 186
+      f: 128
+      pc: 57111
+      sp: 10130
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 57110
+    data: 185
+    mode: read
+- name: af 20 e4
+  initial:
+    registers:
+      a: 57
+      b: 130
+      c: 27
+      d: 75
+      e: 28
+      h: 97
+      l: 196
+      f: 80
+      pc: 38600
+      sp: 42851
+    ram:
+    - address: 38599
+      value: 175
+    - address: 38600
+      value: 32
+    - address: 38601
+      value: 228
+  final:
+    registers:
+      a: 0
+      b: 130
+      c: 27
+      d: 75
+      e: 28
+      h: 97
+      l: 196
+      f: 128
+      pc: 38601
+      sp: 42851
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 38600
+    data: 32
+    mode: read
+- name: af cd 01
+  initial:
+    registers:
+      a: 244
+      b: 159
+      c: 231
+      d: 28
+      e: 139
+      h: 37
+      l: 134
+      f: 224
+      pc: 60816
+      sp: 53638
+    ram:
+    - address: 60815
+      value: 175
+    - address: 60816
+      value: 205
+    - address: 60817
+      value: 1
+  final:
+    registers:
+      a: 0
+      b: 159
+      c: 231
+      d: 28
+      e: 139
+      h: 37
+      l: 134
+      f: 128
+      pc: 60817
+      sp: 53638
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 60816
+    data: 205
+    mode: read
+- name: af 45 b4
+  initial:
+    registers:
+      a: 200
+      b: 83
+      c: 43
+      d: 207
+      e: 197
+      h: 220
+      l: 169
+      f: 160
+      pc: 59791
+      sp: 17367
+    ram:
+    - address: 59790
+      value: 175
+    - address: 59791
+      value: 69
+    - address: 59792
+      value: 180
+  final:
+    registers:
+      a: 0
+      b: 83
+      c: 43
+      d: 207
+      e: 197
+      h: 220
+      l: 169
+      f: 128
+      pc: 59792
+      sp: 17367
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 59791
+    data: 69
+    mode: read
+- name: af 25 f3
+  initial:
+    registers:
+      a: 128
+      b: 58
+      c: 150
+      d: 181
+      e: 239
+      h: 91
+      l: 79
+      f: 192
+      pc: 53126
+      sp: 4564
+    ram:
+    - address: 53125
+      value: 175
+    - address: 53126
+      value: 37
+    - address: 53127
+      value: 243
+  final:
+    registers:
+      a: 0
+      b: 58
+      c: 150
+      d: 181
+      e: 239
+      h: 91
+      l: 79
+      f: 128
+      pc: 53127
+      sp: 4564
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 53126
+    data: 37
+    mode: read
+- name: af 85 70
+  initial:
+    registers:
+      a: 38
+      b: 223
+      c: 60
+      d: 97
+      e: 64
+      h: 251
+      l: 15
+      f: 192
+      pc: 45051
+      sp: 22149
+    ram:
+    - address: 45050
+      value: 175
+    - address: 45051
+      value: 133
+    - address: 45052
+      value: 112
+  final:
+    registers:
+      a: 0
+      b: 223
+      c: 60
+      d: 97
+      e: 64
+      h: 251
+      l: 15
+      f: 128
+      pc: 45052
+      sp: 22149
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 45051
+    data: 133
+    mode: read
+- name: af d0 c5
+  initial:
+    registers:
+      a: 68
+      b: 231
+      c: 19
+      d: 232
+      e: 216
+      h: 67
+      l: 62
+      f: 224
+      pc: 54770
+      sp: 55711
+    ram:
+    - address: 54769
+      value: 175
+    - address: 54770
+      value: 208
+    - address: 54771
+      value: 197
+  final:
+    registers:
+      a: 0
+      b: 231
+      c: 19
+      d: 232
+      e: 216
+      h: 67
+      l: 62
+      f: 128
+      pc: 54771
+      sp: 55711
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 54770
+    data: 208
+    mode: read
+- name: af 63 6d
+  initial:
+    registers:
+      a: 26
+      b: 179
+      c: 119
+      d: 74
+      e: 67
+      h: 26
+      l: 6
+      f: 208
+      pc: 28106
+      sp: 21688
+    ram:
+    - address: 28105
+      value: 175
+    - address: 28106
+      value: 99
+    - address: 28107
+      value: 109
+  final:
+    registers:
+      a: 0
+      b: 179
+      c: 119
+      d: 74
+      e: 67
+      h: 26
+      l: 6
+      f: 128
+      pc: 28107
+      sp: 21688
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 28106
+    data: 99
+    mode: read
+- name: af 17 c9
+  initial:
+    registers:
+      a: 241
+      b: 60
+      c: 71
+      d: 243
+      e: 79
+      h: 45
+      l: 1
+      f: 48
+      pc: 24120
+      sp: 48864
+    ram:
+    - address: 24119
+      value: 175
+    - address: 24120
+      value: 23
+    - address: 24121
+      value: 201
+  final:
+    registers:
+      a: 0
+      b: 60
+      c: 71
+      d: 243
+      e: 79
+      h: 45
+      l: 1
+      f: 128
+      pc: 24121
+      sp: 48864
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 24120
+    data: 23
+    mode: read
+- name: af 25 92
+  initial:
+    registers:
+      a: 229
+      b: 6
+      c: 41
+      d: 208
+      e: 160
+      h: 236
+      l: 97
+      f: 48
+      pc: 43833
+      sp: 16383
+    ram:
+    - address: 43832
+      value: 175
+    - address: 43833
+      value: 37
+    - address: 43834
+      value: 146
+  final:
+    registers:
+      a: 0
+      b: 6
+      c: 41
+      d: 208
+      e: 160
+      h: 236
+      l: 97
+      f: 128
+      pc: 43834
+      sp: 16383
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 43833
+    data: 37
+    mode: read
+- name: af f7 ec
+  initial:
+    registers:
+      a: 207
+      b: 125
+      c: 11
+      d: 34
+      e: 168
+      h: 239
+      l: 245
+      f: 208
+      pc: 54344
+      sp: 40158
+    ram:
+    - address: 54343
+      value: 175
+    - address: 54344
+      value: 247
+    - address: 54345
+      value: 236
+  final:
+    registers:
+      a: 0
+      b: 125
+      c: 11
+      d: 34
+      e: 168
+      h: 239
+      l: 245
+      f: 128
+      pc: 54345
+      sp: 40158
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 54344
+    data: 247
+    mode: read
+- name: af be 26
+  initial:
+    registers:
+      a: 120
+      b: 122
+      c: 237
+      d: 89
+      e: 125
+      h: 76
+      l: 191
+      f: 64
+      pc: 30302
+      sp: 25881
+    ram:
+    - address: 30301
+      value: 175
+    - address: 30302
+      value: 190
+    - address: 30303
+      value: 38
+  final:
+    registers:
+      a: 0
+      b: 122
+      c: 237
+      d: 89
+      e: 125
+      h: 76
+      l: 191
+      f: 128
+      pc: 30303
+      sp: 25881
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 30302
+    data: 190
+    mode: read
+- name: af 82 ff
+  initial:
+    registers:
+      a: 142
+      b: 218
+      c: 27
+      d: 144
+      e: 66
+      h: 178
+      l: 155
+      f: 112
+      pc: 7255
+      sp: 16774
+    ram:
+    - address: 7254
+      value: 175
+    - address: 7255
+      value: 130
+    - address: 7256
+      value: 255
+  final:
+    registers:
+      a: 0
+      b: 218
+      c: 27
+      d: 144
+      e: 66
+      h: 178
+      l: 155
+      f: 128
+      pc: 7256
+      sp: 16774
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 7255
+    data: 130
+    mode: read
+- name: af e2 9d
+  initial:
+    registers:
+      a: 147
+      b: 62
+      c: 232
+      d: 30
+      e: 105
+      h: 48
+      l: 152
+      f: 0
+      pc: 23099
+      sp: 60101
+    ram:
+    - address: 23098
+      value: 175
+    - address: 23099
+      value: 226
+    - address: 23100
+      value: 157
+  final:
+    registers:
+      a: 0
+      b: 62
+      c: 232
+      d: 30
+      e: 105
+      h: 48
+      l: 152
+      f: 128
+      pc: 23100
+      sp: 60101
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 23099
+    data: 226
+    mode: read
+- name: af cb 89
+  initial:
+    registers:
+      a: 162
+      b: 121
+      c: 213
+      d: 168
+      e: 124
+      h: 233
+      l: 246
+      f: 16
+      pc: 18228
+      sp: 4896
+    ram:
+    - address: 18227
+      value: 175
+    - address: 18228
+      value: 203
+    - address: 18229
+      value: 137
+  final:
+    registers:
+      a: 0
+      b: 121
+      c: 213
+      d: 168
+      e: 124
+      h: 233
+      l: 246
+      f: 128
+      pc: 18229
+      sp: 4896
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 18228
+    data: 203
+    mode: read
+- name: af ce 9e
+  initial:
+    registers:
+      a: 62
+      b: 92
+      c: 118
+      d: 100
+      e: 156
+      h: 208
+      l: 81
+      f: 144
+      pc: 7962
+      sp: 4572
+    ram:
+    - address: 7961
+      value: 175
+    - address: 7962
+      value: 206
+    - address: 7963
+      value: 158
+  final:
+    registers:
+      a: 0
+      b: 92
+      c: 118
+      d: 100
+      e: 156
+      h: 208
+      l: 81
+      f: 128
+      pc: 7963
+      sp: 4572
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 7962
+    data: 206
+    mode: read
+- name: af 55 12
+  initial:
+    registers:
+      a: 87
+      b: 177
+      c: 51
+      d: 167
+      e: 126
+      h: 44
+      l: 53
+      f: 48
+      pc: 64831
+      sp: 63767
+    ram:
+    - address: 64830
+      value: 175
+    - address: 64831
+      value: 85
+    - address: 64832
+      value: 18
+  final:
+    registers:
+      a: 0
+      b: 177
+      c: 51
+      d: 167
+      e: 126
+      h: 44
+      l: 53
+      f: 128
+      pc: 64832
+      sp: 63767
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 64831
+    data: 85
+    mode: read
+- name: af 4d 43
+  initial:
+    registers:
+      a: 236
+      b: 62
+      c: 207
+      d: 22
+      e: 39
+      h: 24
+      l: 13
+      f: 32
+      pc: 14404
+      sp: 8473
+    ram:
+    - address: 14403
+      value: 175
+    - address: 14404
+      value: 77
+    - address: 14405
+      value: 67
+  final:
+    registers:
+      a: 0
+      b: 62
+      c: 207
+      d: 22
+      e: 39
+      h: 24
+      l: 13
+      f: 128
+      pc: 14405
+      sp: 8473
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 14404
+    data: 77
+    mode: read
+- name: af 1d c7
+  initial:
+    registers:
+      a: 229
+      b: 24
+      c: 250
+      d: 180
+      e: 131
+      h: 106
+      l: 48
+      f: 224
+      pc: 1433
+      sp: 56637
+    ram:
+    - address: 1432
+      value: 175
+    - address: 1433
+      value: 29
+    - address: 1434
+      value: 199
+  final:
+    registers:
+      a: 0
+      b: 24
+      c: 250
+      d: 180
+      e: 131
+      h: 106
+      l: 48
+      f: 128
+      pc: 1434
+      sp: 56637
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 1433
+    data: 29
+    mode: read
+- name: af db 13
+  initial:
+    registers:
+      a: 200
+      b: 28
+      c: 43
+      d: 31
+      e: 125
+      h: 110
+      l: 227
+      f: 32
+      pc: 13813
+      sp: 28999
+    ram:
+    - address: 13812
+      value: 175
+    - address: 13813
+      value: 219
+    - address: 13814
+      value: 19
+  final:
+    registers:
+      a: 0
+      b: 28
+      c: 43
+      d: 31
+      e: 125
+      h: 110
+      l: 227
+      f: 128
+      pc: 13814
+      sp: 28999
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 13813
+    data: 219
+    mode: read
+- name: af e2 cc
+  initial:
+    registers:
+      a: 180
+      b: 108
+      c: 41
+      d: 223
+      e: 184
+      h: 215
+      l: 186
+      f: 128
+      pc: 60168
+      sp: 25378
+    ram:
+    - address: 60167
+      value: 175
+    - address: 60168
+      value: 226
+    - address: 60169
+      value: 204
+  final:
+    registers:
+      a: 0
+      b: 108
+      c: 41
+      d: 223
+      e: 184
+      h: 215
+      l: 186
+      f: 128
+      pc: 60169
+      sp: 25378
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 60168
+    data: 226
+    mode: read
+- name: af a1 2f
+  initial:
+    registers:
+      a: 205
+      b: 145
+      c: 239
+      d: 59
+      e: 6
+      h: 57
+      l: 114
+      f: 80
+      pc: 10699
+      sp: 14994
+    ram:
+    - address: 10698
+      value: 175
+    - address: 10699
+      value: 161
+    - address: 10700
+      value: 47
+  final:
+    registers:
+      a: 0
+      b: 145
+      c: 239
+      d: 59
+      e: 6
+      h: 57
+      l: 114
+      f: 128
+      pc: 10700
+      sp: 14994
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 10699
+    data: 161
+    mode: read
+- name: af f3 ab
+  initial:
+    registers:
+      a: 212
+      b: 158
+      c: 176
+      d: 17
+      e: 89
+      h: 162
+      l: 253
+      f: 128
+      pc: 60996
+      sp: 51721
+    ram:
+    - address: 60995
+      value: 175
+    - address: 60996
+      value: 243
+    - address: 60997
+      value: 171
+  final:
+    registers:
+      a: 0
+      b: 158
+      c: 176
+      d: 17
+      e: 89
+      h: 162
+      l: 253
+      f: 128
+      pc: 60997
+      sp: 51721
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 60996
+    data: 243
+    mode: read
+- name: af fa f6
+  initial:
+    registers:
+      a: 127
+      b: 36
+      c: 99
+      d: 25
+      e: 172
+      h: 226
+      l: 119
+      f: 128
+      pc: 26612
+      sp: 14761
+    ram:
+    - address: 26611
+      value: 175
+    - address: 26612
+      value: 250
+    - address: 26613
+      value: 246
+  final:
+    registers:
+      a: 0
+      b: 36
+      c: 99
+      d: 25
+      e: 172
+      h: 226
+      l: 119
+      f: 128
+      pc: 26613
+      sp: 14761
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 26612
+    data: 250
+    mode: read
+- name: af c2 ee
+  initial:
+    registers:
+      a: 160
+      b: 131
+      c: 192
+      d: 243
+      e: 199
+      h: 110
+      l: 139
+      f: 208
+      pc: 43462
+      sp: 26441
+    ram:
+    - address: 43461
+      value: 175
+    - address: 43462
+      value: 194
+    - address: 43463
+      value: 238
+  final:
+    registers:
+      a: 0
+      b: 131
+      c: 192
+      d: 243
+      e: 199
+      h: 110
+      l: 139
+      f: 128
+      pc: 43463
+      sp: 26441
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 43462
+    data: 194
+    mode: read
+- name: af b2 31
+  initial:
+    registers:
+      a: 36
+      b: 85
+      c: 16
+      d: 22
+      e: 87
+      h: 139
+      l: 153
+      f: 224
+      pc: 53405
+      sp: 43938
+    ram:
+    - address: 53404
+      value: 175
+    - address: 53405
+      value: 178
+    - address: 53406
+      value: 49
+  final:
+    registers:
+      a: 0
+      b: 85
+      c: 16
+      d: 22
+      e: 87
+      h: 139
+      l: 153
+      f: 128
+      pc: 53406
+      sp: 43938
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 53405
+    data: 178
+    mode: read
+- name: af cd 8c
+  initial:
+    registers:
+      a: 174
+      b: 0
+      c: 69
+      d: 148
+      e: 29
+      h: 199
+      l: 214
+      f: 128
+      pc: 25075
+      sp: 19936
+    ram:
+    - address: 25074
+      value: 175
+    - address: 25075
+      value: 205
+    - address: 25076
+      value: 140
+  final:
+    registers:
+      a: 0
+      b: 0
+      c: 69
+      d: 148
+      e: 29
+      h: 199
+      l: 214
+      f: 128
+      pc: 25076
+      sp: 19936
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 25075
+    data: 205
+    mode: read
+- name: af ec bb
+  initial:
+    registers:
+      a: 76
+      b: 189
+      c: 232
+      d: 64
+      e: 24
+      h: 14
+      l: 54
+      f: 160
+      pc: 16163
+      sp: 39204
+    ram:
+    - address: 16162
+      value: 175
+    - address: 16163
+      value: 236
+    - address: 16164
+      value: 187
+  final:
+    registers:
+      a: 0
+      b: 189
+      c: 232
+      d: 64
+      e: 24
+      h: 14
+      l: 54
+      f: 128
+      pc: 16164
+      sp: 39204
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 16163
+    data: 236
+    mode: read
+- name: af a5 e2
+  initial:
+    registers:
+      a: 74
+      b: 194
+      c: 19
+      d: 65
+      e: 74
+      h: 88
+      l: 107
+      f: 112
+      pc: 14768
+      sp: 55993
+    ram:
+    - address: 14767
+      value: 175
+    - address: 14768
+      value: 165
+    - address: 14769
+      value: 226
+  final:
+    registers:
+      a: 0
+      b: 194
+      c: 19
+      d: 65
+      e: 74
+      h: 88
+      l: 107
+      f: 128
+      pc: 14769
+      sp: 55993
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 14768
+    data: 165
+    mode: read
+- name: af e6 2c
+  initial:
+    registers:
+      a: 194
+      b: 48
+      c: 236
+      d: 105
+      e: 249
+      h: 127
+      l: 138
+      f: 32
+      pc: 58030
+      sp: 43121
+    ram:
+    - address: 58029
+      value: 175
+    - address: 58030
+      value: 230
+    - address: 58031
+      value: 44
+  final:
+    registers:
+      a: 0
+      b: 48
+      c: 236
+      d: 105
+      e: 249
+      h: 127
+      l: 138
+      f: 128
+      pc: 58031
+      sp: 43121
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 58030
+    data: 230
+    mode: read
+- name: af c2 0c
+  initial:
+    registers:
+      a: 161
+      b: 248
+      c: 230
+      d: 41
+      e: 2
+      h: 98
+      l: 151
+      f: 16
+      pc: 15410
+      sp: 19878
+    ram:
+    - address: 15409
+      value: 175
+    - address: 15410
+      value: 194
+    - address: 15411
+      value: 12
+  final:
+    registers:
+      a: 0
+      b: 248
+      c: 230
+      d: 41
+      e: 2
+      h: 98
+      l: 151
+      f: 128
+      pc: 15411
+      sp: 19878
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 15410
+    data: 194
+    mode: read
+- name: af 68 c2
+  initial:
+    registers:
+      a: 248
+      b: 170
+      c: 148
+      d: 248
+      e: 88
+      h: 200
+      l: 208
+      f: 192
+      pc: 51769
+      sp: 20210
+    ram:
+    - address: 51768
+      value: 175
+    - address: 51769
+      value: 104
+    - address: 51770
+      value: 194
+  final:
+    registers:
+      a: 0
+      b: 170
+      c: 148
+      d: 248
+      e: 88
+      h: 200
+      l: 208
+      f: 128
+      pc: 51770
+      sp: 20210
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 51769
+    data: 104
+    mode: read
+- name: af 1c 3a
+  initial:
+    registers:
+      a: 142
+      b: 102
+      c: 165
+      d: 182
+      e: 182
+      h: 226
+      l: 174
+      f: 192
+      pc: 34315
+      sp: 42223
+    ram:
+    - address: 34314
+      value: 175
+    - address: 34315
+      value: 28
+    - address: 34316
+      value: 58
+  final:
+    registers:
+      a: 0
+      b: 102
+      c: 165
+      d: 182
+      e: 182
+      h: 226
+      l: 174
+      f: 128
+      pc: 34316
+      sp: 42223
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 34315
+    data: 28
+    mode: read
+- name: af f4 6f
+  initial:
+    registers:
+      a: 64
+      b: 33
+      c: 211
+      d: 172
+      e: 176
+      h: 122
+      l: 165
+      f: 176
+      pc: 44473
+      sp: 33871
+    ram:
+    - address: 44472
+      value: 175
+    - address: 44473
+      value: 244
+    - address: 44474
+      value: 111
+  final:
+    registers:
+      a: 0
+      b: 33
+      c: 211
+      d: 172
+      e: 176
+      h: 122
+      l: 165
+      f: 128
+      pc: 44474
+      sp: 33871
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 44473
+    data: 244
+    mode: read
+- name: af 01 7c
+  initial:
+    registers:
+      a: 156
+      b: 242
+      c: 61
+      d: 61
+      e: 106
+      h: 111
+      l: 117
+      f: 32
+      pc: 3741
+      sp: 47382
+    ram:
+    - address: 3740
+      value: 175
+    - address: 3741
+      value: 1
+    - address: 3742
+      value: 124
+  final:
+    registers:
+      a: 0
+      b: 242
+      c: 61
+      d: 61
+      e: 106
+      h: 111
+      l: 117
+      f: 128
+      pc: 3742
+      sp: 47382
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 3741
+    data: 1
+    mode: read
+- name: af 4e d1
+  initial:
+    registers:
+      a: 199
+      b: 243
+      c: 26
+      d: 55
+      e: 146
+      h: 81
+      l: 160
+      f: 240
+      pc: 16804
+      sp: 65103
+    ram:
+    - address: 16803
+      value: 175
+    - address: 16804
+      value: 78
+    - address: 16805
+      value: 209
+  final:
+    registers:
+      a: 0
+      b: 243
+      c: 26
+      d: 55
+      e: 146
+      h: 81
+      l: 160
+      f: 128
+      pc: 16805
+      sp: 65103
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 16804
+    data: 78
+    mode: read
+- name: af 59 46
+  initial:
+    registers:
+      a: 111
+      b: 82
+      c: 118
+      d: 19
+      e: 84
+      h: 97
+      l: 116
+      f: 16
+      pc: 59150
+      sp: 14777
+    ram:
+    - address: 59149
+      value: 175
+    - address: 59150
+      value: 89
+    - address: 59151
+      value: 70
+  final:
+    registers:
+      a: 0
+      b: 82
+      c: 118
+      d: 19
+      e: 84
+      h: 97
+      l: 116
+      f: 128
+      pc: 59151
+      sp: 14777
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 59150
+    data: 89
+    mode: read
+- name: af bd 5b
+  initial:
+    registers:
+      a: 175
+      b: 103
+      c: 99
+      d: 235
+      e: 199
+      h: 79
+      l: 138
+      f: 192
+      pc: 38724
+      sp: 55157
+    ram:
+    - address: 38723
+      value: 175
+    - address: 38724
+      value: 189
+    - address: 38725
+      value: 91
+  final:
+    registers:
+      a: 0
+      b: 103
+      c: 99
+      d: 235
+      e: 199
+      h: 79
+      l: 138
+      f: 128
+      pc: 38725
+      sp: 55157
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 38724
+    data: 189
+    mode: read
+- name: af 6e f8
+  initial:
+    registers:
+      a: 246
+      b: 41
+      c: 3
+      d: 56
+      e: 168
+      h: 10
+      l: 210
+      f: 16
+      pc: 34891
+      sp: 55101
+    ram:
+    - address: 34890
+      value: 175
+    - address: 34891
+      value: 110
+    - address: 34892
+      value: 248
+  final:
+    registers:
+      a: 0
+      b: 41
+      c: 3
+      d: 56
+      e: 168
+      h: 10
+      l: 210
+      f: 128
+      pc: 34892
+      sp: 55101
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 34891
+    data: 110
+    mode: read
+- name: af a3 f5
+  initial:
+    registers:
+      a: 252
+      b: 215
+      c: 195
+      d: 29
+      e: 139
+      h: 85
+      l: 33
+      f: 80
+      pc: 36739
+      sp: 6620
+    ram:
+    - address: 36738
+      value: 175
+    - address: 36739
+      value: 163
+    - address: 36740
+      value: 245
+  final:
+    registers:
+      a: 0
+      b: 215
+      c: 195
+      d: 29
+      e: 139
+      h: 85
+      l: 33
+      f: 128
+      pc: 36740
+      sp: 6620
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 36739
+    data: 163
+    mode: read
+- name: af ee ca
+  initial:
+    registers:
+      a: 10
+      b: 73
+      c: 221
+      d: 150
+      e: 177
+      h: 223
+      l: 38
+      f: 32
+      pc: 64988
+      sp: 11015
+    ram:
+    - address: 64987
+      value: 175
+    - address: 64988
+      value: 238
+    - address: 64989
+      value: 202
+  final:
+    registers:
+      a: 0
+      b: 73
+      c: 221
+      d: 150
+      e: 177
+      h: 223
+      l: 38
+      f: 128
+      pc: 64989
+      sp: 11015
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 64988
+    data: 238
+    mode: read
+- name: af 12 18
+  initial:
+    registers:
+      a: 233
+      b: 213
+      c: 38
+      d: 154
+      e: 7
+      h: 109
+      l: 25
+      f: 32
+      pc: 29835
+      sp: 1769
+    ram:
+    - address: 29834
+      value: 175
+    - address: 29835
+      value: 18
+    - address: 29836
+      value: 24
+  final:
+    registers:
+      a: 0
+      b: 213
+      c: 38
+      d: 154
+      e: 7
+      h: 109
+      l: 25
+      f: 128
+      pc: 29836
+      sp: 1769
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 29835
+    data: 18
+    mode: read
+- name: af 71 a7
+  initial:
+    registers:
+      a: 38
+      b: 211
+      c: 46
+      d: 250
+      e: 223
+      h: 108
+      l: 95
+      f: 96
+      pc: 1720
+      sp: 11935
+    ram:
+    - address: 1719
+      value: 175
+    - address: 1720
+      value: 113
+    - address: 1721
+      value: 167
+  final:
+    registers:
+      a: 0
+      b: 211
+      c: 46
+      d: 250
+      e: 223
+      h: 108
+      l: 95
+      f: 128
+      pc: 1721
+      sp: 11935
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 1720
+    data: 113
+    mode: read
+- name: af 6d ae
+  initial:
+    registers:
+      a: 137
+      b: 24
+      c: 138
+      d: 71
+      e: 125
+      h: 214
+      l: 211
+      f: 64
+      pc: 57831
+      sp: 59629
+    ram:
+    - address: 57830
+      value: 175
+    - address: 57831
+      value: 109
+    - address: 57832
+      value: 174
+  final:
+    registers:
+      a: 0
+      b: 24
+      c: 138
+      d: 71
+      e: 125
+      h: 214
+      l: 211
+      f: 128
+      pc: 57832
+      sp: 59629
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 57831
+    data: 109
+    mode: read
+- name: af 7c b7
+  initial:
+    registers:
+      a: 29
+      b: 131
+      c: 234
+      d: 212
+      e: 84
+      h: 136
+      l: 102
+      f: 240
+      pc: 44015
+      sp: 44043
+    ram:
+    - address: 44014
+      value: 175
+    - address: 44015
+      value: 124
+    - address: 44016
+      value: 183
+  final:
+    registers:
+      a: 0
+      b: 131
+      c: 234
+      d: 212
+      e: 84
+      h: 136
+      l: 102
+      f: 128
+      pc: 44016
+      sp: 44043
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 44015
+    data: 124
+    mode: read
+- name: af 45 a5
+  initial:
+    registers:
+      a: 61
+      b: 79
+      c: 69
+      d: 25
+      e: 18
+      h: 83
+      l: 62
+      f: 112
+      pc: 19176
+      sp: 52536
+    ram:
+    - address: 19175
+      value: 175
+    - address: 19176
+      value: 69
+    - address: 19177
+      value: 165
+  final:
+    registers:
+      a: 0
+      b: 79
+      c: 69
+      d: 25
+      e: 18
+      h: 83
+      l: 62
+      f: 128
+      pc: 19177
+      sp: 52536
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 19176
+    data: 69
+    mode: read
+- name: af b8 aa
+  initial:
+    registers:
+      a: 20
+      b: 131
+      c: 50
+      d: 145
+      e: 118
+      h: 23
+      l: 208
+      f: 160
+      pc: 57633
+      sp: 38641
+    ram:
+    - address: 57632
+      value: 175
+    - address: 57633
+      value: 184
+    - address: 57634
+      value: 170
+  final:
+    registers:
+      a: 0
+      b: 131
+      c: 50
+      d: 145
+      e: 118
+      h: 23
+      l: 208
+      f: 128
+      pc: 57634
+      sp: 38641
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 57633
+    data: 184
+    mode: read
+- name: af 0d 3f
+  initial:
+    registers:
+      a: 93
+      b: 196
+      c: 42
+      d: 115
+      e: 225
+      h: 39
+      l: 121
+      f: 176
+      pc: 16999
+      sp: 7296
+    ram:
+    - address: 16998
+      value: 175
+    - address: 16999
+      value: 13
+    - address: 17000
+      value: 63
+  final:
+    registers:
+      a: 0
+      b: 196
+      c: 42
+      d: 115
+      e: 225
+      h: 39
+      l: 121
+      f: 128
+      pc: 17000
+      sp: 7296
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 16999
+    data: 13
+    mode: read
+- name: af 27 12
+  initial:
+    registers:
+      a: 108
+      b: 60
+      c: 167
+      d: 129
+      e: 215
+      h: 63
+      l: 226
+      f: 208
+      pc: 5753
+      sp: 54518
+    ram:
+    - address: 5752
+      value: 175
+    - address: 5753
+      value: 39
+    - address: 5754
+      value: 18
+  final:
+    registers:
+      a: 0
+      b: 60
+      c: 167
+      d: 129
+      e: 215
+      h: 63
+      l: 226
+      f: 128
+      pc: 5754
+      sp: 54518
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 5753
+    data: 39
+    mode: read
+- name: af a3 65
+  initial:
+    registers:
+      a: 77
+      b: 91
+      c: 96
+      d: 15
+      e: 138
+      h: 129
+      l: 152
+      f: 224
+      pc: 7571
+      sp: 28192
+    ram:
+    - address: 7570
+      value: 175
+    - address: 7571
+      value: 163
+    - address: 7572
+      value: 101
+  final:
+    registers:
+      a: 0
+      b: 91
+      c: 96
+      d: 15
+      e: 138
+      h: 129
+      l: 152
+      f: 128
+      pc: 7572
+      sp: 28192
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 7571
+    data: 163
+    mode: read
+- name: af 0e e7
+  initial:
+    registers:
+      a: 24
+      b: 37
+      c: 57
+      d: 39
+      e: 226
+      h: 53
+      l: 37
+      f: 128
+      pc: 25594
+      sp: 33389
+    ram:
+    - address: 25593
+      value: 175
+    - address: 25594
+      value: 14
+    - address: 25595
+      value: 231
+  final:
+    registers:
+      a: 0
+      b: 37
+      c: 57
+      d: 39
+      e: 226
+      h: 53
+      l: 37
+      f: 128
+      pc: 25595
+      sp: 33389
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 25594
+    data: 14
+    mode: read
+- name: af 3e 6e
+  initial:
+    registers:
+      a: 245
+      b: 196
+      c: 1
+      d: 18
+      e: 109
+      h: 152
+      l: 69
+      f: 48
+      pc: 1232
+      sp: 17090
+    ram:
+    - address: 1231
+      value: 175
+    - address: 1232
+      value: 62
+    - address: 1233
+      value: 110
+  final:
+    registers:
+      a: 0
+      b: 196
+      c: 1
+      d: 18
+      e: 109
+      h: 152
+      l: 69
+      f: 128
+      pc: 1233
+      sp: 17090
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 1232
+    data: 62
+    mode: read
+- name: af f4 9a
+  initial:
+    registers:
+      a: 36
+      b: 146
+      c: 96
+      d: 148
+      e: 142
+      h: 35
+      l: 45
+      f: 176
+      pc: 39296
+      sp: 27686
+    ram:
+    - address: 39295
+      value: 175
+    - address: 39296
+      value: 244
+    - address: 39297
+      value: 154
+  final:
+    registers:
+      a: 0
+      b: 146
+      c: 96
+      d: 148
+      e: 142
+      h: 35
+      l: 45
+      f: 128
+      pc: 39297
+      sp: 27686
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 39296
+    data: 244
+    mode: read
+- name: af 1b 0d
+  initial:
+    registers:
+      a: 125
+      b: 53
+      c: 229
+      d: 119
+      e: 56
+      h: 157
+      l: 143
+      f: 0
+      pc: 64457
+      sp: 65197
+    ram:
+    - address: 64456
+      value: 175
+    - address: 64457
+      value: 27
+    - address: 64458
+      value: 13
+  final:
+    registers:
+      a: 0
+      b: 53
+      c: 229
+      d: 119
+      e: 56
+      h: 157
+      l: 143
+      f: 128
+      pc: 64458
+      sp: 65197
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - address: 64457
+    data: 27
+    mode: read

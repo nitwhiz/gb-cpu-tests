@@ -1,0 +1,5802 @@
+canonicalName: RST $08
+tests:
+- name: cf 22 11
+  initial:
+    registers:
+      a: 127
+      b: 178
+      c: 123
+      d: 148
+      e: 22
+      h: 208
+      l: 29
+      f: 0
+      pc: 31505
+      sp: 40276
+    ram:
+    - address: 8
+      value: 19
+    - address: 31504
+      value: 207
+    - address: 31505
+      value: 34
+    - address: 31506
+      value: 17
+  final:
+    registers:
+      a: 127
+      b: 178
+      c: 123
+      d: 148
+      e: 22
+      h: 208
+      l: 29
+      f: 0
+      pc: 9
+      sp: 40274
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 40275
+    data: 123
+    mode: write
+  - address: 40274
+    data: 17
+    mode: write
+  - address: 8
+    data: 19
+    mode: read
+- name: cf 10 a1
+  initial:
+    registers:
+      a: 85
+      b: 5
+      c: 251
+      d: 226
+      e: 112
+      h: 86
+      l: 4
+      f: 208
+      pc: 39247
+      sp: 64240
+    ram:
+    - address: 8
+      value: 92
+    - address: 39246
+      value: 207
+    - address: 39247
+      value: 16
+    - address: 39248
+      value: 161
+  final:
+    registers:
+      a: 85
+      b: 5
+      c: 251
+      d: 226
+      e: 112
+      h: 86
+      l: 4
+      f: 208
+      pc: 9
+      sp: 64238
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 64239
+    data: 153
+    mode: write
+  - address: 64238
+    data: 79
+    mode: write
+  - address: 8
+    data: 92
+    mode: read
+- name: cf 68 84
+  initial:
+    registers:
+      a: 115
+      b: 97
+      c: 251
+      d: 215
+      e: 205
+      h: 112
+      l: 143
+      f: 16
+      pc: 40322
+      sp: 42645
+    ram:
+    - address: 8
+      value: 4
+    - address: 40321
+      value: 207
+    - address: 40322
+      value: 104
+    - address: 40323
+      value: 132
+  final:
+    registers:
+      a: 115
+      b: 97
+      c: 251
+      d: 215
+      e: 205
+      h: 112
+      l: 143
+      f: 16
+      pc: 9
+      sp: 42643
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 42644
+    data: 157
+    mode: write
+  - address: 42643
+    data: 130
+    mode: write
+  - address: 8
+    data: 4
+    mode: read
+- name: cf ee 50
+  initial:
+    registers:
+      a: 61
+      b: 29
+      c: 11
+      d: 251
+      e: 67
+      h: 44
+      l: 254
+      f: 224
+      pc: 18365
+      sp: 42736
+    ram:
+    - address: 8
+      value: 149
+    - address: 18364
+      value: 207
+    - address: 18365
+      value: 238
+    - address: 18366
+      value: 80
+  final:
+    registers:
+      a: 61
+      b: 29
+      c: 11
+      d: 251
+      e: 67
+      h: 44
+      l: 254
+      f: 224
+      pc: 9
+      sp: 42734
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 42735
+    data: 71
+    mode: write
+  - address: 42734
+    data: 189
+    mode: write
+  - address: 8
+    data: 149
+    mode: read
+- name: cf 24 63
+  initial:
+    registers:
+      a: 108
+      b: 54
+      c: 77
+      d: 113
+      e: 96
+      h: 203
+      l: 13
+      f: 208
+      pc: 14909
+      sp: 22206
+    ram:
+    - address: 8
+      value: 75
+    - address: 14908
+      value: 207
+    - address: 14909
+      value: 36
+    - address: 14910
+      value: 99
+  final:
+    registers:
+      a: 108
+      b: 54
+      c: 77
+      d: 113
+      e: 96
+      h: 203
+      l: 13
+      f: 208
+      pc: 9
+      sp: 22204
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 22205
+    data: 58
+    mode: write
+  - address: 22204
+    data: 61
+    mode: write
+  - address: 8
+    data: 75
+    mode: read
+- name: cf e8 8e
+  initial:
+    registers:
+      a: 98
+      b: 122
+      c: 36
+      d: 77
+      e: 206
+      h: 253
+      l: 124
+      f: 96
+      pc: 60987
+      sp: 24178
+    ram:
+    - address: 8
+      value: 43
+    - address: 60986
+      value: 207
+    - address: 60987
+      value: 232
+    - address: 60988
+      value: 142
+  final:
+    registers:
+      a: 98
+      b: 122
+      c: 36
+      d: 77
+      e: 206
+      h: 253
+      l: 124
+      f: 96
+      pc: 9
+      sp: 24176
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 24177
+    data: 238
+    mode: write
+  - address: 24176
+    data: 59
+    mode: write
+  - address: 8
+    data: 43
+    mode: read
+- name: cf 60 08
+  initial:
+    registers:
+      a: 2
+      b: 17
+      c: 135
+      d: 238
+      e: 54
+      h: 150
+      l: 104
+      f: 208
+      pc: 32639
+      sp: 33284
+    ram:
+    - address: 8
+      value: 185
+    - address: 32638
+      value: 207
+    - address: 32639
+      value: 96
+    - address: 32640
+      value: 8
+  final:
+    registers:
+      a: 2
+      b: 17
+      c: 135
+      d: 238
+      e: 54
+      h: 150
+      l: 104
+      f: 208
+      pc: 9
+      sp: 33282
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 33283
+    data: 127
+    mode: write
+  - address: 33282
+    data: 127
+    mode: write
+  - address: 8
+    data: 185
+    mode: read
+- name: cf c8 6f
+  initial:
+    registers:
+      a: 229
+      b: 83
+      c: 124
+      d: 187
+      e: 169
+      h: 222
+      l: 202
+      f: 160
+      pc: 29105
+      sp: 12574
+    ram:
+    - address: 8
+      value: 196
+    - address: 29104
+      value: 207
+    - address: 29105
+      value: 200
+    - address: 29106
+      value: 111
+  final:
+    registers:
+      a: 229
+      b: 83
+      c: 124
+      d: 187
+      e: 169
+      h: 222
+      l: 202
+      f: 160
+      pc: 9
+      sp: 12572
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 12573
+    data: 113
+    mode: write
+  - address: 12572
+    data: 177
+    mode: write
+  - address: 8
+    data: 196
+    mode: read
+- name: cf 52 63
+  initial:
+    registers:
+      a: 253
+      b: 123
+      c: 9
+      d: 25
+      e: 196
+      h: 88
+      l: 45
+      f: 144
+      pc: 28570
+      sp: 10977
+    ram:
+    - address: 8
+      value: 81
+    - address: 28569
+      value: 207
+    - address: 28570
+      value: 82
+    - address: 28571
+      value: 99
+  final:
+    registers:
+      a: 253
+      b: 123
+      c: 9
+      d: 25
+      e: 196
+      h: 88
+      l: 45
+      f: 144
+      pc: 9
+      sp: 10975
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 10976
+    data: 111
+    mode: write
+  - address: 10975
+    data: 154
+    mode: write
+  - address: 8
+    data: 81
+    mode: read
+- name: cf 0a ab
+  initial:
+    registers:
+      a: 236
+      b: 94
+      c: 92
+      d: 112
+      e: 152
+      h: 4
+      l: 178
+      f: 192
+      pc: 39983
+      sp: 26723
+    ram:
+    - address: 8
+      value: 195
+    - address: 39982
+      value: 207
+    - address: 39983
+      value: 10
+    - address: 39984
+      value: 171
+  final:
+    registers:
+      a: 236
+      b: 94
+      c: 92
+      d: 112
+      e: 152
+      h: 4
+      l: 178
+      f: 192
+      pc: 9
+      sp: 26721
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 26722
+    data: 156
+    mode: write
+  - address: 26721
+    data: 47
+    mode: write
+  - address: 8
+    data: 195
+    mode: read
+- name: cf 59 b1
+  initial:
+    registers:
+      a: 89
+      b: 67
+      c: 140
+      d: 70
+      e: 53
+      h: 81
+      l: 90
+      f: 0
+      pc: 49016
+      sp: 39547
+    ram:
+    - address: 8
+      value: 204
+    - address: 49015
+      value: 207
+    - address: 49016
+      value: 89
+    - address: 49017
+      value: 177
+  final:
+    registers:
+      a: 89
+      b: 67
+      c: 140
+      d: 70
+      e: 53
+      h: 81
+      l: 90
+      f: 0
+      pc: 9
+      sp: 39545
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 39546
+    data: 191
+    mode: write
+  - address: 39545
+    data: 120
+    mode: write
+  - address: 8
+    data: 204
+    mode: read
+- name: cf 7d c9
+  initial:
+    registers:
+      a: 215
+      b: 97
+      c: 168
+      d: 172
+      e: 116
+      h: 55
+      l: 82
+      f: 32
+      pc: 38475
+      sp: 789
+    ram:
+    - address: 8
+      value: 253
+    - address: 38474
+      value: 207
+    - address: 38475
+      value: 125
+    - address: 38476
+      value: 201
+  final:
+    registers:
+      a: 215
+      b: 97
+      c: 168
+      d: 172
+      e: 116
+      h: 55
+      l: 82
+      f: 32
+      pc: 9
+      sp: 787
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 788
+    data: 150
+    mode: write
+  - address: 787
+    data: 75
+    mode: write
+  - address: 8
+    data: 253
+    mode: read
+- name: cf 46 7c
+  initial:
+    registers:
+      a: 53
+      b: 27
+      c: 89
+      d: 60
+      e: 194
+      h: 146
+      l: 145
+      f: 16
+      pc: 65405
+      sp: 42831
+    ram:
+    - address: 8
+      value: 149
+    - address: 65404
+      value: 207
+    - address: 65405
+      value: 70
+    - address: 65406
+      value: 124
+  final:
+    registers:
+      a: 53
+      b: 27
+      c: 89
+      d: 60
+      e: 194
+      h: 146
+      l: 145
+      f: 16
+      pc: 9
+      sp: 42829
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 42830
+    data: 255
+    mode: write
+  - address: 42829
+    data: 125
+    mode: write
+  - address: 8
+    data: 149
+    mode: read
+- name: cf 95 62
+  initial:
+    registers:
+      a: 203
+      b: 31
+      c: 31
+      d: 136
+      e: 228
+      h: 98
+      l: 100
+      f: 48
+      pc: 13302
+      sp: 61568
+    ram:
+    - address: 8
+      value: 190
+    - address: 13301
+      value: 207
+    - address: 13302
+      value: 149
+    - address: 13303
+      value: 98
+  final:
+    registers:
+      a: 203
+      b: 31
+      c: 31
+      d: 136
+      e: 228
+      h: 98
+      l: 100
+      f: 48
+      pc: 9
+      sp: 61566
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 61567
+    data: 51
+    mode: write
+  - address: 61566
+    data: 246
+    mode: write
+  - address: 8
+    data: 190
+    mode: read
+- name: cf cd ce
+  initial:
+    registers:
+      a: 222
+      b: 100
+      c: 189
+      d: 140
+      e: 15
+      h: 94
+      l: 170
+      f: 112
+      pc: 35312
+      sp: 10340
+    ram:
+    - address: 8
+      value: 166
+    - address: 35311
+      value: 207
+    - address: 35312
+      value: 205
+    - address: 35313
+      value: 206
+  final:
+    registers:
+      a: 222
+      b: 100
+      c: 189
+      d: 140
+      e: 15
+      h: 94
+      l: 170
+      f: 112
+      pc: 9
+      sp: 10338
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 10339
+    data: 137
+    mode: write
+  - address: 10338
+    data: 240
+    mode: write
+  - address: 8
+    data: 166
+    mode: read
+- name: cf 9f 03
+  initial:
+    registers:
+      a: 136
+      b: 185
+      c: 203
+      d: 56
+      e: 179
+      h: 97
+      l: 61
+      f: 208
+      pc: 52844
+      sp: 15760
+    ram:
+    - address: 8
+      value: 136
+    - address: 52843
+      value: 207
+    - address: 52844
+      value: 159
+    - address: 52845
+      value: 3
+  final:
+    registers:
+      a: 136
+      b: 185
+      c: 203
+      d: 56
+      e: 179
+      h: 97
+      l: 61
+      f: 208
+      pc: 9
+      sp: 15758
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 15759
+    data: 206
+    mode: write
+  - address: 15758
+    data: 108
+    mode: write
+  - address: 8
+    data: 136
+    mode: read
+- name: cf fe a7
+  initial:
+    registers:
+      a: 34
+      b: 178
+      c: 235
+      d: 39
+      e: 45
+      h: 151
+      l: 39
+      f: 64
+      pc: 59933
+      sp: 52056
+    ram:
+    - address: 8
+      value: 142
+    - address: 59932
+      value: 207
+    - address: 59933
+      value: 254
+    - address: 59934
+      value: 167
+  final:
+    registers:
+      a: 34
+      b: 178
+      c: 235
+      d: 39
+      e: 45
+      h: 151
+      l: 39
+      f: 64
+      pc: 9
+      sp: 52054
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 52055
+    data: 234
+    mode: write
+  - address: 52054
+    data: 29
+    mode: write
+  - address: 8
+    data: 142
+    mode: read
+- name: cf f6 3a
+  initial:
+    registers:
+      a: 5
+      b: 43
+      c: 181
+      d: 39
+      e: 230
+      h: 40
+      l: 187
+      f: 64
+      pc: 63881
+      sp: 9087
+    ram:
+    - address: 8
+      value: 11
+    - address: 63880
+      value: 207
+    - address: 63881
+      value: 246
+    - address: 63882
+      value: 58
+  final:
+    registers:
+      a: 5
+      b: 43
+      c: 181
+      d: 39
+      e: 230
+      h: 40
+      l: 187
+      f: 64
+      pc: 9
+      sp: 9085
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 9086
+    data: 249
+    mode: write
+  - address: 9085
+    data: 137
+    mode: write
+  - address: 8
+    data: 11
+    mode: read
+- name: cf bb ca
+  initial:
+    registers:
+      a: 186
+      b: 106
+      c: 251
+      d: 83
+      e: 202
+      h: 120
+      l: 14
+      f: 176
+      pc: 55472
+      sp: 31100
+    ram:
+    - address: 8
+      value: 59
+    - address: 55471
+      value: 207
+    - address: 55472
+      value: 187
+    - address: 55473
+      value: 202
+  final:
+    registers:
+      a: 186
+      b: 106
+      c: 251
+      d: 83
+      e: 202
+      h: 120
+      l: 14
+      f: 176
+      pc: 9
+      sp: 31098
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 31099
+    data: 216
+    mode: write
+  - address: 31098
+    data: 176
+    mode: write
+  - address: 8
+    data: 59
+    mode: read
+- name: cf c1 88
+  initial:
+    registers:
+      a: 32
+      b: 118
+      c: 126
+      d: 214
+      e: 170
+      h: 230
+      l: 230
+      f: 208
+      pc: 37492
+      sp: 6412
+    ram:
+    - address: 8
+      value: 250
+    - address: 37491
+      value: 207
+    - address: 37492
+      value: 193
+    - address: 37493
+      value: 136
+  final:
+    registers:
+      a: 32
+      b: 118
+      c: 126
+      d: 214
+      e: 170
+      h: 230
+      l: 230
+      f: 208
+      pc: 9
+      sp: 6410
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 6411
+    data: 146
+    mode: write
+  - address: 6410
+    data: 116
+    mode: write
+  - address: 8
+    data: 250
+    mode: read
+- name: cf 8a 3f
+  initial:
+    registers:
+      a: 253
+      b: 47
+      c: 86
+      d: 19
+      e: 33
+      h: 62
+      l: 196
+      f: 144
+      pc: 42416
+      sp: 64985
+    ram:
+    - address: 8
+      value: 58
+    - address: 42415
+      value: 207
+    - address: 42416
+      value: 138
+    - address: 42417
+      value: 63
+  final:
+    registers:
+      a: 253
+      b: 47
+      c: 86
+      d: 19
+      e: 33
+      h: 62
+      l: 196
+      f: 144
+      pc: 9
+      sp: 64983
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 64984
+    data: 165
+    mode: write
+  - address: 64983
+    data: 176
+    mode: write
+  - address: 8
+    data: 58
+    mode: read
+- name: cf 88 60
+  initial:
+    registers:
+      a: 209
+      b: 109
+      c: 4
+      d: 247
+      e: 184
+      h: 118
+      l: 191
+      f: 160
+      pc: 10872
+      sp: 45968
+    ram:
+    - address: 8
+      value: 177
+    - address: 10871
+      value: 207
+    - address: 10872
+      value: 136
+    - address: 10873
+      value: 96
+  final:
+    registers:
+      a: 209
+      b: 109
+      c: 4
+      d: 247
+      e: 184
+      h: 118
+      l: 191
+      f: 160
+      pc: 9
+      sp: 45966
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 45967
+    data: 42
+    mode: write
+  - address: 45966
+    data: 120
+    mode: write
+  - address: 8
+    data: 177
+    mode: read
+- name: cf 58 01
+  initial:
+    registers:
+      a: 230
+      b: 112
+      c: 172
+      d: 33
+      e: 179
+      h: 81
+      l: 171
+      f: 96
+      pc: 10269
+      sp: 49834
+    ram:
+    - address: 8
+      value: 66
+    - address: 10268
+      value: 207
+    - address: 10269
+      value: 88
+    - address: 10270
+      value: 1
+  final:
+    registers:
+      a: 230
+      b: 112
+      c: 172
+      d: 33
+      e: 179
+      h: 81
+      l: 171
+      f: 96
+      pc: 9
+      sp: 49832
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 49833
+    data: 40
+    mode: write
+  - address: 49832
+    data: 29
+    mode: write
+  - address: 8
+    data: 66
+    mode: read
+- name: cf 2a cf
+  initial:
+    registers:
+      a: 11
+      b: 52
+      c: 30
+      d: 177
+      e: 231
+      h: 131
+      l: 192
+      f: 224
+      pc: 52855
+      sp: 25636
+    ram:
+    - address: 8
+      value: 240
+    - address: 52854
+      value: 207
+    - address: 52855
+      value: 42
+    - address: 52856
+      value: 207
+  final:
+    registers:
+      a: 11
+      b: 52
+      c: 30
+      d: 177
+      e: 231
+      h: 131
+      l: 192
+      f: 224
+      pc: 9
+      sp: 25634
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 25635
+    data: 206
+    mode: write
+  - address: 25634
+    data: 119
+    mode: write
+  - address: 8
+    data: 240
+    mode: read
+- name: cf 42 60
+  initial:
+    registers:
+      a: 115
+      b: 165
+      c: 93
+      d: 45
+      e: 206
+      h: 71
+      l: 20
+      f: 144
+      pc: 49401
+      sp: 21898
+    ram:
+    - address: 8
+      value: 216
+    - address: 49400
+      value: 207
+    - address: 49401
+      value: 66
+    - address: 49402
+      value: 96
+  final:
+    registers:
+      a: 115
+      b: 165
+      c: 93
+      d: 45
+      e: 206
+      h: 71
+      l: 20
+      f: 144
+      pc: 9
+      sp: 21896
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 21897
+    data: 192
+    mode: write
+  - address: 21896
+    data: 249
+    mode: write
+  - address: 8
+    data: 216
+    mode: read
+- name: cf 13 67
+  initial:
+    registers:
+      a: 162
+      b: 60
+      c: 144
+      d: 254
+      e: 74
+      h: 42
+      l: 120
+      f: 16
+      pc: 34053
+      sp: 9218
+    ram:
+    - address: 8
+      value: 85
+    - address: 34052
+      value: 207
+    - address: 34053
+      value: 19
+    - address: 34054
+      value: 103
+  final:
+    registers:
+      a: 162
+      b: 60
+      c: 144
+      d: 254
+      e: 74
+      h: 42
+      l: 120
+      f: 16
+      pc: 9
+      sp: 9216
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 9217
+    data: 133
+    mode: write
+  - address: 9216
+    data: 5
+    mode: write
+  - address: 8
+    data: 85
+    mode: read
+- name: cf b4 b4
+  initial:
+    registers:
+      a: 8
+      b: 2
+      c: 157
+      d: 152
+      e: 68
+      h: 62
+      l: 146
+      f: 112
+      pc: 29444
+      sp: 61964
+    ram:
+    - address: 8
+      value: 202
+    - address: 29443
+      value: 207
+    - address: 29444
+      value: 180
+    - address: 29445
+      value: 180
+  final:
+    registers:
+      a: 8
+      b: 2
+      c: 157
+      d: 152
+      e: 68
+      h: 62
+      l: 146
+      f: 112
+      pc: 9
+      sp: 61962
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 61963
+    data: 115
+    mode: write
+  - address: 61962
+    data: 4
+    mode: write
+  - address: 8
+    data: 202
+    mode: read
+- name: cf b0 30
+  initial:
+    registers:
+      a: 42
+      b: 142
+      c: 116
+      d: 181
+      e: 1
+      h: 88
+      l: 90
+      f: 160
+      pc: 6843
+      sp: 36112
+    ram:
+    - address: 8
+      value: 1
+    - address: 6842
+      value: 207
+    - address: 6843
+      value: 176
+    - address: 6844
+      value: 48
+  final:
+    registers:
+      a: 42
+      b: 142
+      c: 116
+      d: 181
+      e: 1
+      h: 88
+      l: 90
+      f: 160
+      pc: 9
+      sp: 36110
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 36111
+    data: 26
+    mode: write
+  - address: 36110
+    data: 187
+    mode: write
+  - address: 8
+    data: 1
+    mode: read
+- name: cf 42 19
+  initial:
+    registers:
+      a: 88
+      b: 226
+      c: 229
+      d: 44
+      e: 86
+      h: 104
+      l: 213
+      f: 96
+      pc: 20351
+      sp: 115
+    ram:
+    - address: 8
+      value: 90
+    - address: 20350
+      value: 207
+    - address: 20351
+      value: 66
+    - address: 20352
+      value: 25
+  final:
+    registers:
+      a: 88
+      b: 226
+      c: 229
+      d: 44
+      e: 86
+      h: 104
+      l: 213
+      f: 96
+      pc: 9
+      sp: 113
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 114
+    data: 79
+    mode: write
+  - address: 113
+    data: 127
+    mode: write
+  - address: 8
+    data: 90
+    mode: read
+- name: cf f7 00
+  initial:
+    registers:
+      a: 104
+      b: 26
+      c: 71
+      d: 9
+      e: 235
+      h: 38
+      l: 74
+      f: 32
+      pc: 49499
+      sp: 62499
+    ram:
+    - address: 8
+      value: 47
+    - address: 49498
+      value: 207
+    - address: 49499
+      value: 247
+    - address: 49500
+      value: 0
+  final:
+    registers:
+      a: 104
+      b: 26
+      c: 71
+      d: 9
+      e: 235
+      h: 38
+      l: 74
+      f: 32
+      pc: 9
+      sp: 62497
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 62498
+    data: 193
+    mode: write
+  - address: 62497
+    data: 91
+    mode: write
+  - address: 8
+    data: 47
+    mode: read
+- name: cf 38 e5
+  initial:
+    registers:
+      a: 178
+      b: 81
+      c: 8
+      d: 199
+      e: 181
+      h: 12
+      l: 186
+      f: 144
+      pc: 51669
+      sp: 23513
+    ram:
+    - address: 8
+      value: 199
+    - address: 51668
+      value: 207
+    - address: 51669
+      value: 56
+    - address: 51670
+      value: 229
+  final:
+    registers:
+      a: 178
+      b: 81
+      c: 8
+      d: 199
+      e: 181
+      h: 12
+      l: 186
+      f: 144
+      pc: 9
+      sp: 23511
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 23512
+    data: 201
+    mode: write
+  - address: 23511
+    data: 213
+    mode: write
+  - address: 8
+    data: 199
+    mode: read
+- name: cf 84 af
+  initial:
+    registers:
+      a: 189
+      b: 64
+      c: 227
+      d: 144
+      e: 82
+      h: 233
+      l: 104
+      f: 240
+      pc: 50724
+      sp: 38642
+    ram:
+    - address: 8
+      value: 242
+    - address: 50723
+      value: 207
+    - address: 50724
+      value: 132
+    - address: 50725
+      value: 175
+  final:
+    registers:
+      a: 189
+      b: 64
+      c: 227
+      d: 144
+      e: 82
+      h: 233
+      l: 104
+      f: 240
+      pc: 9
+      sp: 38640
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 38641
+    data: 198
+    mode: write
+  - address: 38640
+    data: 36
+    mode: write
+  - address: 8
+    data: 242
+    mode: read
+- name: cf 8f 78
+  initial:
+    registers:
+      a: 232
+      b: 141
+      c: 87
+      d: 213
+      e: 193
+      h: 4
+      l: 42
+      f: 48
+      pc: 39710
+      sp: 37168
+    ram:
+    - address: 8
+      value: 93
+    - address: 39709
+      value: 207
+    - address: 39710
+      value: 143
+    - address: 39711
+      value: 120
+  final:
+    registers:
+      a: 232
+      b: 141
+      c: 87
+      d: 213
+      e: 193
+      h: 4
+      l: 42
+      f: 48
+      pc: 9
+      sp: 37166
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 37167
+    data: 155
+    mode: write
+  - address: 37166
+    data: 30
+    mode: write
+  - address: 8
+    data: 93
+    mode: read
+- name: cf c7 1b
+  initial:
+    registers:
+      a: 25
+      b: 127
+      c: 54
+      d: 187
+      e: 214
+      h: 80
+      l: 46
+      f: 48
+      pc: 564
+      sp: 25301
+    ram:
+    - address: 8
+      value: 22
+    - address: 563
+      value: 207
+    - address: 564
+      value: 199
+    - address: 565
+      value: 27
+  final:
+    registers:
+      a: 25
+      b: 127
+      c: 54
+      d: 187
+      e: 214
+      h: 80
+      l: 46
+      f: 48
+      pc: 9
+      sp: 25299
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 25300
+    data: 2
+    mode: write
+  - address: 25299
+    data: 52
+    mode: write
+  - address: 8
+    data: 22
+    mode: read
+- name: cf a4 8e
+  initial:
+    registers:
+      a: 177
+      b: 210
+      c: 99
+      d: 124
+      e: 200
+      h: 33
+      l: 218
+      f: 208
+      pc: 13906
+      sp: 60310
+    ram:
+    - address: 8
+      value: 5
+    - address: 13905
+      value: 207
+    - address: 13906
+      value: 164
+    - address: 13907
+      value: 142
+  final:
+    registers:
+      a: 177
+      b: 210
+      c: 99
+      d: 124
+      e: 200
+      h: 33
+      l: 218
+      f: 208
+      pc: 9
+      sp: 60308
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 60309
+    data: 54
+    mode: write
+  - address: 60308
+    data: 82
+    mode: write
+  - address: 8
+    data: 5
+    mode: read
+- name: cf d8 bf
+  initial:
+    registers:
+      a: 187
+      b: 161
+      c: 3
+      d: 51
+      e: 225
+      h: 144
+      l: 131
+      f: 240
+      pc: 19248
+      sp: 62796
+    ram:
+    - address: 8
+      value: 51
+    - address: 19247
+      value: 207
+    - address: 19248
+      value: 216
+    - address: 19249
+      value: 191
+  final:
+    registers:
+      a: 187
+      b: 161
+      c: 3
+      d: 51
+      e: 225
+      h: 144
+      l: 131
+      f: 240
+      pc: 9
+      sp: 62794
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 62795
+    data: 75
+    mode: write
+  - address: 62794
+    data: 48
+    mode: write
+  - address: 8
+    data: 51
+    mode: read
+- name: cf 7b 1b
+  initial:
+    registers:
+      a: 196
+      b: 65
+      c: 220
+      d: 58
+      e: 8
+      h: 101
+      l: 163
+      f: 96
+      pc: 53084
+      sp: 59693
+    ram:
+    - address: 8
+      value: 97
+    - address: 53083
+      value: 207
+    - address: 53084
+      value: 123
+    - address: 53085
+      value: 27
+  final:
+    registers:
+      a: 196
+      b: 65
+      c: 220
+      d: 58
+      e: 8
+      h: 101
+      l: 163
+      f: 96
+      pc: 9
+      sp: 59691
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 59692
+    data: 207
+    mode: write
+  - address: 59691
+    data: 92
+    mode: write
+  - address: 8
+    data: 97
+    mode: read
+- name: cf 40 61
+  initial:
+    registers:
+      a: 65
+      b: 67
+      c: 40
+      d: 221
+      e: 29
+      h: 237
+      l: 54
+      f: 32
+      pc: 6030
+      sp: 25954
+    ram:
+    - address: 8
+      value: 130
+    - address: 6029
+      value: 207
+    - address: 6030
+      value: 64
+    - address: 6031
+      value: 97
+  final:
+    registers:
+      a: 65
+      b: 67
+      c: 40
+      d: 221
+      e: 29
+      h: 237
+      l: 54
+      f: 32
+      pc: 9
+      sp: 25952
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 25953
+    data: 23
+    mode: write
+  - address: 25952
+    data: 142
+    mode: write
+  - address: 8
+    data: 130
+    mode: read
+- name: cf ba 9b
+  initial:
+    registers:
+      a: 155
+      b: 68
+      c: 100
+      d: 133
+      e: 17
+      h: 170
+      l: 99
+      f: 16
+      pc: 13294
+      sp: 6955
+    ram:
+    - address: 8
+      value: 254
+    - address: 13293
+      value: 207
+    - address: 13294
+      value: 186
+    - address: 13295
+      value: 155
+  final:
+    registers:
+      a: 155
+      b: 68
+      c: 100
+      d: 133
+      e: 17
+      h: 170
+      l: 99
+      f: 16
+      pc: 9
+      sp: 6953
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 6954
+    data: 51
+    mode: write
+  - address: 6953
+    data: 238
+    mode: write
+  - address: 8
+    data: 254
+    mode: read
+- name: cf 5c b4
+  initial:
+    registers:
+      a: 76
+      b: 117
+      c: 64
+      d: 41
+      e: 141
+      h: 97
+      l: 243
+      f: 160
+      pc: 14674
+      sp: 34624
+    ram:
+    - address: 8
+      value: 104
+    - address: 14673
+      value: 207
+    - address: 14674
+      value: 92
+    - address: 14675
+      value: 180
+  final:
+    registers:
+      a: 76
+      b: 117
+      c: 64
+      d: 41
+      e: 141
+      h: 97
+      l: 243
+      f: 160
+      pc: 9
+      sp: 34622
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 34623
+    data: 57
+    mode: write
+  - address: 34622
+    data: 82
+    mode: write
+  - address: 8
+    data: 104
+    mode: read
+- name: cf 2c e2
+  initial:
+    registers:
+      a: 68
+      b: 53
+      c: 56
+      d: 37
+      e: 125
+      h: 43
+      l: 99
+      f: 176
+      pc: 35960
+      sp: 42480
+    ram:
+    - address: 8
+      value: 176
+    - address: 35959
+      value: 207
+    - address: 35960
+      value: 44
+    - address: 35961
+      value: 226
+  final:
+    registers:
+      a: 68
+      b: 53
+      c: 56
+      d: 37
+      e: 125
+      h: 43
+      l: 99
+      f: 176
+      pc: 9
+      sp: 42478
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 42479
+    data: 140
+    mode: write
+  - address: 42478
+    data: 120
+    mode: write
+  - address: 8
+    data: 176
+    mode: read
+- name: cf 26 00
+  initial:
+    registers:
+      a: 172
+      b: 204
+      c: 61
+      d: 206
+      e: 153
+      h: 222
+      l: 44
+      f: 240
+      pc: 46342
+      sp: 59765
+    ram:
+    - address: 8
+      value: 182
+    - address: 46341
+      value: 207
+    - address: 46342
+      value: 38
+    - address: 46343
+      value: 0
+  final:
+    registers:
+      a: 172
+      b: 204
+      c: 61
+      d: 206
+      e: 153
+      h: 222
+      l: 44
+      f: 240
+      pc: 9
+      sp: 59763
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 59764
+    data: 181
+    mode: write
+  - address: 59763
+    data: 6
+    mode: write
+  - address: 8
+    data: 182
+    mode: read
+- name: cf 79 24
+  initial:
+    registers:
+      a: 153
+      b: 208
+      c: 115
+      d: 248
+      e: 242
+      h: 173
+      l: 95
+      f: 208
+      pc: 36357
+      sp: 33292
+    ram:
+    - address: 8
+      value: 235
+    - address: 36356
+      value: 207
+    - address: 36357
+      value: 121
+    - address: 36358
+      value: 36
+  final:
+    registers:
+      a: 153
+      b: 208
+      c: 115
+      d: 248
+      e: 242
+      h: 173
+      l: 95
+      f: 208
+      pc: 9
+      sp: 33290
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 33291
+    data: 142
+    mode: write
+  - address: 33290
+    data: 5
+    mode: write
+  - address: 8
+    data: 235
+    mode: read
+- name: cf 8e 9a
+  initial:
+    registers:
+      a: 45
+      b: 193
+      c: 188
+      d: 139
+      e: 58
+      h: 168
+      l: 133
+      f: 32
+      pc: 19920
+      sp: 27934
+    ram:
+    - address: 8
+      value: 196
+    - address: 19919
+      value: 207
+    - address: 19920
+      value: 142
+    - address: 19921
+      value: 154
+  final:
+    registers:
+      a: 45
+      b: 193
+      c: 188
+      d: 139
+      e: 58
+      h: 168
+      l: 133
+      f: 32
+      pc: 9
+      sp: 27932
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 27933
+    data: 77
+    mode: write
+  - address: 27932
+    data: 208
+    mode: write
+  - address: 8
+    data: 196
+    mode: read
+- name: cf 63 3e
+  initial:
+    registers:
+      a: 2
+      b: 86
+      c: 9
+      d: 224
+      e: 49
+      h: 170
+      l: 13
+      f: 80
+      pc: 16726
+      sp: 48284
+    ram:
+    - address: 8
+      value: 32
+    - address: 16725
+      value: 207
+    - address: 16726
+      value: 99
+    - address: 16727
+      value: 62
+  final:
+    registers:
+      a: 2
+      b: 86
+      c: 9
+      d: 224
+      e: 49
+      h: 170
+      l: 13
+      f: 80
+      pc: 9
+      sp: 48282
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 48283
+    data: 65
+    mode: write
+  - address: 48282
+    data: 86
+    mode: write
+  - address: 8
+    data: 32
+    mode: read
+- name: cf 50 17
+  initial:
+    registers:
+      a: 253
+      b: 123
+      c: 135
+      d: 234
+      e: 139
+      h: 58
+      l: 71
+      f: 144
+      pc: 23232
+      sp: 4285
+    ram:
+    - address: 8
+      value: 197
+    - address: 23231
+      value: 207
+    - address: 23232
+      value: 80
+    - address: 23233
+      value: 23
+  final:
+    registers:
+      a: 253
+      b: 123
+      c: 135
+      d: 234
+      e: 139
+      h: 58
+      l: 71
+      f: 144
+      pc: 9
+      sp: 4283
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 4284
+    data: 90
+    mode: write
+  - address: 4283
+    data: 192
+    mode: write
+  - address: 8
+    data: 197
+    mode: read
+- name: cf 61 95
+  initial:
+    registers:
+      a: 161
+      b: 138
+      c: 195
+      d: 108
+      e: 53
+      h: 139
+      l: 188
+      f: 240
+      pc: 50567
+      sp: 2513
+    ram:
+    - address: 8
+      value: 146
+    - address: 50566
+      value: 207
+    - address: 50567
+      value: 97
+    - address: 50568
+      value: 149
+  final:
+    registers:
+      a: 161
+      b: 138
+      c: 195
+      d: 108
+      e: 53
+      h: 139
+      l: 188
+      f: 240
+      pc: 9
+      sp: 2511
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 2512
+    data: 197
+    mode: write
+  - address: 2511
+    data: 135
+    mode: write
+  - address: 8
+    data: 146
+    mode: read
+- name: cf 0b c4
+  initial:
+    registers:
+      a: 86
+      b: 202
+      c: 109
+      d: 123
+      e: 244
+      h: 150
+      l: 72
+      f: 0
+      pc: 21454
+      sp: 19149
+    ram:
+    - address: 8
+      value: 206
+    - address: 21453
+      value: 207
+    - address: 21454
+      value: 11
+    - address: 21455
+      value: 196
+  final:
+    registers:
+      a: 86
+      b: 202
+      c: 109
+      d: 123
+      e: 244
+      h: 150
+      l: 72
+      f: 0
+      pc: 9
+      sp: 19147
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 19148
+    data: 83
+    mode: write
+  - address: 19147
+    data: 206
+    mode: write
+  - address: 8
+    data: 206
+    mode: read
+- name: cf 39 04
+  initial:
+    registers:
+      a: 78
+      b: 204
+      c: 216
+      d: 86
+      e: 214
+      h: 22
+      l: 187
+      f: 80
+      pc: 3102
+      sp: 3072
+    ram:
+    - address: 8
+      value: 241
+    - address: 3101
+      value: 207
+    - address: 3102
+      value: 57
+    - address: 3103
+      value: 4
+  final:
+    registers:
+      a: 78
+      b: 204
+      c: 216
+      d: 86
+      e: 214
+      h: 22
+      l: 187
+      f: 80
+      pc: 9
+      sp: 3070
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 3071
+    data: 12
+    mode: write
+  - address: 3070
+    data: 30
+    mode: write
+  - address: 8
+    data: 241
+    mode: read
+- name: cf 05 55
+  initial:
+    registers:
+      a: 220
+      b: 58
+      c: 81
+      d: 186
+      e: 235
+      h: 101
+      l: 69
+      f: 80
+      pc: 2641
+      sp: 159
+    ram:
+    - address: 8
+      value: 102
+    - address: 2640
+      value: 207
+    - address: 2641
+      value: 5
+    - address: 2642
+      value: 85
+  final:
+    registers:
+      a: 220
+      b: 58
+      c: 81
+      d: 186
+      e: 235
+      h: 101
+      l: 69
+      f: 80
+      pc: 9
+      sp: 157
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 158
+    data: 10
+    mode: write
+  - address: 157
+    data: 81
+    mode: write
+  - address: 8
+    data: 102
+    mode: read
+- name: cf 1e e0
+  initial:
+    registers:
+      a: 13
+      b: 134
+      c: 122
+      d: 238
+      e: 136
+      h: 48
+      l: 116
+      f: 128
+      pc: 19889
+      sp: 18354
+    ram:
+    - address: 8
+      value: 218
+    - address: 19888
+      value: 207
+    - address: 19889
+      value: 30
+    - address: 19890
+      value: 224
+  final:
+    registers:
+      a: 13
+      b: 134
+      c: 122
+      d: 238
+      e: 136
+      h: 48
+      l: 116
+      f: 128
+      pc: 9
+      sp: 18352
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 18353
+    data: 77
+    mode: write
+  - address: 18352
+    data: 177
+    mode: write
+  - address: 8
+    data: 218
+    mode: read
+- name: cf b6 a9
+  initial:
+    registers:
+      a: 71
+      b: 33
+      c: 147
+      d: 207
+      e: 242
+      h: 167
+      l: 126
+      f: 112
+      pc: 43298
+      sp: 41788
+    ram:
+    - address: 8
+      value: 218
+    - address: 43297
+      value: 207
+    - address: 43298
+      value: 182
+    - address: 43299
+      value: 169
+  final:
+    registers:
+      a: 71
+      b: 33
+      c: 147
+      d: 207
+      e: 242
+      h: 167
+      l: 126
+      f: 112
+      pc: 9
+      sp: 41786
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 41787
+    data: 169
+    mode: write
+  - address: 41786
+    data: 34
+    mode: write
+  - address: 8
+    data: 218
+    mode: read
+- name: cf 8b 35
+  initial:
+    registers:
+      a: 149
+      b: 199
+      c: 166
+      d: 187
+      e: 149
+      h: 58
+      l: 80
+      f: 160
+      pc: 8028
+      sp: 56505
+    ram:
+    - address: 8
+      value: 46
+    - address: 8027
+      value: 207
+    - address: 8028
+      value: 139
+    - address: 8029
+      value: 53
+  final:
+    registers:
+      a: 149
+      b: 199
+      c: 166
+      d: 187
+      e: 149
+      h: 58
+      l: 80
+      f: 160
+      pc: 9
+      sp: 56503
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 56504
+    data: 31
+    mode: write
+  - address: 56503
+    data: 92
+    mode: write
+  - address: 8
+    data: 46
+    mode: read
+- name: cf f9 76
+  initial:
+    registers:
+      a: 188
+      b: 55
+      c: 24
+      d: 100
+      e: 155
+      h: 36
+      l: 50
+      f: 128
+      pc: 47268
+      sp: 39089
+    ram:
+    - address: 8
+      value: 174
+    - address: 47267
+      value: 207
+    - address: 47268
+      value: 249
+    - address: 47269
+      value: 118
+  final:
+    registers:
+      a: 188
+      b: 55
+      c: 24
+      d: 100
+      e: 155
+      h: 36
+      l: 50
+      f: 128
+      pc: 9
+      sp: 39087
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 39088
+    data: 184
+    mode: write
+  - address: 39087
+    data: 164
+    mode: write
+  - address: 8
+    data: 174
+    mode: read
+- name: cf 7b b7
+  initial:
+    registers:
+      a: 130
+      b: 184
+      c: 10
+      d: 5
+      e: 186
+      h: 205
+      l: 179
+      f: 224
+      pc: 25506
+      sp: 48052
+    ram:
+    - address: 8
+      value: 188
+    - address: 25505
+      value: 207
+    - address: 25506
+      value: 123
+    - address: 25507
+      value: 183
+  final:
+    registers:
+      a: 130
+      b: 184
+      c: 10
+      d: 5
+      e: 186
+      h: 205
+      l: 179
+      f: 224
+      pc: 9
+      sp: 48050
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 48051
+    data: 99
+    mode: write
+  - address: 48050
+    data: 162
+    mode: write
+  - address: 8
+    data: 188
+    mode: read
+- name: cf 0f ee
+  initial:
+    registers:
+      a: 56
+      b: 130
+      c: 70
+      d: 251
+      e: 9
+      h: 124
+      l: 209
+      f: 144
+      pc: 14487
+      sp: 1578
+    ram:
+    - address: 8
+      value: 130
+    - address: 14486
+      value: 207
+    - address: 14487
+      value: 15
+    - address: 14488
+      value: 238
+  final:
+    registers:
+      a: 56
+      b: 130
+      c: 70
+      d: 251
+      e: 9
+      h: 124
+      l: 209
+      f: 144
+      pc: 9
+      sp: 1576
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 1577
+    data: 56
+    mode: write
+  - address: 1576
+    data: 151
+    mode: write
+  - address: 8
+    data: 130
+    mode: read
+- name: cf f5 84
+  initial:
+    registers:
+      a: 118
+      b: 254
+      c: 70
+      d: 96
+      e: 252
+      h: 66
+      l: 127
+      f: 80
+      pc: 29304
+      sp: 15797
+    ram:
+    - address: 8
+      value: 215
+    - address: 29303
+      value: 207
+    - address: 29304
+      value: 245
+    - address: 29305
+      value: 132
+  final:
+    registers:
+      a: 118
+      b: 254
+      c: 70
+      d: 96
+      e: 252
+      h: 66
+      l: 127
+      f: 80
+      pc: 9
+      sp: 15795
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 15796
+    data: 114
+    mode: write
+  - address: 15795
+    data: 120
+    mode: write
+  - address: 8
+    data: 215
+    mode: read
+- name: cf a1 ae
+  initial:
+    registers:
+      a: 47
+      b: 13
+      c: 253
+      d: 180
+      e: 29
+      h: 147
+      l: 150
+      f: 144
+      pc: 36270
+      sp: 49107
+    ram:
+    - address: 8
+      value: 96
+    - address: 36269
+      value: 207
+    - address: 36270
+      value: 161
+    - address: 36271
+      value: 174
+  final:
+    registers:
+      a: 47
+      b: 13
+      c: 253
+      d: 180
+      e: 29
+      h: 147
+      l: 150
+      f: 144
+      pc: 9
+      sp: 49105
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 49106
+    data: 141
+    mode: write
+  - address: 49105
+    data: 174
+    mode: write
+  - address: 8
+    data: 96
+    mode: read
+- name: cf d0 3f
+  initial:
+    registers:
+      a: 244
+      b: 57
+      c: 11
+      d: 133
+      e: 68
+      h: 206
+      l: 214
+      f: 96
+      pc: 27072
+      sp: 60564
+    ram:
+    - address: 8
+      value: 168
+    - address: 27071
+      value: 207
+    - address: 27072
+      value: 208
+    - address: 27073
+      value: 63
+  final:
+    registers:
+      a: 244
+      b: 57
+      c: 11
+      d: 133
+      e: 68
+      h: 206
+      l: 214
+      f: 96
+      pc: 9
+      sp: 60562
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 60563
+    data: 105
+    mode: write
+  - address: 60562
+    data: 192
+    mode: write
+  - address: 8
+    data: 168
+    mode: read
+- name: cf 62 4e
+  initial:
+    registers:
+      a: 222
+      b: 176
+      c: 110
+      d: 88
+      e: 170
+      h: 112
+      l: 4
+      f: 48
+      pc: 27691
+      sp: 31927
+    ram:
+    - address: 8
+      value: 150
+    - address: 27690
+      value: 207
+    - address: 27691
+      value: 98
+    - address: 27692
+      value: 78
+  final:
+    registers:
+      a: 222
+      b: 176
+      c: 110
+      d: 88
+      e: 170
+      h: 112
+      l: 4
+      f: 48
+      pc: 9
+      sp: 31925
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 31926
+    data: 108
+    mode: write
+  - address: 31925
+    data: 43
+    mode: write
+  - address: 8
+    data: 150
+    mode: read
+- name: cf 50 3f
+  initial:
+    registers:
+      a: 85
+      b: 121
+      c: 158
+      d: 71
+      e: 4
+      h: 187
+      l: 81
+      f: 80
+      pc: 4233
+      sp: 53766
+    ram:
+    - address: 8
+      value: 155
+    - address: 4232
+      value: 207
+    - address: 4233
+      value: 80
+    - address: 4234
+      value: 63
+  final:
+    registers:
+      a: 85
+      b: 121
+      c: 158
+      d: 71
+      e: 4
+      h: 187
+      l: 81
+      f: 80
+      pc: 9
+      sp: 53764
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 53765
+    data: 16
+    mode: write
+  - address: 53764
+    data: 137
+    mode: write
+  - address: 8
+    data: 155
+    mode: read
+- name: cf 36 ca
+  initial:
+    registers:
+      a: 68
+      b: 225
+      c: 39
+      d: 218
+      e: 199
+      h: 38
+      l: 85
+      f: 112
+      pc: 39887
+      sp: 1027
+    ram:
+    - address: 8
+      value: 174
+    - address: 39886
+      value: 207
+    - address: 39887
+      value: 54
+    - address: 39888
+      value: 202
+  final:
+    registers:
+      a: 68
+      b: 225
+      c: 39
+      d: 218
+      e: 199
+      h: 38
+      l: 85
+      f: 112
+      pc: 9
+      sp: 1025
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 1026
+    data: 155
+    mode: write
+  - address: 1025
+    data: 207
+    mode: write
+  - address: 8
+    data: 174
+    mode: read
+- name: cf f0 0b
+  initial:
+    registers:
+      a: 24
+      b: 7
+      c: 236
+      d: 233
+      e: 213
+      h: 187
+      l: 163
+      f: 0
+      pc: 41353
+      sp: 63822
+    ram:
+    - address: 8
+      value: 76
+    - address: 41352
+      value: 207
+    - address: 41353
+      value: 240
+    - address: 41354
+      value: 11
+  final:
+    registers:
+      a: 24
+      b: 7
+      c: 236
+      d: 233
+      e: 213
+      h: 187
+      l: 163
+      f: 0
+      pc: 9
+      sp: 63820
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 63821
+    data: 161
+    mode: write
+  - address: 63820
+    data: 137
+    mode: write
+  - address: 8
+    data: 76
+    mode: read
+- name: cf 0d 45
+  initial:
+    registers:
+      a: 125
+      b: 123
+      c: 218
+      d: 233
+      e: 235
+      h: 215
+      l: 201
+      f: 192
+      pc: 36946
+      sp: 42149
+    ram:
+    - address: 8
+      value: 202
+    - address: 36945
+      value: 207
+    - address: 36946
+      value: 13
+    - address: 36947
+      value: 69
+  final:
+    registers:
+      a: 125
+      b: 123
+      c: 218
+      d: 233
+      e: 235
+      h: 215
+      l: 201
+      f: 192
+      pc: 9
+      sp: 42147
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 42148
+    data: 144
+    mode: write
+  - address: 42147
+    data: 82
+    mode: write
+  - address: 8
+    data: 202
+    mode: read
+- name: cf 2c 3b
+  initial:
+    registers:
+      a: 90
+      b: 122
+      c: 94
+      d: 188
+      e: 13
+      h: 230
+      l: 144
+      f: 192
+      pc: 31354
+      sp: 2858
+    ram:
+    - address: 8
+      value: 125
+    - address: 31353
+      value: 207
+    - address: 31354
+      value: 44
+    - address: 31355
+      value: 59
+  final:
+    registers:
+      a: 90
+      b: 122
+      c: 94
+      d: 188
+      e: 13
+      h: 230
+      l: 144
+      f: 192
+      pc: 9
+      sp: 2856
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 2857
+    data: 122
+    mode: write
+  - address: 2856
+    data: 122
+    mode: write
+  - address: 8
+    data: 125
+    mode: read
+- name: cf aa 81
+  initial:
+    registers:
+      a: 172
+      b: 131
+      c: 21
+      d: 221
+      e: 215
+      h: 169
+      l: 161
+      f: 96
+      pc: 29825
+      sp: 61421
+    ram:
+    - address: 8
+      value: 0
+    - address: 29824
+      value: 207
+    - address: 29825
+      value: 170
+    - address: 29826
+      value: 129
+  final:
+    registers:
+      a: 172
+      b: 131
+      c: 21
+      d: 221
+      e: 215
+      h: 169
+      l: 161
+      f: 96
+      pc: 9
+      sp: 61419
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 61420
+    data: 116
+    mode: write
+  - address: 61419
+    data: 129
+    mode: write
+  - address: 8
+    data: 0
+    mode: read
+- name: cf 74 91
+  initial:
+    registers:
+      a: 34
+      b: 142
+      c: 169
+      d: 213
+      e: 75
+      h: 241
+      l: 84
+      f: 160
+      pc: 33299
+      sp: 3595
+    ram:
+    - address: 8
+      value: 255
+    - address: 33298
+      value: 207
+    - address: 33299
+      value: 116
+    - address: 33300
+      value: 145
+  final:
+    registers:
+      a: 34
+      b: 142
+      c: 169
+      d: 213
+      e: 75
+      h: 241
+      l: 84
+      f: 160
+      pc: 9
+      sp: 3593
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 3594
+    data: 130
+    mode: write
+  - address: 3593
+    data: 19
+    mode: write
+  - address: 8
+    data: 255
+    mode: read
+- name: cf e0 68
+  initial:
+    registers:
+      a: 72
+      b: 118
+      c: 26
+      d: 153
+      e: 84
+      h: 200
+      l: 102
+      f: 96
+      pc: 59681
+      sp: 31784
+    ram:
+    - address: 8
+      value: 138
+    - address: 59680
+      value: 207
+    - address: 59681
+      value: 224
+    - address: 59682
+      value: 104
+  final:
+    registers:
+      a: 72
+      b: 118
+      c: 26
+      d: 153
+      e: 84
+      h: 200
+      l: 102
+      f: 96
+      pc: 9
+      sp: 31782
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 31783
+    data: 233
+    mode: write
+  - address: 31782
+    data: 33
+    mode: write
+  - address: 8
+    data: 138
+    mode: read
+- name: cf e7 d7
+  initial:
+    registers:
+      a: 227
+      b: 108
+      c: 59
+      d: 127
+      e: 51
+      h: 222
+      l: 43
+      f: 16
+      pc: 51308
+      sp: 36232
+    ram:
+    - address: 8
+      value: 41
+    - address: 51307
+      value: 207
+    - address: 51308
+      value: 231
+    - address: 51309
+      value: 215
+  final:
+    registers:
+      a: 227
+      b: 108
+      c: 59
+      d: 127
+      e: 51
+      h: 222
+      l: 43
+      f: 16
+      pc: 9
+      sp: 36230
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 36231
+    data: 200
+    mode: write
+  - address: 36230
+    data: 108
+    mode: write
+  - address: 8
+    data: 41
+    mode: read
+- name: cf 99 19
+  initial:
+    registers:
+      a: 207
+      b: 239
+      c: 83
+      d: 63
+      e: 230
+      h: 0
+      l: 228
+      f: 192
+      pc: 43415
+      sp: 6684
+    ram:
+    - address: 8
+      value: 67
+    - address: 43414
+      value: 207
+    - address: 43415
+      value: 153
+    - address: 43416
+      value: 25
+  final:
+    registers:
+      a: 207
+      b: 239
+      c: 83
+      d: 63
+      e: 230
+      h: 0
+      l: 228
+      f: 192
+      pc: 9
+      sp: 6682
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 6683
+    data: 169
+    mode: write
+  - address: 6682
+    data: 151
+    mode: write
+  - address: 8
+    data: 67
+    mode: read
+- name: cf 56 90
+  initial:
+    registers:
+      a: 64
+      b: 56
+      c: 177
+      d: 54
+      e: 11
+      h: 70
+      l: 30
+      f: 160
+      pc: 5678
+      sp: 14150
+    ram:
+    - address: 8
+      value: 199
+    - address: 5677
+      value: 207
+    - address: 5678
+      value: 86
+    - address: 5679
+      value: 144
+  final:
+    registers:
+      a: 64
+      b: 56
+      c: 177
+      d: 54
+      e: 11
+      h: 70
+      l: 30
+      f: 160
+      pc: 9
+      sp: 14148
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 14149
+    data: 22
+    mode: write
+  - address: 14148
+    data: 46
+    mode: write
+  - address: 8
+    data: 199
+    mode: read
+- name: cf 55 58
+  initial:
+    registers:
+      a: 136
+      b: 101
+      c: 6
+      d: 96
+      e: 146
+      h: 157
+      l: 141
+      f: 32
+      pc: 27941
+      sp: 56926
+    ram:
+    - address: 8
+      value: 170
+    - address: 27940
+      value: 207
+    - address: 27941
+      value: 85
+    - address: 27942
+      value: 88
+  final:
+    registers:
+      a: 136
+      b: 101
+      c: 6
+      d: 96
+      e: 146
+      h: 157
+      l: 141
+      f: 32
+      pc: 9
+      sp: 56924
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 56925
+    data: 109
+    mode: write
+  - address: 56924
+    data: 37
+    mode: write
+  - address: 8
+    data: 170
+    mode: read
+- name: cf c5 45
+  initial:
+    registers:
+      a: 168
+      b: 217
+      c: 108
+      d: 131
+      e: 44
+      h: 62
+      l: 221
+      f: 96
+      pc: 35338
+      sp: 2209
+    ram:
+    - address: 8
+      value: 177
+    - address: 35337
+      value: 207
+    - address: 35338
+      value: 197
+    - address: 35339
+      value: 69
+  final:
+    registers:
+      a: 168
+      b: 217
+      c: 108
+      d: 131
+      e: 44
+      h: 62
+      l: 221
+      f: 96
+      pc: 9
+      sp: 2207
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 2208
+    data: 138
+    mode: write
+  - address: 2207
+    data: 10
+    mode: write
+  - address: 8
+    data: 177
+    mode: read
+- name: cf 90 85
+  initial:
+    registers:
+      a: 251
+      b: 184
+      c: 18
+      d: 120
+      e: 98
+      h: 12
+      l: 48
+      f: 96
+      pc: 49194
+      sp: 38724
+    ram:
+    - address: 8
+      value: 198
+    - address: 49193
+      value: 207
+    - address: 49194
+      value: 144
+    - address: 49195
+      value: 133
+  final:
+    registers:
+      a: 251
+      b: 184
+      c: 18
+      d: 120
+      e: 98
+      h: 12
+      l: 48
+      f: 96
+      pc: 9
+      sp: 38722
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 38723
+    data: 192
+    mode: write
+  - address: 38722
+    data: 42
+    mode: write
+  - address: 8
+    data: 198
+    mode: read
+- name: cf 24 fd
+  initial:
+    registers:
+      a: 225
+      b: 35
+      c: 182
+      d: 2
+      e: 157
+      h: 179
+      l: 76
+      f: 128
+      pc: 1353
+      sp: 7044
+    ram:
+    - address: 8
+      value: 180
+    - address: 1352
+      value: 207
+    - address: 1353
+      value: 36
+    - address: 1354
+      value: 253
+  final:
+    registers:
+      a: 225
+      b: 35
+      c: 182
+      d: 2
+      e: 157
+      h: 179
+      l: 76
+      f: 128
+      pc: 9
+      sp: 7042
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 7043
+    data: 5
+    mode: write
+  - address: 7042
+    data: 73
+    mode: write
+  - address: 8
+    data: 180
+    mode: read
+- name: cf a6 8e
+  initial:
+    registers:
+      a: 19
+      b: 100
+      c: 12
+      d: 206
+      e: 97
+      h: 244
+      l: 43
+      f: 160
+      pc: 3890
+      sp: 40544
+    ram:
+    - address: 8
+      value: 82
+    - address: 3889
+      value: 207
+    - address: 3890
+      value: 166
+    - address: 3891
+      value: 142
+  final:
+    registers:
+      a: 19
+      b: 100
+      c: 12
+      d: 206
+      e: 97
+      h: 244
+      l: 43
+      f: 160
+      pc: 9
+      sp: 40542
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 40543
+    data: 15
+    mode: write
+  - address: 40542
+    data: 50
+    mode: write
+  - address: 8
+    data: 82
+    mode: read
+- name: cf 00 1c
+  initial:
+    registers:
+      a: 205
+      b: 126
+      c: 86
+      d: 225
+      e: 42
+      h: 249
+      l: 135
+      f: 96
+      pc: 10668
+      sp: 49074
+    ram:
+    - address: 8
+      value: 137
+    - address: 10667
+      value: 207
+    - address: 10668
+      value: 0
+    - address: 10669
+      value: 28
+  final:
+    registers:
+      a: 205
+      b: 126
+      c: 86
+      d: 225
+      e: 42
+      h: 249
+      l: 135
+      f: 96
+      pc: 9
+      sp: 49072
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 49073
+    data: 41
+    mode: write
+  - address: 49072
+    data: 172
+    mode: write
+  - address: 8
+    data: 137
+    mode: read
+- name: cf 09 0f
+  initial:
+    registers:
+      a: 103
+      b: 62
+      c: 212
+      d: 189
+      e: 123
+      h: 36
+      l: 41
+      f: 0
+      pc: 62607
+      sp: 44260
+    ram:
+    - address: 8
+      value: 88
+    - address: 62606
+      value: 207
+    - address: 62607
+      value: 9
+    - address: 62608
+      value: 15
+  final:
+    registers:
+      a: 103
+      b: 62
+      c: 212
+      d: 189
+      e: 123
+      h: 36
+      l: 41
+      f: 0
+      pc: 9
+      sp: 44258
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 44259
+    data: 244
+    mode: write
+  - address: 44258
+    data: 143
+    mode: write
+  - address: 8
+    data: 88
+    mode: read
+- name: cf 24 d0
+  initial:
+    registers:
+      a: 126
+      b: 108
+      c: 247
+      d: 238
+      e: 78
+      h: 133
+      l: 148
+      f: 0
+      pc: 48358
+      sp: 7952
+    ram:
+    - address: 8
+      value: 63
+    - address: 48357
+      value: 207
+    - address: 48358
+      value: 36
+    - address: 48359
+      value: 208
+  final:
+    registers:
+      a: 126
+      b: 108
+      c: 247
+      d: 238
+      e: 78
+      h: 133
+      l: 148
+      f: 0
+      pc: 9
+      sp: 7950
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 7951
+    data: 188
+    mode: write
+  - address: 7950
+    data: 230
+    mode: write
+  - address: 8
+    data: 63
+    mode: read
+- name: cf d9 ef
+  initial:
+    registers:
+      a: 93
+      b: 74
+      c: 225
+      d: 203
+      e: 75
+      h: 79
+      l: 223
+      f: 208
+      pc: 42167
+      sp: 31016
+    ram:
+    - address: 8
+      value: 154
+    - address: 42166
+      value: 207
+    - address: 42167
+      value: 217
+    - address: 42168
+      value: 239
+  final:
+    registers:
+      a: 93
+      b: 74
+      c: 225
+      d: 203
+      e: 75
+      h: 79
+      l: 223
+      f: 208
+      pc: 9
+      sp: 31014
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 31015
+    data: 164
+    mode: write
+  - address: 31014
+    data: 183
+    mode: write
+  - address: 8
+    data: 154
+    mode: read
+- name: cf 01 39
+  initial:
+    registers:
+      a: 161
+      b: 154
+      c: 151
+      d: 174
+      e: 82
+      h: 233
+      l: 164
+      f: 0
+      pc: 39820
+      sp: 48990
+    ram:
+    - address: 8
+      value: 99
+    - address: 39819
+      value: 207
+    - address: 39820
+      value: 1
+    - address: 39821
+      value: 57
+  final:
+    registers:
+      a: 161
+      b: 154
+      c: 151
+      d: 174
+      e: 82
+      h: 233
+      l: 164
+      f: 0
+      pc: 9
+      sp: 48988
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 48989
+    data: 155
+    mode: write
+  - address: 48988
+    data: 140
+    mode: write
+  - address: 8
+    data: 99
+    mode: read
+- name: cf 19 48
+  initial:
+    registers:
+      a: 109
+      b: 154
+      c: 225
+      d: 225
+      e: 203
+      h: 231
+      l: 144
+      f: 64
+      pc: 56863
+      sp: 17194
+    ram:
+    - address: 8
+      value: 206
+    - address: 56862
+      value: 207
+    - address: 56863
+      value: 25
+    - address: 56864
+      value: 72
+  final:
+    registers:
+      a: 109
+      b: 154
+      c: 225
+      d: 225
+      e: 203
+      h: 231
+      l: 144
+      f: 64
+      pc: 9
+      sp: 17192
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 17193
+    data: 222
+    mode: write
+  - address: 17192
+    data: 31
+    mode: write
+  - address: 8
+    data: 206
+    mode: read
+- name: cf 67 60
+  initial:
+    registers:
+      a: 135
+      b: 0
+      c: 82
+      d: 56
+      e: 128
+      h: 106
+      l: 14
+      f: 64
+      pc: 56365
+      sp: 13389
+    ram:
+    - address: 8
+      value: 144
+    - address: 56364
+      value: 207
+    - address: 56365
+      value: 103
+    - address: 56366
+      value: 96
+  final:
+    registers:
+      a: 135
+      b: 0
+      c: 82
+      d: 56
+      e: 128
+      h: 106
+      l: 14
+      f: 64
+      pc: 9
+      sp: 13387
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 13388
+    data: 220
+    mode: write
+  - address: 13387
+    data: 45
+    mode: write
+  - address: 8
+    data: 144
+    mode: read
+- name: cf 50 5e
+  initial:
+    registers:
+      a: 102
+      b: 196
+      c: 170
+      d: 66
+      e: 59
+      h: 44
+      l: 179
+      f: 176
+      pc: 34545
+      sp: 63993
+    ram:
+    - address: 8
+      value: 55
+    - address: 34544
+      value: 207
+    - address: 34545
+      value: 80
+    - address: 34546
+      value: 94
+  final:
+    registers:
+      a: 102
+      b: 196
+      c: 170
+      d: 66
+      e: 59
+      h: 44
+      l: 179
+      f: 176
+      pc: 9
+      sp: 63991
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 63992
+    data: 134
+    mode: write
+  - address: 63991
+    data: 241
+    mode: write
+  - address: 8
+    data: 55
+    mode: read
+- name: cf 72 49
+  initial:
+    registers:
+      a: 56
+      b: 13
+      c: 142
+      d: 185
+      e: 167
+      h: 24
+      l: 110
+      f: 112
+      pc: 22881
+      sp: 18838
+    ram:
+    - address: 8
+      value: 139
+    - address: 22880
+      value: 207
+    - address: 22881
+      value: 114
+    - address: 22882
+      value: 73
+  final:
+    registers:
+      a: 56
+      b: 13
+      c: 142
+      d: 185
+      e: 167
+      h: 24
+      l: 110
+      f: 112
+      pc: 9
+      sp: 18836
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 18837
+    data: 89
+    mode: write
+  - address: 18836
+    data: 97
+    mode: write
+  - address: 8
+    data: 139
+    mode: read
+- name: cf 6f 0e
+  initial:
+    registers:
+      a: 21
+      b: 181
+      c: 31
+      d: 191
+      e: 201
+      h: 177
+      l: 86
+      f: 240
+      pc: 57948
+      sp: 59386
+    ram:
+    - address: 8
+      value: 51
+    - address: 57947
+      value: 207
+    - address: 57948
+      value: 111
+    - address: 57949
+      value: 14
+  final:
+    registers:
+      a: 21
+      b: 181
+      c: 31
+      d: 191
+      e: 201
+      h: 177
+      l: 86
+      f: 240
+      pc: 9
+      sp: 59384
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 59385
+    data: 226
+    mode: write
+  - address: 59384
+    data: 92
+    mode: write
+  - address: 8
+    data: 51
+    mode: read
+- name: cf f1 8f
+  initial:
+    registers:
+      a: 162
+      b: 159
+      c: 136
+      d: 18
+      e: 205
+      h: 10
+      l: 13
+      f: 144
+      pc: 56737
+      sp: 40088
+    ram:
+    - address: 8
+      value: 186
+    - address: 56736
+      value: 207
+    - address: 56737
+      value: 241
+    - address: 56738
+      value: 143
+  final:
+    registers:
+      a: 162
+      b: 159
+      c: 136
+      d: 18
+      e: 205
+      h: 10
+      l: 13
+      f: 144
+      pc: 9
+      sp: 40086
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 40087
+    data: 221
+    mode: write
+  - address: 40086
+    data: 161
+    mode: write
+  - address: 8
+    data: 186
+    mode: read
+- name: cf 16 7a
+  initial:
+    registers:
+      a: 170
+      b: 46
+      c: 27
+      d: 208
+      e: 236
+      h: 137
+      l: 20
+      f: 208
+      pc: 26058
+      sp: 63205
+    ram:
+    - address: 8
+      value: 81
+    - address: 26057
+      value: 207
+    - address: 26058
+      value: 22
+    - address: 26059
+      value: 122
+  final:
+    registers:
+      a: 170
+      b: 46
+      c: 27
+      d: 208
+      e: 236
+      h: 137
+      l: 20
+      f: 208
+      pc: 9
+      sp: 63203
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 63204
+    data: 101
+    mode: write
+  - address: 63203
+    data: 202
+    mode: write
+  - address: 8
+    data: 81
+    mode: read
+- name: cf de ae
+  initial:
+    registers:
+      a: 32
+      b: 229
+      c: 184
+      d: 192
+      e: 108
+      h: 129
+      l: 142
+      f: 64
+      pc: 3133
+      sp: 11201
+    ram:
+    - address: 8
+      value: 11
+    - address: 3132
+      value: 207
+    - address: 3133
+      value: 222
+    - address: 3134
+      value: 174
+  final:
+    registers:
+      a: 32
+      b: 229
+      c: 184
+      d: 192
+      e: 108
+      h: 129
+      l: 142
+      f: 64
+      pc: 9
+      sp: 11199
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 11200
+    data: 12
+    mode: write
+  - address: 11199
+    data: 61
+    mode: write
+  - address: 8
+    data: 11
+    mode: read
+- name: cf 4d e1
+  initial:
+    registers:
+      a: 75
+      b: 156
+      c: 206
+      d: 254
+      e: 114
+      h: 219
+      l: 197
+      f: 112
+      pc: 42858
+      sp: 43849
+    ram:
+    - address: 8
+      value: 29
+    - address: 42857
+      value: 207
+    - address: 42858
+      value: 77
+    - address: 42859
+      value: 225
+  final:
+    registers:
+      a: 75
+      b: 156
+      c: 206
+      d: 254
+      e: 114
+      h: 219
+      l: 197
+      f: 112
+      pc: 9
+      sp: 43847
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 43848
+    data: 167
+    mode: write
+  - address: 43847
+    data: 106
+    mode: write
+  - address: 8
+    data: 29
+    mode: read
+- name: cf 5a 22
+  initial:
+    registers:
+      a: 0
+      b: 83
+      c: 56
+      d: 65
+      e: 53
+      h: 174
+      l: 111
+      f: 176
+      pc: 23436
+      sp: 25834
+    ram:
+    - address: 8
+      value: 192
+    - address: 23435
+      value: 207
+    - address: 23436
+      value: 90
+    - address: 23437
+      value: 34
+  final:
+    registers:
+      a: 0
+      b: 83
+      c: 56
+      d: 65
+      e: 53
+      h: 174
+      l: 111
+      f: 176
+      pc: 9
+      sp: 25832
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 25833
+    data: 91
+    mode: write
+  - address: 25832
+    data: 140
+    mode: write
+  - address: 8
+    data: 192
+    mode: read
+- name: cf 72 e3
+  initial:
+    registers:
+      a: 115
+      b: 106
+      c: 132
+      d: 116
+      e: 75
+      h: 204
+      l: 5
+      f: 16
+      pc: 4262
+      sp: 8975
+    ram:
+    - address: 8
+      value: 203
+    - address: 4261
+      value: 207
+    - address: 4262
+      value: 114
+    - address: 4263
+      value: 227
+  final:
+    registers:
+      a: 115
+      b: 106
+      c: 132
+      d: 116
+      e: 75
+      h: 204
+      l: 5
+      f: 16
+      pc: 9
+      sp: 8973
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 8974
+    data: 16
+    mode: write
+  - address: 8973
+    data: 166
+    mode: write
+  - address: 8
+    data: 203
+    mode: read
+- name: cf e0 ea
+  initial:
+    registers:
+      a: 74
+      b: 166
+      c: 248
+      d: 187
+      e: 191
+      h: 216
+      l: 85
+      f: 96
+      pc: 26787
+      sp: 47563
+    ram:
+    - address: 8
+      value: 120
+    - address: 26786
+      value: 207
+    - address: 26787
+      value: 224
+    - address: 26788
+      value: 234
+  final:
+    registers:
+      a: 74
+      b: 166
+      c: 248
+      d: 187
+      e: 191
+      h: 216
+      l: 85
+      f: 96
+      pc: 9
+      sp: 47561
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 47562
+    data: 104
+    mode: write
+  - address: 47561
+    data: 163
+    mode: write
+  - address: 8
+    data: 120
+    mode: read
+- name: cf 5d 49
+  initial:
+    registers:
+      a: 183
+      b: 38
+      c: 136
+      d: 71
+      e: 251
+      h: 132
+      l: 244
+      f: 192
+      pc: 964
+      sp: 44974
+    ram:
+    - address: 8
+      value: 75
+    - address: 963
+      value: 207
+    - address: 964
+      value: 93
+    - address: 965
+      value: 73
+  final:
+    registers:
+      a: 183
+      b: 38
+      c: 136
+      d: 71
+      e: 251
+      h: 132
+      l: 244
+      f: 192
+      pc: 9
+      sp: 44972
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 44973
+    data: 3
+    mode: write
+  - address: 44972
+    data: 196
+    mode: write
+  - address: 8
+    data: 75
+    mode: read
+- name: cf 8d f6
+  initial:
+    registers:
+      a: 153
+      b: 214
+      c: 8
+      d: 123
+      e: 212
+      h: 154
+      l: 88
+      f: 224
+      pc: 63007
+      sp: 44823
+    ram:
+    - address: 8
+      value: 155
+    - address: 63006
+      value: 207
+    - address: 63007
+      value: 141
+    - address: 63008
+      value: 246
+  final:
+    registers:
+      a: 153
+      b: 214
+      c: 8
+      d: 123
+      e: 212
+      h: 154
+      l: 88
+      f: 224
+      pc: 9
+      sp: 44821
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 44822
+    data: 246
+    mode: write
+  - address: 44821
+    data: 31
+    mode: write
+  - address: 8
+    data: 155
+    mode: read
+- name: cf 83 a9
+  initial:
+    registers:
+      a: 87
+      b: 67
+      c: 211
+      d: 38
+      e: 115
+      h: 230
+      l: 190
+      f: 144
+      pc: 4051
+      sp: 48117
+    ram:
+    - address: 8
+      value: 66
+    - address: 4050
+      value: 207
+    - address: 4051
+      value: 131
+    - address: 4052
+      value: 169
+  final:
+    registers:
+      a: 87
+      b: 67
+      c: 211
+      d: 38
+      e: 115
+      h: 230
+      l: 190
+      f: 144
+      pc: 9
+      sp: 48115
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 48116
+    data: 15
+    mode: write
+  - address: 48115
+    data: 211
+    mode: write
+  - address: 8
+    data: 66
+    mode: read
+- name: cf 6b ba
+  initial:
+    registers:
+      a: 184
+      b: 3
+      c: 13
+      d: 171
+      e: 177
+      h: 125
+      l: 48
+      f: 144
+      pc: 45524
+      sp: 7239
+    ram:
+    - address: 8
+      value: 227
+    - address: 45523
+      value: 207
+    - address: 45524
+      value: 107
+    - address: 45525
+      value: 186
+  final:
+    registers:
+      a: 184
+      b: 3
+      c: 13
+      d: 171
+      e: 177
+      h: 125
+      l: 48
+      f: 144
+      pc: 9
+      sp: 7237
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 7238
+    data: 177
+    mode: write
+  - address: 7237
+    data: 212
+    mode: write
+  - address: 8
+    data: 227
+    mode: read
+- name: cf 4b 5b
+  initial:
+    registers:
+      a: 147
+      b: 87
+      c: 251
+      d: 197
+      e: 216
+      h: 12
+      l: 97
+      f: 32
+      pc: 26076
+      sp: 60800
+    ram:
+    - address: 8
+      value: 241
+    - address: 26075
+      value: 207
+    - address: 26076
+      value: 75
+    - address: 26077
+      value: 91
+  final:
+    registers:
+      a: 147
+      b: 87
+      c: 251
+      d: 197
+      e: 216
+      h: 12
+      l: 97
+      f: 32
+      pc: 9
+      sp: 60798
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 60799
+    data: 101
+    mode: write
+  - address: 60798
+    data: 220
+    mode: write
+  - address: 8
+    data: 241
+    mode: read
+- name: cf 53 a7
+  initial:
+    registers:
+      a: 75
+      b: 210
+      c: 168
+      d: 185
+      e: 21
+      h: 40
+      l: 215
+      f: 160
+      pc: 35087
+      sp: 21516
+    ram:
+    - address: 8
+      value: 233
+    - address: 35086
+      value: 207
+    - address: 35087
+      value: 83
+    - address: 35088
+      value: 167
+  final:
+    registers:
+      a: 75
+      b: 210
+      c: 168
+      d: 185
+      e: 21
+      h: 40
+      l: 215
+      f: 160
+      pc: 9
+      sp: 21514
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 21515
+    data: 137
+    mode: write
+  - address: 21514
+    data: 15
+    mode: write
+  - address: 8
+    data: 233
+    mode: read
+- name: cf 84 08
+  initial:
+    registers:
+      a: 122
+      b: 245
+      c: 94
+      d: 32
+      e: 169
+      h: 97
+      l: 96
+      f: 32
+      pc: 59887
+      sp: 42428
+    ram:
+    - address: 8
+      value: 35
+    - address: 59886
+      value: 207
+    - address: 59887
+      value: 132
+    - address: 59888
+      value: 8
+  final:
+    registers:
+      a: 122
+      b: 245
+      c: 94
+      d: 32
+      e: 169
+      h: 97
+      l: 96
+      f: 32
+      pc: 9
+      sp: 42426
+    ram:
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+    - address: 0
+      value: 0
+  busCycles:
+  - null
+  - address: 42427
+    data: 233
+    mode: write
+  - address: 42426
+    data: 239
+    mode: write
+  - address: 8
+    data: 35
+    mode: read

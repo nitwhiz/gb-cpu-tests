@@ -7,7 +7,7 @@ A collection of Game Boy CPU instruction tests provided as YAML specifications a
 The project provides comprehensive tests for each Game Boy CPU instruction. Each test includes the initial state, the expected final state, and the cycle-accurate bus operations.
 
 - **Specs**: Located in `spec/*.yaml`, named by opcode (e.g., `0b.yaml`).
-- **Data**: Includes registers (A, B, C, D, E, H, L, F, PC, SP), RAM values, and bus cycles (address, data, and mode: read/write).
+- **Data**: Includes registers (A, B, C, D, E, H, L, F, PC, SP), RAM values, and bus cycles (address, data, and mode: read/write). A `null` bus cycle entry indicates no bus activity during that cycle.
 - **Format**: YAML for easy parsing and human readability.
 
 ## Go Library
@@ -17,7 +17,7 @@ The `spec` package provides a Go API for loading these tests, with the YAML file
 ### Usage
 
 ```go
-import "github.com/nitwhiz/gb-cpu-tests/spec"
+import spec "github.com/nitwhiz/gb-cpu-tests"
 
 // Load tests for a specific opcode
 suite, err := spec.Load(0x0B)

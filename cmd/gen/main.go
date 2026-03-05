@@ -7,7 +7,6 @@ import (
 	"os"
 	"os/exec"
 	"path"
-	"path/filepath"
 	"strings"
 
 	"github.com/goccy/go-yaml"
@@ -183,6 +182,26 @@ func ensureCpuTestsDirectory() (err error) {
 	return
 }
 
+func writeEmptySpecFile(code string, op *OpCode) (err error) {
+	baseName := strings.ToLower(strings.TrimPrefix(code, "0x"))
+
+	suite := TestSuite{
+		CanonicalName: op.String(),
+	}
+
+	var bs []byte
+
+	if bs, err = yaml.Marshal(&suite); err != nil {
+		return
+	}
+
+	slog.Info("writing empty test suite file ...", slog.String("baseName", baseName))
+
+	err = os.WriteFile(path.Join("spec/", baseName+".yaml"), bs, 0644)
+
+	return
+}
+
 func generateSpec() (err error) {
 	if err = os.MkdirAll("spec", 0755); err != nil {
 		return
@@ -200,15 +219,21 @@ func generateSpec() (err error) {
 		return
 	}
 
-	v2Files, err := filepath.Glob("data/cpu_tests/v2/*.json")
+	for code, op := range opcodes.Unprefixed {
+		baseName := strings.ToLower(strings.TrimPrefix(code, "0x"))
+		v2File := path.Join("data/cpu_tests/v2/", baseName+".json")
 
-	if err != nil {
-		return
-	}
+		_, err = os.Stat(v2File)
 
-	for _, v2File := range v2Files {
-		baseName := filepath.Base(v2File)
-		baseName = strings.TrimSuffix(baseName, ".json")
+		if errors.Is(err, os.ErrNotExist) {
+			if err = writeEmptySpecFile(code, op); err != nil {
+				return
+			}
+
+			continue
+		} else if err != nil {
+			return
+		}
 
 		slog.Info("processing v2 file ...", slog.String("file", v2File))
 
@@ -224,14 +249,13 @@ func generateSpec() (err error) {
 
 		var suite TestSuite
 
-		var op *OpCode
 		isPrefixed := false
 
-		if baseName == "cb" {
+		if code == "0xCB" {
 			suite.CanonicalName = "PREFIX"
 			isPrefixed = true
 		} else {
-			suite.CanonicalName = opcodes.Unprefixed["0x"+strings.ToUpper(baseName)].String()
+			suite.CanonicalName = op.String()
 		}
 
 		for _, t := range v2Tests {

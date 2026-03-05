@@ -24,12 +24,12 @@ func (o *Operand) String() string {
 	return "[" + o.Name + "]"
 }
 
-type OpCode struct {
+type Opcode struct {
 	Mnemonic string    `json:"mnemonic"`
 	Operands []Operand `json:"operands"`
 }
 
-func (o *OpCode) String() string {
+func (o *Opcode) String() string {
 	if len(o.Operands) == 0 {
 		return o.Mnemonic
 	}
@@ -44,8 +44,8 @@ func (o *OpCode) String() string {
 }
 
 type Opcodes struct {
-	Unprefixed map[string]*OpCode `json:"unprefixed"`
-	Prefixed   map[string]*OpCode `json:"cbprefixed"`
+	Unprefixed map[string]*Opcode `json:"unprefixed"`
+	Prefixed   map[string]*Opcode `json:"cbprefixed"`
 }
 
 const (

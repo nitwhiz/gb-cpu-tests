@@ -145,7 +145,7 @@ func ensureCpuTestsDirectory() (err error) {
 	return
 }
 
-func writeEmptySpecFile(code string, op *OpCode) (err error) {
+func writeEmptySpecFile(code string, op *Opcode) (err error) {
 	baseName := strings.ToLower(strings.TrimPrefix(code, "0x"))
 
 	suite := TestSuite{

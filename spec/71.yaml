@@ -33,14 +33,14 @@ tests:
       pc: 31506
       sp: 40276
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 31504
+      value: 113
+    - address: 31505
+      value: 34
+    - address: 31506
+      value: 17
+    - address: 53277
+      value: 123
   busCycles:
   - address: 53277
     data: 123
@@ -81,14 +81,14 @@ tests:
       pc: 6084
       sp: 41070
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 6082
+      value: 113
+    - address: 6083
+      value: 65
+    - address: 6084
+      value: 54
+    - address: 13984
+      value: 6
   busCycles:
   - address: 13984
     data: 6
@@ -129,14 +129,14 @@ tests:
       pc: 37746
       sp: 43738
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 27833
+      value: 75
+    - address: 37744
+      value: 113
+    - address: 37745
+      value: 55
+    - address: 37746
+      value: 212
   busCycles:
   - address: 27833
     data: 75
@@ -177,14 +177,14 @@ tests:
       pc: 7642
       sp: 18803
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 7640
+      value: 113
+    - address: 7641
+      value: 231
+    - address: 7642
+      value: 43
+    - address: 40235
+      value: 217
   busCycles:
   - address: 40235
     data: 217
@@ -225,14 +225,14 @@ tests:
       pc: 43802
       sp: 35545
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 26222
+      value: 249
+    - address: 43800
+      value: 113
+    - address: 43801
+      value: 38
+    - address: 43802
+      value: 31
   busCycles:
   - address: 26222
     data: 249
@@ -273,14 +273,14 @@ tests:
       pc: 3344
       sp: 51053
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 3342
+      value: 113
+    - address: 3343
+      value: 122
+    - address: 3344
+      value: 222
+    - address: 58507
+      value: 213
   busCycles:
   - address: 58507
     data: 213
@@ -321,14 +321,14 @@ tests:
       pc: 30848
       sp: 48701
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 18075
+      value: 232
+    - address: 30846
+      value: 113
+    - address: 30847
+      value: 156
+    - address: 30848
+      value: 2
   busCycles:
   - address: 18075
     data: 232
@@ -369,14 +369,14 @@ tests:
       pc: 15894
       sp: 24584
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 7831
+      value: 34
+    - address: 15892
+      value: 113
+    - address: 15893
+      value: 101
+    - address: 15894
+      value: 14
   busCycles:
   - address: 7831
     data: 34
@@ -417,14 +417,14 @@ tests:
       pc: 30471
       sp: 43422
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 1075
+      value: 131
+    - address: 30469
+      value: 113
+    - address: 30470
+      value: 158
+    - address: 30471
+      value: 10
   busCycles:
   - address: 1075
     data: 131
@@ -465,14 +465,14 @@ tests:
       pc: 47233
       sp: 50273
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 27672
+      value: 165
+    - address: 47231
+      value: 113
+    - address: 47232
+      value: 198
+    - address: 47233
+      value: 111
   busCycles:
   - address: 27672
     data: 165
@@ -513,14 +513,14 @@ tests:
       pc: 1135
       sp: 18947
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 1133
+      value: 113
+    - address: 1134
+      value: 165
+    - address: 1135
+      value: 156
+    - address: 4729
+      value: 8
   busCycles:
   - address: 4729
     data: 8
@@ -561,14 +561,14 @@ tests:
       pc: 40863
       sp: 41349
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 2640
+      value: 168
+    - address: 40861
+      value: 113
+    - address: 40862
+      value: 31
+    - address: 40863
+      value: 74
   busCycles:
   - address: 2640
     data: 168
@@ -609,14 +609,14 @@ tests:
       pc: 51126
       sp: 19521
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 34111
+      value: 140
+    - address: 51124
+      value: 113
+    - address: 51125
+      value: 169
+    - address: 51126
+      value: 45
   busCycles:
   - address: 34111
     data: 140
@@ -657,14 +657,14 @@ tests:
       pc: 11864
       sp: 36351
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 11862
+      value: 113
+    - address: 11863
+      value: 194
+    - address: 11864
+      value: 60
+    - address: 49320
+      value: 217
   busCycles:
   - address: 49320
     data: 217
@@ -705,14 +705,14 @@ tests:
       pc: 18451
       sp: 4711
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 18449
+      value: 113
+    - address: 18450
+      value: 53
+    - address: 18451
+      value: 47
+    - address: 44726
+      value: 190
   busCycles:
   - address: 44726
     data: 190
@@ -753,14 +753,14 @@ tests:
       pc: 2375
       sp: 37287
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 2373
+      value: 113
+    - address: 2374
+      value: 167
+    - address: 2375
+      value: 156
+    - address: 5464
+      value: 40
   busCycles:
   - address: 5464
     data: 40
@@ -801,14 +801,14 @@ tests:
       pc: 23758
       sp: 48692
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 23756
+      value: 113
+    - address: 23757
+      value: 14
+    - address: 23758
+      value: 111
+    - address: 43848
+      value: 234
   busCycles:
   - address: 43848
     data: 234
@@ -849,14 +849,14 @@ tests:
       pc: 48067
       sp: 20008
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 3660
+      value: 27
+    - address: 48065
+      value: 113
+    - address: 48066
+      value: 10
+    - address: 48067
+      value: 32
   busCycles:
   - address: 3660
     data: 27
@@ -897,14 +897,14 @@ tests:
       pc: 60620
       sp: 19360
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 33080
+      value: 177
+    - address: 60618
+      value: 113
+    - address: 60619
+      value: 74
+    - address: 60620
+      value: 214
   busCycles:
   - address: 33080
     data: 177
@@ -945,14 +945,14 @@ tests:
       pc: 7254
       sp: 33980
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 7252
+      value: 113
+    - address: 7253
+      value: 135
+    - address: 7254
+      value: 3
+    - address: 61255
+      value: 173
   busCycles:
   - address: 61255
     data: 173
@@ -993,14 +993,14 @@ tests:
       pc: 26346
       sp: 14777
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 14093
+      value: 175
+    - address: 26344
+      value: 113
+    - address: 26345
+      value: 178
+    - address: 26346
+      value: 252
   busCycles:
   - address: 14093
     data: 175
@@ -1041,14 +1041,14 @@ tests:
       pc: 64900
       sp: 7702
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 48449
+      value: 5
+    - address: 64898
+      value: 113
+    - address: 64899
+      value: 27
+    - address: 64900
+      value: 45
   busCycles:
   - address: 48449
     data: 5
@@ -1089,14 +1089,14 @@ tests:
       pc: 55285
       sp: 51806
     ram:
-    - address: 0
+    - address: 32606
+      value: 240
+    - address: 55283
+      value: 113
+    - address: 55284
       value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 55285
+      value: 163
   busCycles:
   - address: 32606
     data: 240
@@ -1137,14 +1137,14 @@ tests:
       pc: 27947
       sp: 28536
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 27325
+      value: 85
+    - address: 27945
+      value: 113
+    - address: 27946
+      value: 205
+    - address: 27947
+      value: 175
   busCycles:
   - address: 27325
     data: 85
@@ -1185,14 +1185,14 @@ tests:
       pc: 1009
       sp: 44066
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 1007
+      value: 113
+    - address: 1008
+      value: 63
+    - address: 1009
+      value: 239
+    - address: 63594
+      value: 132
   busCycles:
   - address: 63594
     data: 132
@@ -1233,14 +1233,14 @@ tests:
       pc: 32620
       sp: 13038
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 22566
+      value: 203
+    - address: 32618
+      value: 113
+    - address: 32619
+      value: 53
+    - address: 32620
+      value: 213
   busCycles:
   - address: 22566
     data: 203
@@ -1281,14 +1281,14 @@ tests:
       pc: 9328
       sp: 17984
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 4521
+      value: 133
+    - address: 9326
+      value: 113
+    - address: 9327
+      value: 58
+    - address: 9328
+      value: 192
   busCycles:
   - address: 4521
     data: 133
@@ -1329,14 +1329,14 @@ tests:
       pc: 26629
       sp: 4227
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 7333
+      value: 23
+    - address: 26627
+      value: 113
+    - address: 26628
+      value: 15
+    - address: 26629
+      value: 252
   busCycles:
   - address: 7333
     data: 23
@@ -1377,14 +1377,14 @@ tests:
       pc: 56230
       sp: 30536
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 56228
+      value: 113
+    - address: 56229
+      value: 226
+    - address: 56230
+      value: 17
+    - address: 65000
+      value: 59
   busCycles:
   - address: 65000
     data: 59
@@ -1425,14 +1425,14 @@ tests:
       pc: 28132
       sp: 21062
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 6826
+      value: 147
+    - address: 28130
+      value: 113
+    - address: 28131
+      value: 222
+    - address: 28132
+      value: 54
   busCycles:
   - address: 6826
     data: 147
@@ -1473,14 +1473,14 @@ tests:
       pc: 16063
       sp: 37626
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 16061
+      value: 113
+    - address: 16062
+      value: 54
+    - address: 16063
+      value: 196
+    - address: 46504
+      value: 77
   busCycles:
   - address: 46504
     data: 77
@@ -1521,14 +1521,14 @@ tests:
       pc: 32903
       sp: 63134
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 7681
+      value: 251
+    - address: 32901
+      value: 113
+    - address: 32902
+      value: 1
+    - address: 32903
+      value: 43
   busCycles:
   - address: 7681
     data: 251
@@ -1569,14 +1569,14 @@ tests:
       pc: 18673
       sp: 22364
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 18671
+      value: 113
+    - address: 18672
+      value: 109
+    - address: 18673
+      value: 134
+    - address: 52624
+      value: 193
   busCycles:
   - address: 52624
     data: 193
@@ -1617,14 +1617,14 @@ tests:
       pc: 60453
       sp: 56754
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 34975
+      value: 110
+    - address: 60451
+      value: 113
+    - address: 60452
+      value: 173
+    - address: 60453
+      value: 156
   busCycles:
   - address: 34975
     data: 110
@@ -1665,14 +1665,14 @@ tests:
       pc: 45097
       sp: 55265
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 45095
+      value: 113
+    - address: 45096
+      value: 8
+    - address: 45097
+      value: 204
+    - address: 58897
+      value: 204
   busCycles:
   - address: 58897
     data: 204
@@ -1713,14 +1713,14 @@ tests:
       pc: 296
       sp: 42035
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 294
+      value: 113
+    - address: 295
+      value: 210
+    - address: 296
+      value: 205
+    - address: 20905
+      value: 220
   busCycles:
   - address: 20905
     data: 220
@@ -1761,14 +1761,14 @@ tests:
       pc: 46734
       sp: 20035
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 18761
+      value: 92
+    - address: 46732
+      value: 113
+    - address: 46733
+      value: 94
+    - address: 46734
+      value: 66
   busCycles:
   - address: 18761
     data: 92
@@ -1809,14 +1809,14 @@ tests:
       pc: 32177
       sp: 60917
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 12403
+      value: 48
+    - address: 32175
+      value: 113
+    - address: 32176
+      value: 148
+    - address: 32177
+      value: 87
   busCycles:
   - address: 12403
     data: 48
@@ -1857,14 +1857,14 @@ tests:
       pc: 24522
       sp: 36712
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 24320
+      value: 194
+    - address: 24520
+      value: 113
+    - address: 24521
+      value: 229
+    - address: 24522
+      value: 212
   busCycles:
   - address: 24320
     data: 194
@@ -1905,14 +1905,14 @@ tests:
       pc: 61643
       sp: 57753
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 23293
+      value: 37
+    - address: 61641
+      value: 113
+    - address: 61642
+      value: 99
+    - address: 61643
+      value: 146
   busCycles:
   - address: 23293
     data: 37
@@ -1953,14 +1953,14 @@ tests:
       pc: 24490
       sp: 33933
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 24488
+      value: 113
+    - address: 24489
+      value: 49
+    - address: 24490
+      value: 177
+    - address: 57659
+      value: 114
   busCycles:
   - address: 57659
     data: 114
@@ -2001,14 +2001,14 @@ tests:
       pc: 48417
       sp: 24354
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 48415
+      value: 113
+    - address: 48416
+      value: 119
+    - address: 48417
+      value: 69
+    - address: 59801
+      value: 240
   busCycles:
   - address: 59801
     data: 240
@@ -2049,14 +2049,14 @@ tests:
       pc: 44940
       sp: 34493
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 44172
+      value: 79
+    - address: 44938
+      value: 113
+    - address: 44939
+      value: 65
+    - address: 44940
+      value: 241
   busCycles:
   - address: 44172
     data: 79
@@ -2097,14 +2097,14 @@ tests:
       pc: 45137
       sp: 40983
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 38660
+      value: 200
+    - address: 45135
+      value: 113
+    - address: 45136
+      value: 175
+    - address: 45137
+      value: 249
   busCycles:
   - address: 38660
     data: 200
@@ -2145,14 +2145,14 @@ tests:
       pc: 62747
       sp: 4532
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 20155
+      value: 98
+    - address: 62745
+      value: 113
+    - address: 62746
+      value: 192
+    - address: 62747
+      value: 232
   busCycles:
   - address: 20155
     data: 98
@@ -2193,14 +2193,14 @@ tests:
       pc: 1206
       sp: 2267
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 1204
+      value: 113
+    - address: 1205
+      value: 232
+    - address: 1206
+      value: 37
+    - address: 29988
+      value: 192
   busCycles:
   - address: 29988
     data: 192
@@ -2241,14 +2241,14 @@ tests:
       pc: 25525
       sp: 30828
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 12517
+      value: 133
+    - address: 25523
+      value: 113
+    - address: 25524
+      value: 171
+    - address: 25525
+      value: 68
   busCycles:
   - address: 12517
     data: 133
@@ -2289,14 +2289,14 @@ tests:
       pc: 63895
       sp: 16585
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 13124
+      value: 173
+    - address: 63893
+      value: 113
+    - address: 63894
+      value: 132
+    - address: 63895
+      value: 96
   busCycles:
   - address: 13124
     data: 173
@@ -2337,14 +2337,14 @@ tests:
       pc: 58042
       sp: 15466
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 9374
+      value: 66
+    - address: 58040
+      value: 113
+    - address: 58041
+      value: 167
+    - address: 58042
+      value: 168
   busCycles:
   - address: 9374
     data: 66
@@ -2385,14 +2385,14 @@ tests:
       pc: 11170
       sp: 55745
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 11168
+      value: 113
+    - address: 11169
+      value: 195
+    - address: 11170
+      value: 236
+    - address: 13482
+      value: 154
   busCycles:
   - address: 13482
     data: 154
@@ -2433,14 +2433,14 @@ tests:
       pc: 55844
       sp: 26288
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 55842
+      value: 113
+    - address: 55843
+      value: 126
+    - address: 55844
+      value: 184
+    - address: 64097
+      value: 9
   busCycles:
   - address: 64097
     data: 9
@@ -2481,14 +2481,14 @@ tests:
       pc: 21270
       sp: 37143
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 21268
+      value: 113
+    - address: 21269
+      value: 194
+    - address: 21270
+      value: 127
+    - address: 49401
+      value: 142
   busCycles:
   - address: 49401
     data: 142
@@ -2529,14 +2529,14 @@ tests:
       pc: 53284
       sp: 3602
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 16454
+      value: 4
+    - address: 53282
+      value: 113
+    - address: 53283
+      value: 28
+    - address: 53284
+      value: 78
   busCycles:
   - address: 16454
     data: 4
@@ -2577,14 +2577,14 @@ tests:
       pc: 29295
       sp: 30749
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 29293
+      value: 113
+    - address: 29294
+      value: 8
+    - address: 29295
+      value: 53
+    - address: 30460
+      value: 200
   busCycles:
   - address: 30460
     data: 200
@@ -2625,14 +2625,14 @@ tests:
       pc: 49284
       sp: 18318
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 49282
+      value: 113
+    - address: 49283
+      value: 24
+    - address: 49284
+      value: 188
+    - address: 55275
+      value: 94
   busCycles:
   - address: 55275
     data: 94
@@ -2673,14 +2673,14 @@ tests:
       pc: 9318
       sp: 27528
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 9316
+      value: 113
+    - address: 9317
+      value: 143
+    - address: 9318
+      value: 100
+    - address: 62276
+      value: 61
   busCycles:
   - address: 62276
     data: 61
@@ -2721,14 +2721,14 @@ tests:
       pc: 45031
       sp: 29278
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 43667
+      value: 230
+    - address: 45029
+      value: 113
+    - address: 45030
+      value: 114
+    - address: 45031
+      value: 80
   busCycles:
   - address: 43667
     data: 230
@@ -2769,14 +2769,14 @@ tests:
       pc: 52528
       sp: 29743
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 46224
+      value: 238
+    - address: 52526
+      value: 113
+    - address: 52527
+      value: 254
+    - address: 52528
+      value: 168
   busCycles:
   - address: 46224
     data: 238
@@ -2817,14 +2817,14 @@ tests:
       pc: 35883
       sp: 37588
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 187
+      value: 147
+    - address: 35881
+      value: 113
+    - address: 35882
+      value: 2
+    - address: 35883
+      value: 45
   busCycles:
   - address: 187
     data: 147
@@ -2865,14 +2865,14 @@ tests:
       pc: 31782
       sp: 56552
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 12070
+      value: 175
+    - address: 31780
+      value: 113
+    - address: 31781
+      value: 46
+    - address: 31782
+      value: 189
   busCycles:
   - address: 12070
     data: 175
@@ -2913,14 +2913,14 @@ tests:
       pc: 24056
       sp: 39027
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 11881
+      value: 154
+    - address: 24054
+      value: 113
+    - address: 24055
+      value: 4
+    - address: 24056
+      value: 225
   busCycles:
   - address: 11881
     data: 154
@@ -2961,14 +2961,14 @@ tests:
       pc: 60782
       sp: 18213
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 37534
+      value: 130
+    - address: 60780
+      value: 113
+    - address: 60781
+      value: 118
+    - address: 60782
+      value: 73
   busCycles:
   - address: 37534
     data: 130
@@ -3009,14 +3009,14 @@ tests:
       pc: 50282
       sp: 51038
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 25419
+      value: 107
+    - address: 50280
+      value: 113
+    - address: 50281
+      value: 130
+    - address: 50282
+      value: 113
   busCycles:
   - address: 25419
     data: 107
@@ -3057,14 +3057,14 @@ tests:
       pc: 26
       sp: 47146
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 24
+      value: 113
+    - address: 25
+      value: 72
+    - address: 26
+      value: 10
+    - address: 36024
+      value: 201
   busCycles:
   - address: 36024
     data: 201
@@ -3105,14 +3105,14 @@ tests:
       pc: 44213
       sp: 40044
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 44211
+      value: 113
+    - address: 44212
+      value: 148
+    - address: 44213
+      value: 225
+    - address: 44756
+      value: 194
   busCycles:
   - address: 44756
     data: 194
@@ -3153,14 +3153,14 @@ tests:
       pc: 45816
       sp: 6342
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 45814
+      value: 113
+    - address: 45815
+      value: 44
+    - address: 45816
+      value: 205
+    - address: 48013
+      value: 42
   busCycles:
   - address: 48013
     data: 42
@@ -3201,14 +3201,14 @@ tests:
       pc: 8035
       sp: 15498
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 8033
+      value: 113
+    - address: 8034
+      value: 76
+    - address: 8035
+      value: 204
+    - address: 47895
+      value: 194
   busCycles:
   - address: 47895
     data: 194
@@ -3249,14 +3249,14 @@ tests:
       pc: 23168
       sp: 8467
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 23166
+      value: 113
+    - address: 23167
+      value: 142
+    - address: 23168
+      value: 80
+    - address: 35167
+      value: 135
   busCycles:
   - address: 35167
     data: 135
@@ -3297,14 +3297,14 @@ tests:
       pc: 12245
       sp: 21706
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 12243
+      value: 113
+    - address: 12244
+      value: 135
+    - address: 12245
+      value: 231
+    - address: 31246
+      value: 75
   busCycles:
   - address: 31246
     data: 75
@@ -3345,14 +3345,14 @@ tests:
       pc: 61374
       sp: 58653
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 9670
+      value: 208
+    - address: 61372
+      value: 113
+    - address: 61373
+      value: 68
+    - address: 61374
+      value: 144
   busCycles:
   - address: 9670
     data: 208
@@ -3393,14 +3393,14 @@ tests:
       pc: 1174
       sp: 49904
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 1172
+      value: 113
+    - address: 1173
+      value: 11
+    - address: 1174
+      value: 147
+    - address: 4988
+      value: 71
   busCycles:
   - address: 4988
     data: 71
@@ -3441,14 +3441,14 @@ tests:
       pc: 38364
       sp: 5758
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 18718
+      value: 6
+    - address: 38362
+      value: 113
+    - address: 38363
+      value: 75
+    - address: 38364
+      value: 34
   busCycles:
   - address: 18718
     data: 6
@@ -3489,14 +3489,14 @@ tests:
       pc: 22363
       sp: 40764
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 22361
+      value: 113
+    - address: 22362
+      value: 243
+    - address: 22363
+      value: 208
+    - address: 64511
+      value: 187
   busCycles:
   - address: 64511
     data: 187
@@ -3537,14 +3537,14 @@ tests:
       pc: 40716
       sp: 21195
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 9487
+      value: 129
+    - address: 40714
+      value: 113
+    - address: 40715
+      value: 119
+    - address: 40716
+      value: 214
   busCycles:
   - address: 9487
     data: 129
@@ -3585,14 +3585,14 @@ tests:
       pc: 11634
       sp: 25860
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 11632
+      value: 113
+    - address: 11633
+      value: 93
+    - address: 11634
+      value: 19
+    - address: 44143
+      value: 150
   busCycles:
   - address: 44143
     data: 150
@@ -3633,14 +3633,14 @@ tests:
       pc: 26678
       sp: 63946
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 14378
+      value: 10
+    - address: 26676
+      value: 113
+    - address: 26677
+      value: 4
+    - address: 26678
+      value: 54
   busCycles:
   - address: 14378
     data: 10
@@ -3681,14 +3681,14 @@ tests:
       pc: 51674
       sp: 9636
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 4977
+      value: 146
+    - address: 51672
+      value: 113
+    - address: 51673
+      value: 167
+    - address: 51674
+      value: 175
   busCycles:
   - address: 4977
     data: 146
@@ -3729,14 +3729,14 @@ tests:
       pc: 31438
       sp: 50308
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 4921
+      value: 241
+    - address: 31436
+      value: 113
+    - address: 31437
+      value: 13
+    - address: 31438
+      value: 29
   busCycles:
   - address: 4921
     data: 241
@@ -3777,14 +3777,14 @@ tests:
       pc: 56679
       sp: 15924
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 56677
+      value: 113
+    - address: 56678
+      value: 105
+    - address: 56679
+      value: 47
+    - address: 63461
+      value: 179
   busCycles:
   - address: 63461
     data: 179
@@ -3825,14 +3825,14 @@ tests:
       pc: 62669
       sp: 14234
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 1242
+      value: 130
+    - address: 62667
+      value: 113
+    - address: 62668
+      value: 133
+    - address: 62669
+      value: 203
   busCycles:
   - address: 1242
     data: 130
@@ -3873,14 +3873,14 @@ tests:
       pc: 43021
       sp: 16633
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 43019
+      value: 113
+    - address: 43020
+      value: 107
+    - address: 43021
+      value: 195
+    - address: 56783
+      value: 157
   busCycles:
   - address: 56783
     data: 157
@@ -3921,14 +3921,14 @@ tests:
       pc: 44097
       sp: 22234
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 44095
+      value: 113
+    - address: 44096
+      value: 35
+    - address: 44097
+      value: 222
+    - address: 50607
+      value: 110
   busCycles:
   - address: 50607
     data: 110
@@ -3969,14 +3969,14 @@ tests:
       pc: 56623
       sp: 46434
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 11052
+      value: 71
+    - address: 56621
+      value: 113
+    - address: 56622
+      value: 210
+    - address: 56623
+      value: 99
   busCycles:
   - address: 11052
     data: 71
@@ -4017,14 +4017,14 @@ tests:
       pc: 49387
       sp: 44441
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 49385
+      value: 113
+    - address: 49386
+      value: 90
+    - address: 49387
+      value: 227
+    - address: 56496
+      value: 44
   busCycles:
   - address: 56496
     data: 44
@@ -4065,14 +4065,14 @@ tests:
       pc: 45445
       sp: 16111
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 37213
+      value: 129
+    - address: 45443
+      value: 113
+    - address: 45444
+      value: 239
+    - address: 45445
+      value: 46
   busCycles:
   - address: 37213
     data: 129
@@ -4113,14 +4113,14 @@ tests:
       pc: 182
       sp: 54668
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 180
+      value: 113
+    - address: 181
+      value: 2
+    - address: 182
+      value: 53
+    - address: 20328
+      value: 211
   busCycles:
   - address: 20328
     data: 211
@@ -4161,14 +4161,14 @@ tests:
       pc: 5312
       sp: 35848
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 5310
+      value: 113
+    - address: 5311
+      value: 172
+    - address: 5312
+      value: 19
+    - address: 15246
+      value: 51
   busCycles:
   - address: 15246
     data: 51
@@ -4209,14 +4209,14 @@ tests:
       pc: 7402
       sp: 30110
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 7057
+      value: 249
+    - address: 7400
+      value: 113
+    - address: 7401
+      value: 134
+    - address: 7402
+      value: 2
   busCycles:
   - address: 7057
     data: 249
@@ -4257,14 +4257,14 @@ tests:
       pc: 11552
       sp: 46511
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 11550
+      value: 113
+    - address: 11551
+      value: 188
+    - address: 11552
+      value: 95
+    - address: 16150
+      value: 152
   busCycles:
   - address: 16150
     data: 152
@@ -4305,14 +4305,14 @@ tests:
       pc: 42072
       sp: 59320
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 35395
+      value: 186
+    - address: 42070
+      value: 113
+    - address: 42071
+      value: 248
+    - address: 42072
+      value: 223
   busCycles:
   - address: 35395
     data: 186
@@ -4353,14 +4353,14 @@ tests:
       pc: 45352
       sp: 44347
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 3264
+      value: 210
+    - address: 45350
+      value: 113
+    - address: 45351
+      value: 117
+    - address: 45352
+      value: 121
   busCycles:
   - address: 3264
     data: 210
@@ -4401,14 +4401,14 @@ tests:
       pc: 31165
       sp: 49615
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 31163
+      value: 113
+    - address: 31164
+      value: 103
+    - address: 31165
+      value: 89
+    - address: 38123
+      value: 147
   busCycles:
   - address: 38123
     data: 147
@@ -4449,14 +4449,14 @@ tests:
       pc: 55762
       sp: 16715
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 12641
+      value: 200
+    - address: 55760
+      value: 113
+    - address: 55761
+      value: 145
+    - address: 55762
+      value: 60
   busCycles:
   - address: 12641
     data: 200
@@ -4497,14 +4497,14 @@ tests:
       pc: 1313
       sp: 3701
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 1311
+      value: 113
+    - address: 1312
+      value: 112
+    - address: 1313
+      value: 239
+    - address: 38823
+      value: 178
   busCycles:
   - address: 38823
     data: 178
@@ -4545,14 +4545,14 @@ tests:
       pc: 64566
       sp: 17409
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 41168
+      value: 176
+    - address: 64564
+      value: 113
+    - address: 64565
+      value: 82
+    - address: 64566
+      value: 212
   busCycles:
   - address: 41168
     data: 176
@@ -4593,14 +4593,14 @@ tests:
       pc: 5818
       sp: 884
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 2342
+      value: 117
+    - address: 5816
+      value: 113
+    - address: 5817
+      value: 131
+    - address: 5818
+      value: 110
   busCycles:
   - address: 2342
     data: 117
@@ -4641,14 +4641,14 @@ tests:
       pc: 10293
       sp: 30186
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 10291
+      value: 113
+    - address: 10292
+      value: 225
+    - address: 10293
+      value: 122
+    - address: 13380
+      value: 206
   busCycles:
   - address: 13380
     data: 206
@@ -4689,14 +4689,14 @@ tests:
       pc: 16484
       sp: 56987
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 16482
+      value: 113
+    - address: 16483
+      value: 82
+    - address: 16484
+      value: 212
+    - address: 16749
+      value: 16
   busCycles:
   - address: 16749
     data: 16
@@ -4737,14 +4737,14 @@ tests:
       pc: 53528
       sp: 42240
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 12219
+      value: 162
+    - address: 53526
+      value: 113
+    - address: 53527
+      value: 187
+    - address: 53528
+      value: 249
   busCycles:
   - address: 12219
     data: 162
@@ -4785,14 +4785,14 @@ tests:
       pc: 54664
       sp: 40544
     ram:
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
-    - address: 0
-      value: 0
+    - address: 54662
+      value: 113
+    - address: 54663
+      value: 87
+    - address: 54664
+      value: 20
+    - address: 61873
+      value: 250
   busCycles:
   - address: 61873
     data: 250

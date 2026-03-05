@@ -279,7 +279,7 @@ func generateSpec() (err error) {
 				RAM: make([]RAMValue, len(t.Final.RAM)),
 			}
 
-			for i, r := range fState.RAM {
+			for i, r := range t.Final.RAM {
 				fState.RAM[i] = RAMValue{
 					Address: r.Address,
 					Value:   r.Value,

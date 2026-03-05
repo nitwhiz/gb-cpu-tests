@@ -13,43 +13,6 @@ import (
 	. "github.com/nitwhiz/gb-cpu-tests"
 )
 
-type Operand struct {
-	Name      string `json:"name"`
-	Immediate bool   `json:"immediate"`
-}
-
-func (o *Operand) String() string {
-	if o.Immediate {
-		return o.Name
-	}
-
-	return "[" + o.Name + "]"
-}
-
-type OpCode struct {
-	Mnemonic string    `json:"mnemonic"`
-	Operands []Operand `json:"operands"`
-}
-
-func (o *OpCode) String() string {
-	if len(o.Operands) == 0 {
-		return o.Mnemonic
-	}
-
-	operands := make([]string, len(o.Operands))
-
-	for i, op := range o.Operands {
-		operands[i] = op.String()
-	}
-
-	return o.Mnemonic + " " + strings.Join(operands, ", ")
-}
-
-type Opcodes struct {
-	Unprefixed map[string]*OpCode `json:"unprefixed"`
-	Prefixed   map[string]*OpCode `json:"cbprefixed"`
-}
-
 type V2RAMTuple struct {
 	Address uint16
 	Value   uint8

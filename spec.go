@@ -2,12 +2,51 @@ package spec
 
 import (
 	"embed"
+	"encoding/json"
 	"fmt"
 	"iter"
 	"path"
+	"strings"
 
 	"github.com/goccy/go-yaml"
 )
+
+type Operand struct {
+	Name      string `json:"name"`
+	Immediate bool   `json:"immediate"`
+}
+
+func (o *Operand) String() string {
+	if o.Immediate {
+		return o.Name
+	}
+
+	return "[" + o.Name + "]"
+}
+
+type OpCode struct {
+	Mnemonic string    `json:"mnemonic"`
+	Operands []Operand `json:"operands"`
+}
+
+func (o *OpCode) String() string {
+	if len(o.Operands) == 0 {
+		return o.Mnemonic
+	}
+
+	operands := make([]string, len(o.Operands))
+
+	for i, op := range o.Operands {
+		operands[i] = op.String()
+	}
+
+	return o.Mnemonic + " " + strings.Join(operands, ", ")
+}
+
+type Opcodes struct {
+	Unprefixed map[string]*OpCode `json:"unprefixed"`
+	Prefixed   map[string]*OpCode `json:"cbprefixed"`
+}
 
 const (
 	ModeRead  = "read"
@@ -58,6 +97,17 @@ type TestSuite struct {
 
 //go:embed spec/*.yaml
 var specFS embed.FS
+
+//go:embed data/opcodes.json
+var opcodesBS []byte
+
+var OpCodes Opcodes
+
+func init() {
+	if err := json.Unmarshal(opcodesBS, &OpCodes); err != nil {
+		panic(err)
+	}
+}
 
 func Load(opcode uint8) (suite *TestSuite, err error) {
 	bs, err := specFS.ReadFile("spec/" + fmt.Sprintf("%02x", opcode) + ".yaml")

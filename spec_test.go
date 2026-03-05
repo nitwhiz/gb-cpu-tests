@@ -45,3 +45,19 @@ func TestLoadAll(t *testing.T) {
 		t.Fatal("no suites passed")
 	}
 }
+
+func TestGetOpcode(t *testing.T) {
+	opcode, ok := OpCodes.Unprefixed["0x41"]
+
+	if !ok {
+		t.Fatal("opcode not found")
+	}
+
+	if opcode == nil {
+		t.Fatal("opcode is nil")
+	}
+
+	if opcode.Mnemonic != "LD" {
+		t.Fatal("invalid opcode mnemonic, expected LD, got ", opcode.Mnemonic)
+	}
+}

@@ -1,0 +1,6140 @@
+unprefixed:
+- opcode: "00"
+  mnemonic: NOP
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "01"
+  mnemonic: LD
+  bytes: 3
+  cycles: [12]
+  immediate: true
+  operands:
+  - name: BC
+    bytes: 0
+    immediate: true
+  - name: n16
+    bytes: 2
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "02"
+  mnemonic: LD
+  bytes: 1
+  cycles: [8]
+  immediate: false
+  operands:
+  - name: BC
+    bytes: 0
+    immediate: false
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "03"
+  mnemonic: INC
+  bytes: 1
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: BC
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "04"
+  mnemonic: INC
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: H, c: "-"}
+- opcode: "05"
+  mnemonic: DEC
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "1", h: H, c: "-"}
+- opcode: "06"
+  mnemonic: LD
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: B
+    bytes: 0
+    immediate: true
+  - name: n8
+    bytes: 1
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "07"
+  mnemonic: RLCA
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  flags: {z: "0", "n": "0", h: "0", c: C}
+- opcode: 08
+  mnemonic: LD
+  bytes: 3
+  cycles: [20]
+  immediate: false
+  operands:
+  - name: a16
+    bytes: 2
+    immediate: false
+  - name: SP
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 09
+  mnemonic: ADD
+  bytes: 1
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: HL
+    bytes: 0
+    immediate: true
+  - name: BC
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "0", h: H, c: C}
+- opcode: 0A
+  mnemonic: LD
+  bytes: 1
+  cycles: [8]
+  immediate: false
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: BC
+    bytes: 0
+    immediate: false
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 0B
+  mnemonic: DEC
+  bytes: 1
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: BC
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 0C
+  mnemonic: INC
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: H, c: "-"}
+- opcode: 0D
+  mnemonic: DEC
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "1", h: H, c: "-"}
+- opcode: 0E
+  mnemonic: LD
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: C
+    bytes: 0
+    immediate: true
+  - name: n8
+    bytes: 1
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 0F
+  mnemonic: RRCA
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  flags: {z: "0", "n": "0", h: "0", c: C}
+- opcode: "10"
+  mnemonic: STOP
+  bytes: 2
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: n8
+    bytes: 1
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "11"
+  mnemonic: LD
+  bytes: 3
+  cycles: [12]
+  immediate: true
+  operands:
+  - name: DE
+    bytes: 0
+    immediate: true
+  - name: n16
+    bytes: 2
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "12"
+  mnemonic: LD
+  bytes: 1
+  cycles: [8]
+  immediate: false
+  operands:
+  - name: DE
+    bytes: 0
+    immediate: false
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "13"
+  mnemonic: INC
+  bytes: 1
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: DE
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "14"
+  mnemonic: INC
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: H, c: "-"}
+- opcode: "15"
+  mnemonic: DEC
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "1", h: H, c: "-"}
+- opcode: "16"
+  mnemonic: LD
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: D
+    bytes: 0
+    immediate: true
+  - name: n8
+    bytes: 1
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "17"
+  mnemonic: RLA
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  flags: {z: "0", "n": "0", h: "0", c: C}
+- opcode: "18"
+  mnemonic: JR
+  bytes: 2
+  cycles: [12]
+  immediate: true
+  operands:
+  - name: e8
+    bytes: 1
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "19"
+  mnemonic: ADD
+  bytes: 1
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: HL
+    bytes: 0
+    immediate: true
+  - name: DE
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "0", h: H, c: C}
+- opcode: 1A
+  mnemonic: LD
+  bytes: 1
+  cycles: [8]
+  immediate: false
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: DE
+    bytes: 0
+    immediate: false
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 1B
+  mnemonic: DEC
+  bytes: 1
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: DE
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 1C
+  mnemonic: INC
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: H, c: "-"}
+- opcode: 1D
+  mnemonic: DEC
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "1", h: H, c: "-"}
+- opcode: 1E
+  mnemonic: LD
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: E
+    bytes: 0
+    immediate: true
+  - name: n8
+    bytes: 1
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 1F
+  mnemonic: RRA
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  flags: {z: "0", "n": "0", h: "0", c: C}
+- opcode: "20"
+  mnemonic: JR
+  bytes: 2
+  cycles: [12, 8]
+  immediate: true
+  operands:
+  - name: NZ
+    bytes: 0
+    immediate: true
+  - name: e8
+    bytes: 1
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "21"
+  mnemonic: LD
+  bytes: 3
+  cycles: [12]
+  immediate: true
+  operands:
+  - name: HL
+    bytes: 0
+    immediate: true
+  - name: n16
+    bytes: 2
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "22"
+  mnemonic: LD
+  bytes: 1
+  cycles: [8]
+  immediate: false
+  operands:
+  - name: HL
+    bytes: 0
+    immediate: false
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "23"
+  mnemonic: INC
+  bytes: 1
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: HL
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "24"
+  mnemonic: INC
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: H, c: "-"}
+- opcode: "25"
+  mnemonic: DEC
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "1", h: H, c: "-"}
+- opcode: "26"
+  mnemonic: LD
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: H
+    bytes: 0
+    immediate: true
+  - name: n8
+    bytes: 1
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "27"
+  mnemonic: DAA
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  flags: {z: Z, "n": "-", h: "0", c: C}
+- opcode: "28"
+  mnemonic: JR
+  bytes: 2
+  cycles: [12, 8]
+  immediate: true
+  operands:
+  - name: Z
+    bytes: 0
+    immediate: true
+  - name: e8
+    bytes: 1
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "29"
+  mnemonic: ADD
+  bytes: 1
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: HL
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "0", h: H, c: C}
+- opcode: 2A
+  mnemonic: LD
+  bytes: 1
+  cycles: [8]
+  immediate: false
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 2B
+  mnemonic: DEC
+  bytes: 1
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: HL
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 2C
+  mnemonic: INC
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: H, c: "-"}
+- opcode: 2D
+  mnemonic: DEC
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "1", h: H, c: "-"}
+- opcode: 2E
+  mnemonic: LD
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: L
+    bytes: 0
+    immediate: true
+  - name: n8
+    bytes: 1
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 2F
+  mnemonic: CPL
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  flags: {z: "-", "n": "1", h: "1", c: "-"}
+- opcode: "30"
+  mnemonic: JR
+  bytes: 2
+  cycles: [12, 8]
+  immediate: true
+  operands:
+  - name: NC
+    bytes: 0
+    immediate: true
+  - name: e8
+    bytes: 1
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "31"
+  mnemonic: LD
+  bytes: 3
+  cycles: [12]
+  immediate: true
+  operands:
+  - name: SP
+    bytes: 0
+    immediate: true
+  - name: n16
+    bytes: 2
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "32"
+  mnemonic: LD
+  bytes: 1
+  cycles: [8]
+  immediate: false
+  operands:
+  - name: HL
+    bytes: 0
+    immediate: false
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "33"
+  mnemonic: INC
+  bytes: 1
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: SP
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "34"
+  mnemonic: INC
+  bytes: 1
+  cycles: [12]
+  immediate: false
+  operands:
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: Z, "n": "0", h: H, c: "-"}
+- opcode: "35"
+  mnemonic: DEC
+  bytes: 1
+  cycles: [12]
+  immediate: false
+  operands:
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: Z, "n": "1", h: H, c: "-"}
+- opcode: "36"
+  mnemonic: LD
+  bytes: 2
+  cycles: [12]
+  immediate: false
+  operands:
+  - name: HL
+    bytes: 0
+    immediate: false
+  - name: n8
+    bytes: 1
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "37"
+  mnemonic: SCF
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  flags: {z: "-", "n": "0", h: "0", c: "1"}
+- opcode: "38"
+  mnemonic: JR
+  bytes: 2
+  cycles: [12, 8]
+  immediate: true
+  operands:
+  - name: C
+    bytes: 0
+    immediate: true
+  - name: e8
+    bytes: 1
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "39"
+  mnemonic: ADD
+  bytes: 1
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: HL
+    bytes: 0
+    immediate: true
+  - name: SP
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "0", h: H, c: C}
+- opcode: 3A
+  mnemonic: LD
+  bytes: 1
+  cycles: [8]
+  immediate: false
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 3B
+  mnemonic: DEC
+  bytes: 1
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: SP
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 3C
+  mnemonic: INC
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: H, c: "-"}
+- opcode: 3D
+  mnemonic: DEC
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "1", h: H, c: "-"}
+- opcode: 3E
+  mnemonic: LD
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: n8
+    bytes: 1
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 3F
+  mnemonic: CCF
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  flags: {z: "-", "n": "0", h: "0", c: C}
+- opcode: "40"
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: B
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "41"
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: B
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "42"
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: B
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "43"
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: B
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "44"
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: B
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "45"
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: B
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "46"
+  mnemonic: LD
+  bytes: 1
+  cycles: [8]
+  immediate: false
+  operands:
+  - name: B
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "47"
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: B
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "48"
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: C
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "49"
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: C
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 4A
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: C
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 4B
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: C
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 4C
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: C
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 4D
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: C
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 4E
+  mnemonic: LD
+  bytes: 1
+  cycles: [8]
+  immediate: false
+  operands:
+  - name: C
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 4F
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: C
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "50"
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: D
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "51"
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: D
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "52"
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: D
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "53"
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: D
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "54"
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: D
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "55"
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: D
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "56"
+  mnemonic: LD
+  bytes: 1
+  cycles: [8]
+  immediate: false
+  operands:
+  - name: D
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "57"
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: D
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "58"
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: E
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "59"
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: E
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 5A
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: E
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 5B
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: E
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 5C
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: E
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 5D
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: E
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 5E
+  mnemonic: LD
+  bytes: 1
+  cycles: [8]
+  immediate: false
+  operands:
+  - name: E
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 5F
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: E
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "60"
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: H
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "61"
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: H
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "62"
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: H
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "63"
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: H
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "64"
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: H
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "65"
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: H
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "66"
+  mnemonic: LD
+  bytes: 1
+  cycles: [8]
+  immediate: false
+  operands:
+  - name: H
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "67"
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: H
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "68"
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: L
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "69"
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: L
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 6A
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: L
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 6B
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: L
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 6C
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: L
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 6D
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: L
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 6E
+  mnemonic: LD
+  bytes: 1
+  cycles: [8]
+  immediate: false
+  operands:
+  - name: L
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 6F
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: L
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "70"
+  mnemonic: LD
+  bytes: 1
+  cycles: [8]
+  immediate: false
+  operands:
+  - name: HL
+    bytes: 0
+    immediate: false
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "71"
+  mnemonic: LD
+  bytes: 1
+  cycles: [8]
+  immediate: false
+  operands:
+  - name: HL
+    bytes: 0
+    immediate: false
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "72"
+  mnemonic: LD
+  bytes: 1
+  cycles: [8]
+  immediate: false
+  operands:
+  - name: HL
+    bytes: 0
+    immediate: false
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "73"
+  mnemonic: LD
+  bytes: 1
+  cycles: [8]
+  immediate: false
+  operands:
+  - name: HL
+    bytes: 0
+    immediate: false
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "74"
+  mnemonic: LD
+  bytes: 1
+  cycles: [8]
+  immediate: false
+  operands:
+  - name: HL
+    bytes: 0
+    immediate: false
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "75"
+  mnemonic: LD
+  bytes: 1
+  cycles: [8]
+  immediate: false
+  operands:
+  - name: HL
+    bytes: 0
+    immediate: false
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "76"
+  mnemonic: HALT
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "77"
+  mnemonic: LD
+  bytes: 1
+  cycles: [8]
+  immediate: false
+  operands:
+  - name: HL
+    bytes: 0
+    immediate: false
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "78"
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "79"
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 7A
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 7B
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 7C
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 7D
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 7E
+  mnemonic: LD
+  bytes: 1
+  cycles: [8]
+  immediate: false
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 7F
+  mnemonic: LD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "80"
+  mnemonic: ADD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: H, c: C}
+- opcode: "81"
+  mnemonic: ADD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: H, c: C}
+- opcode: "82"
+  mnemonic: ADD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: H, c: C}
+- opcode: "83"
+  mnemonic: ADD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: H, c: C}
+- opcode: "84"
+  mnemonic: ADD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: H, c: C}
+- opcode: "85"
+  mnemonic: ADD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: H, c: C}
+- opcode: "86"
+  mnemonic: ADD
+  bytes: 1
+  cycles: [8]
+  immediate: false
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: Z, "n": "0", h: H, c: C}
+- opcode: "87"
+  mnemonic: ADD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: H, c: C}
+- opcode: "88"
+  mnemonic: ADC
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: H, c: C}
+- opcode: "89"
+  mnemonic: ADC
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: H, c: C}
+- opcode: 8A
+  mnemonic: ADC
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: H, c: C}
+- opcode: 8B
+  mnemonic: ADC
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: H, c: C}
+- opcode: 8C
+  mnemonic: ADC
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: H, c: C}
+- opcode: 8D
+  mnemonic: ADC
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: H, c: C}
+- opcode: 8E
+  mnemonic: ADC
+  bytes: 1
+  cycles: [8]
+  immediate: false
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: Z, "n": "0", h: H, c: C}
+- opcode: 8F
+  mnemonic: ADC
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: H, c: C}
+- opcode: "90"
+  mnemonic: SUB
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "1", h: H, c: C}
+- opcode: "91"
+  mnemonic: SUB
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "1", h: H, c: C}
+- opcode: "92"
+  mnemonic: SUB
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "1", h: H, c: C}
+- opcode: "93"
+  mnemonic: SUB
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "1", h: H, c: C}
+- opcode: "94"
+  mnemonic: SUB
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "1", h: H, c: C}
+- opcode: "95"
+  mnemonic: SUB
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "1", h: H, c: C}
+- opcode: "96"
+  mnemonic: SUB
+  bytes: 1
+  cycles: [8]
+  immediate: false
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: Z, "n": "1", h: H, c: C}
+- opcode: "97"
+  mnemonic: SUB
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "1", "n": "1", h: "0", c: "0"}
+- opcode: "98"
+  mnemonic: SBC
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "1", h: H, c: C}
+- opcode: "99"
+  mnemonic: SBC
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "1", h: H, c: C}
+- opcode: 9A
+  mnemonic: SBC
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "1", h: H, c: C}
+- opcode: 9B
+  mnemonic: SBC
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "1", h: H, c: C}
+- opcode: 9C
+  mnemonic: SBC
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "1", h: H, c: C}
+- opcode: 9D
+  mnemonic: SBC
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "1", h: H, c: C}
+- opcode: 9E
+  mnemonic: SBC
+  bytes: 1
+  cycles: [8]
+  immediate: false
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: Z, "n": "1", h: H, c: C}
+- opcode: 9F
+  mnemonic: SBC
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "1", h: H, c: "-"}
+- opcode: A0
+  mnemonic: AND
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "0"}
+- opcode: A1
+  mnemonic: AND
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "0"}
+- opcode: A2
+  mnemonic: AND
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "0"}
+- opcode: A3
+  mnemonic: AND
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "0"}
+- opcode: A4
+  mnemonic: AND
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "0"}
+- opcode: A5
+  mnemonic: AND
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "0"}
+- opcode: A6
+  mnemonic: AND
+  bytes: 1
+  cycles: [8]
+  immediate: false
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: Z, "n": "0", h: "1", c: "0"}
+- opcode: A7
+  mnemonic: AND
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "0"}
+- opcode: A8
+  mnemonic: XOR
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: "0"}
+- opcode: A9
+  mnemonic: XOR
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: "0"}
+- opcode: AA
+  mnemonic: XOR
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: "0"}
+- opcode: AB
+  mnemonic: XOR
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: "0"}
+- opcode: AC
+  mnemonic: XOR
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: "0"}
+- opcode: AD
+  mnemonic: XOR
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: "0"}
+- opcode: AE
+  mnemonic: XOR
+  bytes: 1
+  cycles: [8]
+  immediate: false
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: Z, "n": "0", h: "0", c: "0"}
+- opcode: AF
+  mnemonic: XOR
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "1", "n": "0", h: "0", c: "0"}
+- opcode: B0
+  mnemonic: OR
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: "0"}
+- opcode: B1
+  mnemonic: OR
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: "0"}
+- opcode: B2
+  mnemonic: OR
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: "0"}
+- opcode: B3
+  mnemonic: OR
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: "0"}
+- opcode: B4
+  mnemonic: OR
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: "0"}
+- opcode: B5
+  mnemonic: OR
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: "0"}
+- opcode: B6
+  mnemonic: OR
+  bytes: 1
+  cycles: [8]
+  immediate: false
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: Z, "n": "0", h: "0", c: "0"}
+- opcode: B7
+  mnemonic: OR
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: "0"}
+- opcode: B8
+  mnemonic: CP
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "1", h: H, c: C}
+- opcode: B9
+  mnemonic: CP
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "1", h: H, c: C}
+- opcode: BA
+  mnemonic: CP
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "1", h: H, c: C}
+- opcode: BB
+  mnemonic: CP
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "1", h: H, c: C}
+- opcode: BC
+  mnemonic: CP
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "1", h: H, c: C}
+- opcode: BD
+  mnemonic: CP
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "1", h: H, c: C}
+- opcode: BE
+  mnemonic: CP
+  bytes: 1
+  cycles: [8]
+  immediate: false
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: Z, "n": "1", h: H, c: C}
+- opcode: BF
+  mnemonic: CP
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "1", "n": "1", h: "0", c: "0"}
+- opcode: C0
+  mnemonic: RET
+  bytes: 1
+  cycles: [20, 8]
+  immediate: true
+  operands:
+  - name: NZ
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: C1
+  mnemonic: POP
+  bytes: 1
+  cycles: [12]
+  immediate: true
+  operands:
+  - name: BC
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: C2
+  mnemonic: JP
+  bytes: 3
+  cycles: [16, 12]
+  immediate: true
+  operands:
+  - name: NZ
+    bytes: 0
+    immediate: true
+  - name: a16
+    bytes: 2
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: C3
+  mnemonic: JP
+  bytes: 3
+  cycles: [16]
+  immediate: true
+  operands:
+  - name: a16
+    bytes: 2
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: C4
+  mnemonic: CALL
+  bytes: 3
+  cycles: [24, 12]
+  immediate: true
+  operands:
+  - name: NZ
+    bytes: 0
+    immediate: true
+  - name: a16
+    bytes: 2
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: C5
+  mnemonic: PUSH
+  bytes: 1
+  cycles: [16]
+  immediate: true
+  operands:
+  - name: BC
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: C6
+  mnemonic: ADD
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: n8
+    bytes: 1
+    immediate: true
+  flags: {z: Z, "n": "0", h: H, c: C}
+- opcode: C7
+  mnemonic: RST
+  bytes: 1
+  cycles: [16]
+  immediate: true
+  operands:
+  - name: $00
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: C8
+  mnemonic: RET
+  bytes: 1
+  cycles: [20, 8]
+  immediate: true
+  operands:
+  - name: Z
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: C9
+  mnemonic: RET
+  bytes: 1
+  cycles: [16]
+  immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: CA
+  mnemonic: JP
+  bytes: 3
+  cycles: [16, 12]
+  immediate: true
+  operands:
+  - name: Z
+    bytes: 0
+    immediate: true
+  - name: a16
+    bytes: 2
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: CB
+  mnemonic: PREFIX
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: CC
+  mnemonic: CALL
+  bytes: 3
+  cycles: [24, 12]
+  immediate: true
+  operands:
+  - name: Z
+    bytes: 0
+    immediate: true
+  - name: a16
+    bytes: 2
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: CD
+  mnemonic: CALL
+  bytes: 3
+  cycles: [24]
+  immediate: true
+  operands:
+  - name: a16
+    bytes: 2
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: CE
+  mnemonic: ADC
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: n8
+    bytes: 1
+    immediate: true
+  flags: {z: Z, "n": "0", h: H, c: C}
+- opcode: CF
+  mnemonic: RST
+  bytes: 1
+  cycles: [16]
+  immediate: true
+  operands:
+  - name: $08
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: D0
+  mnemonic: RET
+  bytes: 1
+  cycles: [20, 8]
+  immediate: true
+  operands:
+  - name: NC
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: D1
+  mnemonic: POP
+  bytes: 1
+  cycles: [12]
+  immediate: true
+  operands:
+  - name: DE
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: D2
+  mnemonic: JP
+  bytes: 3
+  cycles: [16, 12]
+  immediate: true
+  operands:
+  - name: NC
+    bytes: 0
+    immediate: true
+  - name: a16
+    bytes: 2
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: D3
+  mnemonic: ILLEGAL_D3
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: D4
+  mnemonic: CALL
+  bytes: 3
+  cycles: [24, 12]
+  immediate: true
+  operands:
+  - name: NC
+    bytes: 0
+    immediate: true
+  - name: a16
+    bytes: 2
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: D5
+  mnemonic: PUSH
+  bytes: 1
+  cycles: [16]
+  immediate: true
+  operands:
+  - name: DE
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: D6
+  mnemonic: SUB
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: n8
+    bytes: 1
+    immediate: true
+  flags: {z: Z, "n": "1", h: H, c: C}
+- opcode: D7
+  mnemonic: RST
+  bytes: 1
+  cycles: [16]
+  immediate: true
+  operands:
+  - name: $10
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: D8
+  mnemonic: RET
+  bytes: 1
+  cycles: [20, 8]
+  immediate: true
+  operands:
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: D9
+  mnemonic: RETI
+  bytes: 1
+  cycles: [16]
+  immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: DA
+  mnemonic: JP
+  bytes: 3
+  cycles: [16, 12]
+  immediate: true
+  operands:
+  - name: C
+    bytes: 0
+    immediate: true
+  - name: a16
+    bytes: 2
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: DB
+  mnemonic: ILLEGAL_DB
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: DC
+  mnemonic: CALL
+  bytes: 3
+  cycles: [24, 12]
+  immediate: true
+  operands:
+  - name: C
+    bytes: 0
+    immediate: true
+  - name: a16
+    bytes: 2
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: DD
+  mnemonic: ILLEGAL_DD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: DE
+  mnemonic: SBC
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: n8
+    bytes: 1
+    immediate: true
+  flags: {z: Z, "n": "1", h: H, c: C}
+- opcode: DF
+  mnemonic: RST
+  bytes: 1
+  cycles: [16]
+  immediate: true
+  operands:
+  - name: $18
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: E0
+  mnemonic: LDH
+  bytes: 2
+  cycles: [12]
+  immediate: false
+  operands:
+  - name: a8
+    bytes: 1
+    immediate: false
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: E1
+  mnemonic: POP
+  bytes: 1
+  cycles: [12]
+  immediate: true
+  operands:
+  - name: HL
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: E2
+  mnemonic: LD
+  bytes: 1
+  cycles: [8]
+  immediate: false
+  operands:
+  - name: C
+    bytes: 0
+    immediate: false
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: E3
+  mnemonic: ILLEGAL_E3
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: E4
+  mnemonic: ILLEGAL_E4
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: E5
+  mnemonic: PUSH
+  bytes: 1
+  cycles: [16]
+  immediate: true
+  operands:
+  - name: HL
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: E6
+  mnemonic: AND
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: n8
+    bytes: 1
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "0"}
+- opcode: E7
+  mnemonic: RST
+  bytes: 1
+  cycles: [16]
+  immediate: true
+  operands:
+  - name: $20
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: E8
+  mnemonic: ADD
+  bytes: 2
+  cycles: [16]
+  immediate: true
+  operands:
+  - name: SP
+    bytes: 0
+    immediate: true
+  - name: e8
+    bytes: 1
+    immediate: true
+  flags: {z: "0", "n": "0", h: H, c: C}
+- opcode: E9
+  mnemonic: JP
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  operands:
+  - name: HL
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: EA
+  mnemonic: LD
+  bytes: 3
+  cycles: [16]
+  immediate: false
+  operands:
+  - name: a16
+    bytes: 2
+    immediate: false
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: EB
+  mnemonic: ILLEGAL_EB
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: EC
+  mnemonic: ILLEGAL_EC
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: ED
+  mnemonic: ILLEGAL_ED
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: EE
+  mnemonic: XOR
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: n8
+    bytes: 1
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: "0"}
+- opcode: EF
+  mnemonic: RST
+  bytes: 1
+  cycles: [16]
+  immediate: true
+  operands:
+  - name: $28
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: F0
+  mnemonic: LDH
+  bytes: 2
+  cycles: [12]
+  immediate: false
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: a8
+    bytes: 1
+    immediate: false
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: F1
+  mnemonic: POP
+  bytes: 1
+  cycles: [12]
+  immediate: true
+  operands:
+  - name: AF
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "N", h: H, c: C}
+- opcode: F2
+  mnemonic: LD
+  bytes: 1
+  cycles: [8]
+  immediate: false
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: false
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: F3
+  mnemonic: DI
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: F4
+  mnemonic: ILLEGAL_F4
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: F5
+  mnemonic: PUSH
+  bytes: 1
+  cycles: [16]
+  immediate: true
+  operands:
+  - name: AF
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: F6
+  mnemonic: OR
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: n8
+    bytes: 1
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: "0"}
+- opcode: F7
+  mnemonic: RST
+  bytes: 1
+  cycles: [16]
+  immediate: true
+  operands:
+  - name: $30
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: F8
+  mnemonic: LD
+  bytes: 2
+  cycles: [12]
+  immediate: true
+  operands:
+  - name: HL
+    bytes: 0
+    immediate: true
+  - name: SP
+    bytes: 0
+    immediate: true
+  - name: e8
+    bytes: 1
+    immediate: true
+  flags: {z: "0", "n": "0", h: H, c: C}
+- opcode: F9
+  mnemonic: LD
+  bytes: 1
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: SP
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: FA
+  mnemonic: LD
+  bytes: 3
+  cycles: [16]
+  immediate: false
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: a16
+    bytes: 2
+    immediate: false
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: FB
+  mnemonic: EI
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: FC
+  mnemonic: ILLEGAL_FC
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: FD
+  mnemonic: ILLEGAL_FD
+  bytes: 1
+  cycles: [4]
+  immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: FE
+  mnemonic: CP
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  - name: n8
+    bytes: 1
+    immediate: true
+  flags: {z: Z, "n": "1", h: H, c: C}
+- opcode: FF
+  mnemonic: RST
+  bytes: 1
+  cycles: [16]
+  immediate: true
+  operands:
+  - name: $38
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+prefixed:
+- opcode: "00"
+  mnemonic: RLC
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: "01"
+  mnemonic: RLC
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: "02"
+  mnemonic: RLC
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: "03"
+  mnemonic: RLC
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: "04"
+  mnemonic: RLC
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: "05"
+  mnemonic: RLC
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: "06"
+  mnemonic: RLC
+  bytes: 2
+  cycles: [16]
+  immediate: false
+  operands:
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: "07"
+  mnemonic: RLC
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: 08
+  mnemonic: RRC
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: 09
+  mnemonic: RRC
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: 0A
+  mnemonic: RRC
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: 0B
+  mnemonic: RRC
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: 0C
+  mnemonic: RRC
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: 0D
+  mnemonic: RRC
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: 0E
+  mnemonic: RRC
+  bytes: 2
+  cycles: [16]
+  immediate: false
+  operands:
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: 0F
+  mnemonic: RRC
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: "10"
+  mnemonic: RL
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: "11"
+  mnemonic: RL
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: "12"
+  mnemonic: RL
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: "13"
+  mnemonic: RL
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: "14"
+  mnemonic: RL
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: "15"
+  mnemonic: RL
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: "16"
+  mnemonic: RL
+  bytes: 2
+  cycles: [16]
+  immediate: false
+  operands:
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: "17"
+  mnemonic: RL
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: "18"
+  mnemonic: RR
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: "19"
+  mnemonic: RR
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: 1A
+  mnemonic: RR
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: 1B
+  mnemonic: RR
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: 1C
+  mnemonic: RR
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: 1D
+  mnemonic: RR
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: 1E
+  mnemonic: RR
+  bytes: 2
+  cycles: [16]
+  immediate: false
+  operands:
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: 1F
+  mnemonic: RR
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: "20"
+  mnemonic: SLA
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: "21"
+  mnemonic: SLA
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: "22"
+  mnemonic: SLA
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: "23"
+  mnemonic: SLA
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: "24"
+  mnemonic: SLA
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: "25"
+  mnemonic: SLA
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: "26"
+  mnemonic: SLA
+  bytes: 2
+  cycles: [16]
+  immediate: false
+  operands:
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: "27"
+  mnemonic: SLA
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: "28"
+  mnemonic: SRA
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: "29"
+  mnemonic: SRA
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: 2A
+  mnemonic: SRA
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: 2B
+  mnemonic: SRA
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: 2C
+  mnemonic: SRA
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: 2D
+  mnemonic: SRA
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: 2E
+  mnemonic: SRA
+  bytes: 2
+  cycles: [16]
+  immediate: false
+  operands:
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: 2F
+  mnemonic: SRA
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: "30"
+  mnemonic: SWAP
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: "0"}
+- opcode: "31"
+  mnemonic: SWAP
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: "0"}
+- opcode: "32"
+  mnemonic: SWAP
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: "0"}
+- opcode: "33"
+  mnemonic: SWAP
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: "0"}
+- opcode: "34"
+  mnemonic: SWAP
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: "0"}
+- opcode: "35"
+  mnemonic: SWAP
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: "0"}
+- opcode: "36"
+  mnemonic: SWAP
+  bytes: 2
+  cycles: [16]
+  immediate: false
+  operands:
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: Z, "n": "0", h: "0", c: "0"}
+- opcode: "37"
+  mnemonic: SWAP
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: "0"}
+- opcode: "38"
+  mnemonic: SRL
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: "39"
+  mnemonic: SRL
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: 3A
+  mnemonic: SRL
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: 3B
+  mnemonic: SRL
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: 3C
+  mnemonic: SRL
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: 3D
+  mnemonic: SRL
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: 3E
+  mnemonic: SRL
+  bytes: 2
+  cycles: [16]
+  immediate: false
+  operands:
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: 3F
+  mnemonic: SRL
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "0", c: C}
+- opcode: "40"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "0"
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "41"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "0"
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "42"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "0"
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "43"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "0"
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "44"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "0"
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "45"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "0"
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "46"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [12]
+  immediate: false
+  operands:
+  - name: "0"
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "47"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "0"
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "48"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "1"
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "49"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "1"
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: 4A
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "1"
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: 4B
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "1"
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: 4C
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "1"
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: 4D
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "1"
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: 4E
+  mnemonic: BIT
+  bytes: 2
+  cycles: [12]
+  immediate: false
+  operands:
+  - name: "1"
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: 4F
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "1"
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "50"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "2"
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "51"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "2"
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "52"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "2"
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "53"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "2"
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "54"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "2"
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "55"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "2"
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "56"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [12]
+  immediate: false
+  operands:
+  - name: "2"
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "57"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "2"
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "58"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "3"
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "59"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "3"
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: 5A
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "3"
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: 5B
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "3"
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: 5C
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "3"
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: 5D
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "3"
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: 5E
+  mnemonic: BIT
+  bytes: 2
+  cycles: [12]
+  immediate: false
+  operands:
+  - name: "3"
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: 5F
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "3"
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "60"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "4"
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "61"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "4"
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "62"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "4"
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "63"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "4"
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "64"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "4"
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "65"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "4"
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "66"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [12]
+  immediate: false
+  operands:
+  - name: "4"
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "67"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "4"
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "68"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "5"
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "69"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "5"
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: 6A
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "5"
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: 6B
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "5"
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: 6C
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "5"
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: 6D
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "5"
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: 6E
+  mnemonic: BIT
+  bytes: 2
+  cycles: [12]
+  immediate: false
+  operands:
+  - name: "5"
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: 6F
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "5"
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "70"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "6"
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "71"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "6"
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "72"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "6"
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "73"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "6"
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "74"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "6"
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "75"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "6"
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "76"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [12]
+  immediate: false
+  operands:
+  - name: "6"
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "77"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "6"
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "78"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "7"
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "79"
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "7"
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: 7A
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "7"
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: 7B
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "7"
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: 7C
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "7"
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: 7D
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "7"
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: 7E
+  mnemonic: BIT
+  bytes: 2
+  cycles: [12]
+  immediate: false
+  operands:
+  - name: "7"
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: 7F
+  mnemonic: BIT
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "7"
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: Z, "n": "0", h: "1", c: "-"}
+- opcode: "80"
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "0"
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "81"
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "0"
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "82"
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "0"
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "83"
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "0"
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "84"
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "0"
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "85"
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "0"
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "86"
+  mnemonic: RES
+  bytes: 2
+  cycles: [16]
+  immediate: false
+  operands:
+  - name: "0"
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "87"
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "0"
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "88"
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "1"
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "89"
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "1"
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 8A
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "1"
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 8B
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "1"
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 8C
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "1"
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 8D
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "1"
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 8E
+  mnemonic: RES
+  bytes: 2
+  cycles: [16]
+  immediate: false
+  operands:
+  - name: "1"
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 8F
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "1"
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "90"
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "2"
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "91"
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "2"
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "92"
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "2"
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "93"
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "2"
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "94"
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "2"
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "95"
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "2"
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "96"
+  mnemonic: RES
+  bytes: 2
+  cycles: [16]
+  immediate: false
+  operands:
+  - name: "2"
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "97"
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "2"
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "98"
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "3"
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: "99"
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "3"
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 9A
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "3"
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 9B
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "3"
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 9C
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "3"
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 9D
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "3"
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 9E
+  mnemonic: RES
+  bytes: 2
+  cycles: [16]
+  immediate: false
+  operands:
+  - name: "3"
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: 9F
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "3"
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: A0
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "4"
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: A1
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "4"
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: A2
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "4"
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: A3
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "4"
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: A4
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "4"
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: A5
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "4"
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: A6
+  mnemonic: RES
+  bytes: 2
+  cycles: [16]
+  immediate: false
+  operands:
+  - name: "4"
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: A7
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "4"
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: A8
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "5"
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: A9
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "5"
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: AA
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "5"
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: AB
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "5"
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: AC
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "5"
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: AD
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "5"
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: AE
+  mnemonic: RES
+  bytes: 2
+  cycles: [16]
+  immediate: false
+  operands:
+  - name: "5"
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: AF
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "5"
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: B0
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "6"
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: B1
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "6"
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: B2
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "6"
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: B3
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "6"
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: B4
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "6"
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: B5
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "6"
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: B6
+  mnemonic: RES
+  bytes: 2
+  cycles: [16]
+  immediate: false
+  operands:
+  - name: "6"
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: B7
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "6"
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: B8
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "7"
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: B9
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "7"
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: BA
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "7"
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: BB
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "7"
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: BC
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "7"
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: BD
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "7"
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: BE
+  mnemonic: RES
+  bytes: 2
+  cycles: [16]
+  immediate: false
+  operands:
+  - name: "7"
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: BF
+  mnemonic: RES
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "7"
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: C0
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "0"
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: C1
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "0"
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: C2
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "0"
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: C3
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "0"
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: C4
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "0"
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: C5
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "0"
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: C6
+  mnemonic: SET
+  bytes: 2
+  cycles: [16]
+  immediate: false
+  operands:
+  - name: "0"
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: C7
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "0"
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: C8
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "1"
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: C9
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "1"
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: CA
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "1"
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: CB
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "1"
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: CC
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "1"
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: CD
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "1"
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: CE
+  mnemonic: SET
+  bytes: 2
+  cycles: [16]
+  immediate: false
+  operands:
+  - name: "1"
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: CF
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "1"
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: D0
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "2"
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: D1
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "2"
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: D2
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "2"
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: D3
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "2"
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: D4
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "2"
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: D5
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "2"
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: D6
+  mnemonic: SET
+  bytes: 2
+  cycles: [16]
+  immediate: false
+  operands:
+  - name: "2"
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: D7
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "2"
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: D8
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "3"
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: D9
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "3"
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: DA
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "3"
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: DB
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "3"
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: DC
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "3"
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: DD
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "3"
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: DE
+  mnemonic: SET
+  bytes: 2
+  cycles: [16]
+  immediate: false
+  operands:
+  - name: "3"
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: DF
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "3"
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: E0
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "4"
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: E1
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "4"
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: E2
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "4"
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: E3
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "4"
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: E4
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "4"
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: E5
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "4"
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: E6
+  mnemonic: SET
+  bytes: 2
+  cycles: [16]
+  immediate: false
+  operands:
+  - name: "4"
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: E7
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "4"
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: E8
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "5"
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: E9
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "5"
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: EA
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "5"
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: EB
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "5"
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: EC
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "5"
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: ED
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "5"
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: EE
+  mnemonic: SET
+  bytes: 2
+  cycles: [16]
+  immediate: false
+  operands:
+  - name: "5"
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: EF
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "5"
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: F0
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "6"
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: F1
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "6"
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: F2
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "6"
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: F3
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "6"
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: F4
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "6"
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: F5
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "6"
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: F6
+  mnemonic: SET
+  bytes: 2
+  cycles: [16]
+  immediate: false
+  operands:
+  - name: "6"
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: F7
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "6"
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: F8
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "7"
+    bytes: 0
+    immediate: true
+  - name: B
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: F9
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "7"
+    bytes: 0
+    immediate: true
+  - name: C
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: FA
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "7"
+    bytes: 0
+    immediate: true
+  - name: D
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: FB
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "7"
+    bytes: 0
+    immediate: true
+  - name: E
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: FC
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "7"
+    bytes: 0
+    immediate: true
+  - name: H
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: FD
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "7"
+    bytes: 0
+    immediate: true
+  - name: L
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: FE
+  mnemonic: SET
+  bytes: 2
+  cycles: [16]
+  immediate: false
+  operands:
+  - name: "7"
+    bytes: 0
+    immediate: true
+  - name: HL
+    bytes: 0
+    immediate: false
+  flags: {z: "-", "n": "-", h: "-", c: "-"}
+- opcode: FF
+  mnemonic: SET
+  bytes: 2
+  cycles: [8]
+  immediate: true
+  operands:
+  - name: "7"
+    bytes: 0
+    immediate: true
+  - name: A
+    bytes: 0
+    immediate: true
+  flags: {z: "-", "n": "-", h: "-", c: "-"}

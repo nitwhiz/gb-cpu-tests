@@ -20,7 +20,7 @@ The `spec` package provides a Go API for loading these tests, with the YAML file
 import spec "github.com/nitwhiz/gb-cpu-tests"
 
 // Load tests for a specific opcode
-suite, err := spec.Load(0x0B)
+suite, err := spec.Load(0x0B, false)
 if err != nil {
     log.Fatal(err)
 }
@@ -38,7 +38,7 @@ for suite, err := range spec.LoadAll() {
 
 ## Data Source
 
-The data in this repository is sourced from [adtennant/GameboyCPUTests](https://github.com/adtennant/GameboyCPUTests.git).
+The data in this repository is sourced from [SingleStepTests/sm83](https://github.com/SingleStepTests/sm83).
 
 ## Structure
 

@@ -2,7 +2,6 @@ package spec
 
 import (
 	"embed"
-	"encoding/json"
 	"fmt"
 	"iter"
 	"path"
@@ -11,12 +10,13 @@ import (
 	"github.com/goccy/go-yaml"
 )
 
-type Operand struct {
+type OpcodeOperand struct {
 	Name      string `json:"name"`
+	Bytes     int    `json:"bytes"`
 	Immediate bool   `json:"immediate"`
 }
 
-func (o *Operand) String() string {
+func (o OpcodeOperand) String() string {
 	if o.Immediate {
 		return o.Name
 	}
@@ -24,12 +24,24 @@ func (o *Operand) String() string {
 	return "[" + o.Name + "]"
 }
 
-type Opcode struct {
-	Mnemonic string    `json:"mnemonic"`
-	Operands []Operand `json:"operands"`
+type OpcodeFlags struct {
+	Z string `json:"z"`
+	N string `json:"n"`
+	H string `json:"h"`
+	C string `json:"c"`
 }
 
-func (o *Opcode) String() string {
+type Opcode struct {
+	Code      string          `yaml:"opcode"`
+	Mnemonic  string          `yaml:"mnemonic"`
+	Bytes     int             `yaml:"bytes"`
+	Cycles    []int           `yaml:"cycles,flow"`
+	Immediate bool            `yaml:"immediate"`
+	Operands  []OpcodeOperand `yaml:"operands,omitempty"`
+	Flags     OpcodeFlags     `yaml:"flags,flow"`
+}
+
+func (o Opcode) String() string {
 	if len(o.Operands) == 0 {
 		return o.Mnemonic
 	}
@@ -44,14 +56,9 @@ func (o *Opcode) String() string {
 }
 
 type Opcodes struct {
-	Unprefixed map[string]*Opcode `json:"unprefixed"`
-	Prefixed   map[string]*Opcode `json:"cbprefixed"`
+	Unprefixed [256]Opcode `yaml:"unprefixed"`
+	Prefixed   [256]Opcode `yaml:"prefixed"`
 }
-
-const (
-	ModeRead  = "read"
-	ModeWrite = "write"
-)
 
 type Registers struct {
 	A  uint8  `yaml:"a"`
@@ -77,40 +84,58 @@ type BusState struct {
 	Mode    string `yaml:"mode"`
 }
 
+func (b BusState) IsRead() bool {
+	return b.Mode[0] == 'r'
+}
+
+func (b BusState) IsWrite() bool {
+	return b.Mode[1] == 'w'
+}
+
+func (b BusState) IsMemoryRequest() bool {
+	return b.Mode[2] == 'm'
+}
+
 type State struct {
 	Registers `yaml:"registers"`
 	RAM       []RAMValue `yaml:"ram"`
 }
 
 type Test struct {
-	Name          string      `yaml:"name"`
-	CanonicalName string      `yaml:"canonicalName,omitempty"`
-	InitialState  State       `yaml:"initial"`
-	FinalState    State       `yaml:"final"`
-	BusCycles     []*BusState `yaml:"busCycles"`
+	Name         string      `yaml:"name"`
+	InitialState State       `yaml:"initial"`
+	FinalState   State       `yaml:"final"`
+	BusCycles    []*BusState `yaml:"busCycles"`
 }
 
 type TestSuite struct {
+	Opcode        string `yaml:"opcode"`
 	CanonicalName string `yaml:"canonicalName"`
 	Tests         []Test `yaml:"tests"`
 }
 
-//go:embed spec/*.yaml
+//go:embed spec/*
 var specFS embed.FS
 
-//go:embed data/opcodes.json
+//go:embed data/opcodes.yaml
 var opcodesBS []byte
 
-var OpCodes Opcodes
+var OpcodeData Opcodes
 
 func init() {
-	if err := json.Unmarshal(opcodesBS, &OpCodes); err != nil {
+	if err := yaml.Unmarshal(opcodesBS, &OpcodeData); err != nil {
 		panic(err)
 	}
 }
 
-func Load(opcode uint8) (suite *TestSuite, err error) {
-	bs, err := specFS.ReadFile("spec/" + fmt.Sprintf("%02x", opcode) + ".yaml")
+func Load(opcode uint8, prefixed bool) (suite *TestSuite, err error) {
+	filename := fmt.Sprintf("%02x", opcode)
+
+	if prefixed {
+		filename = "cb " + filename
+	}
+
+	bs, err := specFS.ReadFile("spec/" + filename + ".yaml")
 
 	if err != nil {
 		return nil, err

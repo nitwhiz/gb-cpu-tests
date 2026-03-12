@@ -1,15 +1,30 @@
 package spec
 
-import "testing"
+import (
+	"strings"
+	"testing"
+)
 
 func TestLoad41(t *testing.T) {
-	suite, err := Load(0x41)
+	suite, err := Load(0x41, false)
 
 	if err != nil {
 		t.Fatal(err)
 	}
 
-	t.Logf("%+v", suite)
+	if suite.CanonicalName != "LD B, C" {
+		t.Fatal("invalid canonical name, expected 'LD B, C', got", suite.CanonicalName)
+	}
+
+	suite, err = Load(0x41, true)
+
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	if suite.CanonicalName != "BIT 0, C" {
+		t.Fatal("invalid canonical name, expected 'BIT 0, C', got", suite.CanonicalName)
+	}
 }
 
 func TestLoadAll(t *testing.T) {
@@ -28,8 +43,8 @@ func TestLoadAll(t *testing.T) {
 			t.Fatal("empty suite canonical name")
 		}
 
-		if len(suite.Tests) == 0 {
-			t.Fatal("empty suite")
+		if !strings.HasPrefix(suite.CanonicalName, "ILLEGAL") && len(suite.Tests) == 0 {
+			t.Fatal("empty non-illegal suite")
 		}
 
 		for _, test := range suite.Tests {
@@ -39,6 +54,8 @@ func TestLoadAll(t *testing.T) {
 		}
 
 		passedOne = true
+
+		t.Logf("tested suite for opcode %s '%s'", suite.Opcode, suite.CanonicalName)
 	}
 
 	if !passedOne {
@@ -46,18 +63,16 @@ func TestLoadAll(t *testing.T) {
 	}
 }
 
-func TestGetOpcode(t *testing.T) {
-	opcode, ok := OpCodes.Unprefixed["0x41"]
-
-	if !ok {
-		t.Fatal("opcode not found")
-	}
-
-	if opcode == nil {
-		t.Fatal("opcode is nil")
-	}
+func TestGetOpcode41(t *testing.T) {
+	opcode := OpcodeData.Unprefixed[0x41]
 
 	if opcode.Mnemonic != "LD" {
-		t.Fatal("invalid opcode mnemonic, expected LD, got ", opcode.Mnemonic)
+		t.Fatal("invalid opcode mnemonic, expected LD, got", opcode.Mnemonic)
+	}
+
+	opcode = OpcodeData.Prefixed[0x41]
+
+	if opcode.Mnemonic != "BIT" {
+		t.Fatal("invalid opcode mnemonic, expected BIT, got", opcode.Mnemonic)
 	}
 }

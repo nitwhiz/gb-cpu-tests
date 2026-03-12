@@ -267,7 +267,8 @@ func generateOpCodeSpec(strCode string, op *SourceOpcode, prefixed bool) (err er
 		return
 	}
 
-	if code == 0xCB {
+	if code == 0xCB && !prefixed {
+		err = writeEmptySpecFile(code, op, false)
 		return
 	}
 
